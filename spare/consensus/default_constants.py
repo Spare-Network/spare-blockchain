@@ -30,7 +30,7 @@ testnet_kwargs = {
     # Default used for tests is std_hash(b'')
     "GENESIS_CHALLENGE": bytes.fromhex("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),
     # Forks of spare should change this value to provide replay attack protection. This is set to mainnet genesis chall
-    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("a9f3a91f33f0496496e9ae67b532d21a7befca8710a6144a42b1469fb9ec7e45"),
+    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("31c37dae02ac08c4aa9f97e34af43924ea71cc2f207d239584be00c49a846f88"),
     "GENESIS_PRE_FARM_POOL_PUZZLE_HASH": bytes.fromhex(
         "d23da14695a188ae5708dd152263c4db883eb27edeb936178d4d988b8f3ce5fc"
     ),
