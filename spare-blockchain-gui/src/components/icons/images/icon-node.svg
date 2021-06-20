@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="40px" viewBox="0 0 36 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-node</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Spare-App" transform="translate(-121.000000, -210.000000)">
+            <g id="icon-node" transform="translate(121.000000, 210.000000)">
+                <path d="M18,1.57874678 L33.5,10.6139482 L33.5,28.6924395 L18.4915525,37.4259681 L2.5,28.6834848 L2.5,10.6139482 L18,1.57874678 Z" id="Rectangle" stroke="#FFFFFF"></path>
+                <circle id="Oval" fill="#FFFFFF" cx="33.5" cy="11.5" r="2.5"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="33.5" cy="28.5" r="2.5"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="2.5" cy="28.5" r="2.5"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="2.5" cy="11.5" r="2.5"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="18.5" cy="2.5" r="2.5"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="18.5" cy="37.5" r="2.5"></circle>
+                <line x1="18.5" y1="4.67307692" x2="18.5" y2="38.3269231" id="Line-6" stroke="#FFFFFF" stroke-linecap="square"></line>
+                <line x1="31.3409091" y1="12.6666667" x2="3.65909091" y2="27.3333333" id="Line-6" stroke="#FFFFFF" stroke-linecap="square"></line>
+                <line x1="33.326087" y1="29.3214286" x2="3.67391304" y2="11.6785714" id="Line-6" stroke="#FFFFFF" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

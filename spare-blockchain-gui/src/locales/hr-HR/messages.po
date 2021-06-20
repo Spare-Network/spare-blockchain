@@ -1,0 +1,2098 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-02-08 18:51+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: hr_HR\n"
+"Project-Id-Version: spare-blockchain\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2021-05-16 11:27\n"
+"Last-Translator: \n"
+"Language-Team: Croatian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Crowdin-Project: spare-blockchain\n"
+"X-Crowdin-Project-ID: 440660\n"
+"X-Crowdin-Language: hr\n"
+"X-Crowdin-File: /main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File-ID: 72\n"
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:39
+#~ msgid "*Want to explore Spare's blocks further? Check out <0>Spare Explorer</0> built by an open source developer."
+#~ msgstr "*Želiš više istražiti Spare blokove? Pogledaj <0>Spare Explorer</0> napravljen od strane razvojnih programera otvorenog koda."
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
+#~ msgid "0 automatically chooses bucket count"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
+msgid "128 buckets is recommended"
+msgstr "128 kanti je preporučeno"
+
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:58
+msgid "A harvester is a service running on a machine where plot(s) are actually stored. A farmer and harvester talk to a full node to see the state of the chain. View your network of connected harvesters below Learn more"
+msgstr "Sakupljač je servis pokrenut na računalu gdje su spremljena zemljišta. Farmer i sakupljač razgovaraju sa Punim Čvorom radi provjere stanja lanca. Niže možeš vidjeti spojene sakupljače Saznaj više"
+
+#: src/electron/main.tsx:360
+#: src/electron/main.tsx:438
+msgid "About Spare Blockchain"
+msgstr ""
+
+#: src/components/trading/ViewOffer.jsx:83
+msgid "Accept"
+msgstr "Prihvati"
+
+#: src/components/trading/TradingOverview.jsx:223
+msgid "Accepted at time:"
+msgstr "Prihvati na vrijeme:"
+
+#: src/components/plot/PlotsFailed.tsx:14
+#: src/components/plot/PlotsNotFound.tsx:14
+#: src/components/plot/overview/PlotOverviewPlots.tsx:69
+msgid "Action"
+msgstr "Radnja"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:43
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:43
+#: src/components/fullNode/FullNodeConnections.tsx:57
+msgid "Actions"
+msgstr "Radnje"
+
+#: src/components/trading/CreateOffer.jsx:216
+msgid "Add"
+msgstr "Dodaj"
+
+#: src/components/farm/overview/FarmOverviewHero.tsx:53
+#: src/components/plot/PlotAddDirectoryDialog.tsx:40
+#: src/components/plot/PlotHeader.tsx:33
+#: src/components/plot/PlotHeader.tsx:51
+#: src/components/plot/add/PlotAdd.tsx:55
+#: src/components/plot/overview/PlotOverviewHero.tsx:48
+msgid "Add Plot Directory"
+msgstr "Dodaj direktorij Zemljišta"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:44
+msgid "Add Plot to Queue"
+msgstr "Dodaj Zemljište u red čekanja"
+
+#: src/components/plot/overview/PlotOverviewHero.tsx:43
+#~ msgid "Add Spare plot and start mining on both networks simultaneously"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:86
+msgid "Add Wallet"
+msgstr "Dodaj Novčanik"
+
+#: src/components/farm/overview/FarmOverviewHero.tsx:53
+#: src/components/plot/PlotHeader.tsx:33
+#: src/components/plot/add/PlotAdd.tsx:55
+#: src/components/plot/overview/PlotOverviewHero.tsx:48
+#~ msgid "Add a Plot"
+#~ msgstr "Dodaj Zemljište"
+
+#: src/components/plot/PlotAddDirectoryDialog.tsx:40
+#~ msgid "Add a plot"
+#~ msgstr "Dodaj zemljište"
+
+#: src/components/plot/overview/PlotOverviewHero.tsx:43
+msgid "Add old plots and start mining on both networks simultaneously"
+msgstr ""
+
+#: src/components/plot/PlotAddDirectoryDialog.tsx:69
+msgid "Add plot directory"
+msgstr "Dodaj direktorij zemljišta"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:405
+#: src/components/wallet/coloured/WalletColoured.tsx:457
+#: src/components/wallet/standard/WalletStandard.tsx:381
+msgid "Address"
+msgstr "Adresa"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:747
+#: src/components/wallet/standard/WalletStandard.tsx:327
+msgid "Address / Puzzle hash"
+msgstr "Adresa / Zagonetni hash"
+
+#: src/components/trading/CreateOffer.jsx:207
+#: src/components/trading/TradesTable.tsx:16
+#: src/components/wallet/WalletHistory.tsx:49
+#: src/components/wallet/create/createNewColouredCoin.jsx:118
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:769
+#: src/components/wallet/standard/WalletStandard.tsx:337
+msgid "Amount"
+msgstr "Iznos"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:415
+msgid "Amount ({cc_unit})"
+msgstr "Iznos ({cc_unit})"
+
+#: src/components/wallet/create/createRLAdmin.jsx:252
+msgid "Amount For Initial Coin"
+msgstr "Iznos za Inicijalni novčić"
+
+#: src/components/plot/PlotAction.tsx:30
+#: src/components/plot/queue/PlotQueueActions.tsx:32
+msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
+msgstr "Sigurno želiš ukloniti zemljište? Zemljište se ne može vratiti."
+
+#: src/components/fullNode/FullNodeCloseConnection.tsx:23
+msgid "Are you sure you want to disconnect?"
+msgstr "Sigurno želiš prekinuti vezu?"
+
+#: src/electron/main.tsx:165
+msgid "Are you sure you want to quit? GUI Plotting and farming will stop."
+msgstr "Sigurno želiš izaći? Obrada zemljišta i uzgoj će prestati sa radom."
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:31
+#~ msgid "Are you sure you want to use k={plotSize}"
+#~ msgstr "Are you sure you want to use k={plotSize}"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:31
+msgid "Are you sure you want to use k={plotSize}?"
+msgstr "Sigurno želiš koristiti k={plotSize}?"
+
+#: src/components/selectKey/SelectKey.tsx:39
+#: src/components/selectKey/SelectKey.tsx:53
+msgid "Back"
+msgstr "Natrag"
+
+#: src/components/backup/BackupCreate.tsx:61
+msgid "Backup file is used to restore smart wallets."
+msgstr "Datoteka sigurnosne kopije se koristi za povrat pametnih novčanika."
+
+#: src/components/wallet/coloured/WalletColoured.tsx:286
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:561
+#: src/components/wallet/standard/WalletStandard.tsx:195
+msgid "Balance"
+msgstr "Stanje"
+
+#: src/components/block/Block.jsx:286
+msgid "Base Farmer Reward Amount"
+msgstr "Iznos Osnovne Nagrade Farmera"
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:25
+msgid "Below are the current block challenges. You may or may not have a proof of space for these challenges. These blocks do not currently contain a proof of time."
+msgstr "Niže su trenutni izazovi bloka. Možeš imati ili ne imati dokaz prostora za ove izazove. Ovi blokovi trenutno nemaju dokaz o vremenu."
+
+#: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:8
+msgid "Best estimate over last 24 hours"
+msgstr "Najbolja procjena u zadnja 24 sata"
+
+#: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:8
+#~ msgid "Best estimate over last 5 hours"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:108
+#: src/components/block/Block.jsx:142
+#: src/components/block/Block.jsx:147
+#: src/components/block/Block.jsx:302
+msgid "Block"
+msgstr "Blok"
+
+#: src/components/block/Block.jsx:120
+msgid "Block Test"
+msgstr "Test Blok"
+
+#: src/components/block/Block.jsx:226
+msgid "Block VDF Iterations"
+msgstr "VDF Ponavljanje Bloka"
+
+#: src/components/block/Block.jsx:307
+msgid "Block at height {0} in the Spare blockchain"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:331
+#~ msgid "Block hash"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:125
+msgid "Block with hash {headerHash}"
+msgstr "Blok sa hashom {headerHash}"
+
+#: src/components/block/Block.jsx:154
+msgid "Block with hash {headerHash} does not exist."
+msgstr "Blok sa hashom {headerHash} ne postoji."
+
+#: src/components/fullNode/FullNode.jsx:320
+msgid "Blocks"
+msgstr "Blokovi"
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:91
+#~ msgid "Both values are empty. This is ok if you are, for example, sending your rewards to an offline wallet."
+#~ msgstr "Both values are empty. This is ok if you are, for example, sending your rewards to an offline wallet."
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:52
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:63
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:81
+msgid "Browse"
+msgstr "Pretraži"
+
+#: src/components/farm/overview/FarmOverviewHero.tsx:48
+msgid "Build your own Spare farm from Chia plots and support transactions in both networks"
+msgstr ""
+
+#: src/components/farm/overview/FarmOverviewHero.tsx:48
+#~ msgid "Build your own Spare farm from Spare plots and support transactions in both networks"
+#~ msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:50
+msgid "But you are currently farming <0/>"
+msgstr "Ali trenutno uzgajaš <0/>"
+
+#: src/components/trading/CreateOffer.jsx:175
+#: src/components/trading/TradesTable.tsx:31
+#: src/components/trading/TradingOverview.jsx:290
+msgid "Buy"
+msgstr "Kupi"
+
+#: src/components/wallet/Wallets.tsx:39
+msgid "CC Wallet"
+msgstr "CC Novčanik"
+
+#: src/components/wallet/create/WalletCreate.jsx:182
+#~ msgid "CCListItems.title"
+#~ msgstr ""
+
+#: src/components/selectKey/SelectKey.tsx:94
+msgid "Can be backed up to mnemonic seed"
+msgstr "Može biti sigurnosno kopirano na \"mnemonic seed\""
+
+#: src/components/core/components/ConfirmDialog/ConfirmDialog.tsx:50
+#: src/components/farm/FarmManageFarmingRewards.tsx:102
+#: src/components/fullNode/FullNodeAddConnection.tsx:67
+#: src/components/trading/CreateOffer.jsx:147
+#: src/components/trading/TradingOverview.jsx:403
+#: src/components/trading/ViewOffer.jsx:76
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: src/components/trading/TradingOverview.jsx:392
+msgid "Cancel and Spend"
+msgstr "Otkaži i Iskoristi"
+
+#: src/components/plot/PlotsNotFound.tsx:26
+msgid "Caution, deleting these plots will delete them forever. Check that the storage devices are properly connected."
+msgstr "Oprez, brisanjem ovih zemljišta ona će se izbrisati zauvijek. Provjeri da su uređaji za pohranu ispravno spojeni."
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:13
+msgid "Challenge"
+msgstr "Izazov"
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:11
+msgid "Challenge Hash"
+msgstr "Hash Izazova"
+
+#: src/electron/main.tsx:346
+#~ msgid "Chat on KeyBase"
+#~ msgstr "Razgovaraj na KeyBase"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
+msgid "Choose Number of Plots"
+msgstr "Odaberi broj zemljišta"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:54
+msgid "Choose Plot Size"
+msgstr "Odaberi veličinu zemljišta"
+
+#: src/components/plot/PlotAddDirectoryDialog.tsx:76
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:55
+msgid "Close"
+msgstr "Zatvori"
+
+#: src/components/app/AppRouter.tsx:18
+msgid "Closing down node and server"
+msgstr "Zatvaram čvor i server"
+
+#: src/components/trading/TradingOverview.jsx:369
+msgid "Coins:"
+msgstr "Novčići:"
+
+#: src/components/trading/CreateOffer.jsx:186
+#: src/components/trading/TradesTable.tsx:19
+msgid "Colour"
+msgstr "Boja"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:181
+msgid "Colour Info"
+msgstr "Info boje"
+
+#: src/components/wallet/create/createExistingColouredCoin.jsx:108
+msgid "Colour String"
+msgstr "Lanac boje"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:186
+msgid "Colour:"
+msgstr "Boja:"
+
+#: src/components/wallet/create/WalletCreate.jsx:120
+msgid "Coloured Coin"
+msgstr "Obojani novčić"
+
+#: src/components/wallet/create/WalletCreate.jsx:168
+msgid "Coloured Coin Options"
+msgstr "Opcije obojanog novčića"
+
+#: src/electron/main.tsx:163
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#: src/components/fullNode/FullNodeCloseConnection.tsx:22
+msgid "Confirm Disconnect"
+msgstr "Potvrdi odjavu"
+
+#: src/components/trading/TradingOverview.jsx:195
+msgid "Confirmed at block:"
+msgstr "Potvrđeno na bloku:"
+
+#: src/components/wallet/WalletHistory.tsx:40
+msgid "Confirmed at height {0}"
+msgstr "Potvrđeno na visini {0}"
+
+#: src/components/fullNode/FullNodeAddConnection.tsx:70
+msgid "Connect"
+msgstr "Spoji se"
+
+#: src/components/fullNode/FullNodeAddConnection.tsx:55
+#: src/components/fullNode/FullNodeConnections.tsx:77
+msgid "Connect to other peers"
+msgstr "Poveži se sa drugom točkom"
+
+#: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:47
+#: src/components/fullNode/FullNode.jsx:152
+msgid "Connected"
+msgstr "Povezano"
+
+#: src/components/app/AppRouter.tsx:23
+msgid "Connecting to wallet"
+msgstr "Spajam se na novčanik"
+
+#: src/components/fullNode/FullNode.jsx:150
+msgid "Connection Status"
+msgstr "Stanje veze"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:66
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:65
+msgid "Connection Status:"
+msgstr "Stanje veze:"
+
+#: src/components/fullNode/FullNodeConnections.tsx:50
+msgid "Connection type"
+msgstr "Vrsta veze"
+
+#: src/components/fullNode/FullNodeConnections.tsx:74
+msgid "Connections"
+msgstr "Veze"
+
+#: src/electron/main.tsx:331
+msgid "Contribute on GitHub"
+msgstr "Doprinos na GitHub"
+
+#: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:22
+msgid "Copied"
+msgstr "Kopirano"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:461
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:313
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:441
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:504
+#: src/components/wallet/standard/WalletStandard.tsx:385
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: src/components/core/components/CopyToClipboard/CopyToClipboard.tsx:23
+msgid "Copy to Clipboard"
+msgstr "Kopiraj u Međuspremnik"
+
+#: src/components/backup/BackupCreate.tsx:70
+#: src/components/wallet/create/createExistingColouredCoin.jsx:134
+#: src/components/wallet/create/createNewColouredCoin.jsx:141
+#: src/components/wallet/create/createRLAdmin.jsx:326
+#: src/components/wallet/create/createRLUser.jsx:103
+msgid "Create"
+msgstr "Kreiraj"
+
+#: src/components/wallet/create/WalletCreate.jsx:308
+msgid "Create DID wallet"
+msgstr "Stvori DID novčanik"
+
+#: src/components/trading/TradeManager.tsx:22
+msgid "Create Offer"
+msgstr "Kreiraj Ponudu"
+
+#: src/components/plot/add/PlotAdd.tsx:67
+msgid "Create Plot"
+msgstr "Kreiraj Zemljište"
+
+#: src/components/wallet/create/createRLAdmin.jsx:191
+msgid "Create Rate Limited Admin Wallet"
+msgstr "Kreiraj ograničeni Administratorski novčanik"
+
+#: src/components/wallet/create/createRLUser.jsx:78
+msgid "Create Rate Limited User Wallet"
+msgstr "Kreiraj ograničeni Korisnički novčanik"
+
+#: src/components/trading/TradeManager.tsx:22
+#~ msgid "Create Trade"
+#~ msgstr ""
+
+#: src/components/trading/CreateOffer.jsx:140
+msgid "Create Trade Offer"
+msgstr "Kreiraj Ponudu"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:396
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:728
+#: src/components/wallet/standard/WalletStandard.tsx:315
+msgid "Create Transaction"
+msgstr "Kreiraj Transakciju"
+
+#: src/components/backup/BackupCreate.tsx:58
+msgid "Create a Backup"
+msgstr "Kreiraj sigurnosnu kopiju"
+
+#: src/components/selectKey/SelectKey.tsx:114
+msgid "Create a new private key"
+msgstr "Kreiraj novi privatni ključ"
+
+#: src/components/wallet/create/WalletCreate.jsx:244
+msgid "Create admin wallet"
+msgstr "Kreiraj administratorski novčanik"
+
+#: src/components/wallet/create/WalletCreate.jsx:180
+msgid "Create new coloured coin"
+msgstr "Kreiraj novi obojani novčić"
+
+#: src/components/wallet/create/WalletCreate.jsx:256
+msgid "Create user wallet"
+msgstr "Kreiraj korisnički novčanik"
+
+#: src/components/wallet/create/createExistingColouredCoin.jsx:88
+msgid "Create wallet for colour"
+msgstr "Kreiraj novčanik za boju"
+
+#: src/components/wallet/create/WalletCreate.jsx:192
+msgid "Create wallet for existing colour"
+msgstr "Kreiraj novčanik za postojeću boju"
+
+#: src/components/wallet/Wallets.tsx:81
+#~ msgid "CreateWallet.addWallet"
+#~ msgstr ""
+
+#: src/components/trading/TradingOverview.jsx:181
+msgid "Created At:"
+msgstr "Kreirano:"
+
+#: src/components/trading/TradingOverview.jsx:207
+msgid "Created by us:"
+msgstr "Kreirali mi:"
+
+#: src/components/trading/TradingOverview.jsx:177
+msgid "Current trade status"
+msgstr "Trenutno stanje trgovanja"
+
+#: src/components/selectKey/SelectKey.tsx:103
+msgid "DANGER: permanently delete private key"
+msgstr "OPREZ: Trajno brisanje privatnog ključa"
+
+#: src/components/wallet/Wallets.tsx:53
+msgid "DID Wallet"
+msgstr "DID Novčanik"
+
+#: src/components/wallet/create/WalletCreate.jsx:310
+#~ msgid "DIDListItems.title"
+#~ msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:29
+#: src/components/trading/TradingOverview.jsx:130
+#: src/components/wallet/WalletHistory.tsx:36
+msgid "Date"
+msgstr "Datum"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:57
+msgid "Delay"
+msgstr "Odgoda"
+
+#: src/components/plot/PlotAction.tsx:29
+#: src/components/plot/PlotAction.tsx:48
+#: src/components/plot/queue/PlotQueueActions.tsx:31
+#: src/components/plot/queue/PlotQueueActions.tsx:65
+#: src/components/selectKey/SelectKey.tsx:39
+#: src/components/selectKey/SelectKey.tsx:53
+msgid "Delete"
+msgstr "Ukloni"
+
+#: src/components/plot/PlotAction.tsx:29
+#: src/components/plot/queue/PlotQueueActions.tsx:31
+msgid "Delete Plot"
+msgstr "Ukloni Zemljište"
+
+#: src/components/selectKey/SelectKey.tsx:53
+msgid "Delete all keys"
+msgstr "Ukloni sve ključeve"
+
+#: src/components/selectKey/SelectKey.tsx:39
+msgid "Delete key"
+msgstr "Ukloni ključ"
+
+#: src/components/selectKey/SelectKey.tsx:54
+msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "Brisanjem svih ključeva, ključevi spremljeni na računalu biti će trajno uklonjeni. Provjeri da imaš sigurnosnu kopiju. Sigurno želiš nastaviti?"
+
+#: src/components/selectKey/SelectKey.tsx:40
+msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
+msgstr "Brisanjem ključa, ključ spremljen na računalu biti će trajno uklonjeni. Provjeri da imaš sigurnosnu kopiju. Sigurno želiš nastaviti?"
+
+#: src/electron/main.tsx:261
+msgid "Developer"
+msgstr "Razvojni programer"
+
+#: src/electron/main.tsx:264
+msgid "Developer Tools"
+msgstr "Alati za razvojne programere"
+
+#: src/components/block/Block.jsx:212
+#: src/components/fullNode/FullNode.jsx:187
+msgid "Difficulty"
+msgstr "Kompleksnost"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:114
+#~ msgid "Disable bifield plotting when your temporary directory is on fast storage like SSD or you need lower per process RAM requirements. Plotting with bitfield enabled has about 20% less overall writes."
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:109
+msgid "Disable bitfield plotting"
+msgstr "Onemogući \"bitfield\" obradu"
+
+#: src/components/fullNode/FullNodeCloseConnection.tsx:22
+msgid "Disconnect"
+msgstr "Odspoji se"
+
+#: src/components/wallet/create/WalletCreate.jsx:144
+#~ msgid "Distributed Identity"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:296
+msgid "Distributed Identity Options"
+msgstr "Opcije Distribuiranog Identiteta"
+
+#: src/components/farm/overview/FarmOverviewHero.tsx:41
+#: src/components/plot/overview/PlotOverviewHero.tsx:35
+#~ msgid "Do you have existing plots on this machine? <0>Add Plot Directory</0>"
+#~ msgstr "Imaš li postojeća zemljišta na ovom računalu? <0>Dodaj direktorij</0>"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:30
+msgid "Does your machine support parallel plotting?"
+msgstr "Da li tvoje računalo podržava paralelnu obradu?"
+
+#: src/components/trading/ViewOffer.jsx:39
+#: src/components/wallet/create/recoverDIDWallet.js:280
+msgid "Drag and drop offer file"
+msgstr "Povuci i ispusti datoteku ponuda"
+
+#: src/components/backup/BackupRestore.tsx:114
+msgid "Drag and drop your backup file"
+msgstr "Povuci i ispusti datoteku sigurnosne kopije"
+
+#: src/electron/main.tsx:220
+msgid "Edit"
+msgstr "Uredi"
+
+#: src/components/wallet/WalletImport.tsx:67
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Spare wallet."
+msgstr ""
+
+#: src/components/farm/FarmerStatus.tsx:30
+#: src/components/farm/FarmerStatus.tsx:31
+#: src/components/farm/card/FarmCardStatus.tsx:20
+#: src/components/farm/card/FarmCardStatus.tsx:25
+#: src/components/plot/PlotStatus.tsx:17
+#: src/components/plot/PlotStatus.tsx:18
+#: src/components/plot/queue/PlotQueueIndicator.tsx:12
+msgid "Error"
+msgstr "Greška"
+
+#: src/components/wallet/standard/WalletStandard.tsx:294
+msgid "Error: Cannot send spare to coloured address. Please enter a spare address."
+msgstr ""
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:32
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:34
+msgid "Estimated Time to Win"
+msgstr "Procijenjeno Vrijeme za Pobjedu"
+
+#: src/components/fullNode/FullNode.jsx:206
+msgid "Estimated network space"
+msgstr "Procijenjen mrežni prostor"
+
+#: src/components/fullNode/FullNode.jsx:209
+msgid "Estimated sum of all the plotted disk space of all farmers in the network"
+msgstr "Procijenjen zbroj svih uzgojenih diskovnih prostora od svih farmera na mreži"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:124
+msgid "Exclude final directory"
+msgstr "Izuzmi krajnji direktorij"
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:32
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:34
+#~ msgid "Expected Time to Win"
+#~ msgstr ""
+
+#: src/components/plot/PlotsFailed.tsx:24
+msgid "Failed to open (invalid plots)"
+msgstr "Neuspjelo otvaranje (neispravna zemljišta)"
+
+#: src/components/dashboard/DashboardSideBar.tsx:30
+#: src/components/wallet/coloured/WalletColoured.tsx:430
+#: src/components/wallet/standard/WalletStandard.tsx:350
+msgid "Farm"
+msgstr "Farma"
+
+#: src/components/block/Block.jsx:248
+msgid "Farmer Puzzle Hash"
+msgstr "Zagonetni hash farmera"
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:95
+msgid "Farmer Reward Address"
+msgstr "Nagradna adresa farmera"
+
+#: src/components/farm/card/FarmCardStatus.tsx:21
+#: src/components/plot/PlotStatus.tsx:28
+msgid "Farmer is not connected"
+msgstr "Farmer nije povezan"
+
+#: src/components/farm/card/FarmCardStatus.tsx:26
+#: src/components/plot/PlotStatus.tsx:29
+msgid "Farmer is not running"
+msgstr "Farmer nije pokrenut"
+
+#: src/components/farm/overview/FarmOverviewHero.tsx:27
+#~ msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
+#~ msgstr "Farmeri zarađuju nagrade bloka i naknade transakcije tako da dodjeljuju svoj diskovni prostor mreži kao pomoć u osiguranju transakcija. Ovdje će biti tvoja farma kada dodaš zemljište. <0>Saznaj više</0>"
+
+#: src/components/farm/Farm.tsx:15
+#: src/components/farm/FarmerStatus.tsx:27
+#: src/components/farm/card/FarmCardStatus.tsx:29
+#: src/components/plot/PlotStatus.tsx:14
+msgid "Farming"
+msgstr "Uzgajam"
+
+#: src/components/farm/card/FarmCardStatus.tsx:11
+#: src/components/farm/card/FarmCardStatus.tsx:16
+#: src/components/farm/card/FarmCardStatus.tsx:19
+#: src/components/farm/card/FarmCardStatus.tsx:24
+#: src/components/farm/card/FarmCardStatus.tsx:28
+msgid "Farming Status"
+msgstr "Stanje uzgoja"
+
+#: src/components/wallet/WalletHistory.tsx:53
+#: src/components/wallet/create/createExistingColouredCoin.jsx:124
+#: src/components/wallet/create/createNewColouredCoin.jsx:131
+#: src/components/wallet/create/createRLAdmin.jsx:259
+#: src/components/wallet/create/createRLAdmin.jsx:291
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:782
+#: src/components/wallet/standard/WalletStandard.tsx:342
+msgid "Fee"
+msgstr "Naknada"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:420
+#~ msgid "Fee (TSPARE)"
+#~ msgstr ""
+
+#: src/components/wallet/coloured/WalletColoured.tsx:420
+#~ msgid "Fee ({0})"
+#~ msgstr "Fee ({0})"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:422
+msgid "Fee ({currencyCode})"
+msgstr "Naknada ({currencyCode})"
+
+#: src/components/block/Block.jsx:290
+msgid "Fees Amount"
+msgstr "Iznos naknada"
+
+#: src/components/block/Block.jsx:313
+#~ msgid "Fees Puzzle Hash"
+#~ msgstr ""
+
+#: src/electron/main.tsx:212
+#: src/electron/main.tsx:393
+msgid "File"
+msgstr "Datoteka"
+
+#: src/components/plot/PlotsFailed.tsx:10
+#: src/components/plot/PlotsNotFound.tsx:10
+#: src/components/plot/overview/PlotOverviewPlots.tsx:61
+msgid "Filename"
+msgstr "Ime datoteke"
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:37
+msgid "Final folder location"
+msgstr "Lokacija krajnjeg direktorija"
+
+#: src/components/fullNode/FullNode.jsx:50
+#: src/components/fullNode/FullNode.jsx:101
+msgid "Finished"
+msgstr "Završeno"
+
+#: src/electron/main.tsx:346
+msgid "Follow on Twitter"
+msgstr "Prati na Twitteru"
+
+#: src/electron/main.tsx:319
+msgid "Frequently Asked Questions"
+msgstr "Često Postavljana Pitanja"
+
+#: src/components/dashboard/DashboardSideBar.tsx:27
+#: src/components/fullNode/FullNode.jsx:336
+msgid "Full Node"
+msgstr "Puni čvor"
+
+#: src/components/fullNode/FullNode.jsx:270
+msgid "Full Node Status"
+msgstr "Stanje punog čvora"
+
+#: src/electron/main.tsx:288
+msgid "Full Screen"
+msgstr "Puni zaslon"
+
+#: src/components/wallet/create/createNewColouredCoin.jsx:99
+msgid "Generate New Colour"
+msgstr "Generiraj novu boju"
+
+#: src/components/wallet/standard/WalletStandard.tsx:375
+msgid "HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key."
+msgstr "HD ili Hijerarhijski deterministički ključevi su vrste javnih/privatnih ključeva gdje jedan privatni ključ može imati neograničen broj različitih javnih ključeva (pa tako i ulazne adrese za novčanik) koji će se u konačnici vratiti i potrošiti jednim privatnim ključem."
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:49
+#~ msgid "Harvester ID"
+#~ msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:68
+msgid "Header Hash"
+msgstr "Hash zaglavlja"
+
+#: src/components/block/Block.jsx:176
+msgid "Header hash"
+msgstr "Hash zaglavlja"
+
+#: src/components/block/Block.jsx:190
+#: src/components/fullNode/FullNode.jsx:84
+#: src/components/fullNode/FullNodeConnections.tsx:54
+msgid "Height"
+msgstr "Visina"
+
+#: src/electron/main.tsx:309
+msgid "Help"
+msgstr "Pomoć"
+
+#: src/components/core/components/LocaleToggle/LocaleToggle.tsx:39
+msgid "Help translate"
+msgstr "Pomozite prevesti"
+
+#: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:35
+#~ msgid "Hide Advanced Options"
+#~ msgstr "Sakrij napredne opcije"
+
+#: src/components/wallet/WalletHistory.tsx:63
+msgid "History"
+msgstr "Povijest"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:24
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:24
+msgid "Host Name"
+msgstr "Naziv poslužitelja"
+
+#: src/components/fullNode/FullNodeConnections.tsx:27
+msgid "IP address"
+msgstr "IP adresa"
+
+#: src/components/fullNode/FullNodeAddConnection.tsx:61
+msgid "IP address / host"
+msgstr "IP adresa / poslužitelj"
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:85
+msgid "If none selected, then it will default to the temporary directory."
+msgstr "Ako ništa nije odabrano, automatski će ići u privremeni direktorij."
+
+#: src/components/wallet/WalletImport.tsx:64
+msgid "Import Wallet from Mnemonics"
+msgstr "Uvezi Novčanik sa Mnemonics"
+
+#: src/components/selectKey/SelectKey.tsx:121
+msgid "Import from Mnemonics (24 words)"
+msgstr "Uvezi sa Mnemonics (24 riječi)"
+
+#: src/components/fullNode/FullNode.jsx:52
+msgid "In Progress"
+msgstr "U tijeku"
+
+#: src/components/wallet/WalletHistory.tsx:20
+msgid "Incoming"
+msgstr "Dolazni"
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:15
+msgid "Index"
+msgstr "Indeks"
+
+#: src/components/trading/TradingOverview.jsx:211
+msgid "Indicated if this offer was created by us"
+msgstr "Označeno ako smo mi kreirali ovu ponudu"
+
+#: src/components/trading/TradingOverview.jsx:227
+msgid "Indicated what time this offer was accepted"
+msgstr "Označeno kada je ova ponuda prihvaćena"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:341
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:490
+msgid "Info Packet"
+msgstr "Informacijski Paket"
+
+#: src/components/wallet/create/createRLAdmin.jsx:276
+msgid "Initial Amount"
+msgstr "Početni iznos"
+
+#: src/components/wallet/create/createRLUser.jsx:89
+msgid "Initialize a Rate Limited User Wallet:"
+msgstr "Inicijaliziraj ograničeni Korisnički novčanik:"
+
+#: src/components/wallet/create/createRLAdmin.jsx:227
+msgid "Interval"
+msgstr "Interval"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:37
+msgid "K-Size"
+msgstr "K-Veličina"
+
+#: src/components/dashboard/DashboardSideBar.tsx:31
+msgid "Keys"
+msgstr "Ključevi"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:40
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:40
+msgid "KiB Up/Down"
+msgstr "KiB Odlaz/Dolaz"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:37
+msgid "Last Attempted Proof"
+msgstr "Zadnji Pokušani dokaz"
+
+#: src/components/farm/card/FarmCardLastHeightFarmed.tsx:9
+msgid "Last Height Farmed"
+msgstr "Zadnje uzgojena visina"
+
+#: src/components/farm/FarmLatestBlockChallenges.tsx:24
+msgid "Latest Block Challenges"
+msgstr "Najnoviji izazovi bloka"
+
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:22
+msgid "Loading..."
+msgstr "Učitavam..."
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:80
+msgid "Local Harvester Plots"
+msgstr "Lokalna zemljišta žetelaca"
+
+#: src/components/app/AppRouter.tsx:28
+msgid "Logging in"
+msgstr "Prijavljivanje"
+
+#: src/components/wallet/create/WalletCreate.jsx:124
+#~ msgid "MainWalletList.colouredCoin"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:258
+#~ msgid "MainWalletList.createAdminWallet"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:322
+#~ msgid "MainWalletList.createDIDWallet"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:194
+#~ msgid "MainWalletList.createNewColouredCoin"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:270
+#~ msgid "MainWalletList.createUserWallet"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:206
+#~ msgid "MainWalletList.createWalletForExistingColour"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:144
+#~ msgid "MainWalletList.distributedIdentity"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:134
+#~ msgid "MainWalletList.rateLimited"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:334
+#~ msgid "MainWalletList.recoverDIDWallet"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:112
+#~ msgid "MainWalletList.title"
+#~ msgstr ""
+
+#: src/components/farm/overview/FarmOverview.tsx:34
+msgid "Manage Farming Rewards"
+msgstr "Upravljaj nagradama uzgoja"
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:82
+msgid "Manage Your Farming Rewards Target Addresses"
+msgstr "Upravljaj odredišnim adresama za nagrade uzgoja"
+
+#: src/components/fullNode/FullNodeConnections.tsx:43
+msgid "MiB Up/Down"
+msgstr "MiB Odlaz/Dolaz"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:60
+msgid "Minutes"
+msgstr "Minute"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:73
+msgid "More memory slightly increases speed"
+msgstr "Više memorije povećava brzinu"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:428
+msgid "My Pubkey"
+msgstr "Moj Pubkey"
+
+#: src/components/fullNode/FullNode.jsx:169
+msgid "Network Name"
+msgstr "Ime mreže"
+
+#: src/components/fullNode/FullNode.jsx:106
+#~ msgid "Network has not yet been launched, once it launches full node will start automatically."
+#~ msgstr "Network has not yet been launched, once it launches full node will start automatically."
+
+#: src/components/app/AppRouter.tsx:24
+#~ msgid "Network not launched yet, waiting for genesis challenge!"
+#~ msgstr "Network not launched yet, waiting for genesis challenge!"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:471
+#: src/components/wallet/standard/WalletStandard.tsx:395
+msgid "New Address"
+msgstr "Nova Adresa"
+
+#: src/components/wallet/WalletAdd.tsx:32
+msgid "New Wallet"
+msgstr "Novi novčanik"
+
+#: src/components/block/Block.jsx:321
+#: src/components/wallet/WalletAdd.tsx:47
+#: src/components/wallet/WalletImport.tsx:77
+msgid "Next"
+msgstr "Dalje"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:200
+msgid "Nickname"
+msgstr "Nadimak"
+
+#: src/components/trading/TradingOverview.jsx:205
+#: src/electron/main.tsx:160
+msgid "No"
+msgstr "Ne"
+
+#: src/middleware/middleware_api.jsx:259
+msgid "No 24 word seed, since this key is imported."
+msgstr "Nema sjemena od 24 riječi, pošto je ovaj ključ uvezen."
+
+#: src/components/farm/card/FarmCardLastHeightFarmed.tsx:9
+msgid "No blocks farmed yet"
+msgstr "Još nema uzgojenih blokova"
+
+#: src/components/wallet/WalletHistory.tsx:66
+msgid "No previous transactions"
+msgstr "Nema prethodnih transakcija"
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:91
+msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
+msgstr "Nema privatnih ključeva za jedno ili obje adrese. Sigurno je jedino ako šalješ nagrade na drugi novčanik."
+
+#: src/components/farm/FarmFullNodeConnections.tsx:20
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:20
+#: src/components/fullNode/FullNodeConnections.tsx:23
+msgid "Node ID"
+msgstr "ID Čvora"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:44
+msgid "None of your plots have passed the plot filter yet."
+msgstr "Niti jedno tvoje zemljište još nije prošlo filter zemljišta."
+
+#: src/components/farm/FarmerStatus.tsx:29
+#: src/components/farm/card/FarmCardNotAvailable.tsx:8
+#: src/components/farm/card/FarmCardNotAvailable.tsx:9
+#: src/components/plot/PlotStatus.tsx:16
+msgid "Not Available"
+msgstr "Nije dostupno"
+
+#: src/components/fullNode/FullNode.jsx:131
+msgid "Not Synced"
+msgstr "Nije sinkronizirano"
+
+#: src/components/trading/TradingOverview.jsx:220
+msgid "Not accepted yet"
+msgstr "Još nije prihvaćeno"
+
+#: src/components/trading/TradingOverview.jsx:192
+msgid "Not confirmed yet"
+msgstr "Još nije potvrđeno"
+
+#: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:48
+#: src/components/fullNode/FullNode.jsx:154
+#: src/components/fullNode/FullNode.jsx:161
+msgid "Not connected"
+msgstr "Nije povezano"
+
+#: src/components/plot/PlotsNotFound.tsx:24
+msgid "Not found Plots"
+msgstr "Nisu pronađena zemljišta"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:92
+msgid "Number of buckets"
+msgstr "Broj kanti"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:83
+msgid "Number of threads"
+msgstr "Broj niza"
+
+#: src/components/core/components/ConfirmDialog/ConfirmDialog.tsx:51
+msgid "OK"
+msgstr "U redu"
+
+#: src/components/trading/ViewOffer.jsx:69
+msgid "Offer"
+msgstr "Ponuda"
+
+#: src/components/trading/TradingOverview.jsx:417
+msgid "Offers Created"
+msgstr "Ponude kreirane"
+
+#: src/components/wallet/standard/WalletStandard.tsx:316
+msgid "On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute."
+msgstr "U prosjeku je potrebna jedna minuta između svakog transakcijskog bloka. Ukoliko nema zastoja, možeš očekivati uključenje svoje transakcije u manje od minute."
+
+#: src/components/wallet/WalletHistory.tsx:19
+msgid "Outgoing"
+msgstr "Odlazni"
+
+#: src/components/fullNode/FullNode.jsx:175
+msgid "Peak Height"
+msgstr "Najviša Visina"
+
+#: src/components/fullNode/FullNode.jsx:204
+#~ msgid "Peak Sub-block Height"
+#~ msgstr "Peak Sub-block Height"
+
+#: src/components/fullNode/FullNode.jsx:180
+msgid "Peak Time"
+msgstr "Zadnje vrijeme"
+
+#: src/components/wallet/WalletHistory.tsx:42
+msgid "Pending"
+msgstr "Na čekanju"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:603
+#: src/components/wallet/standard/WalletStandard.tsx:225
+msgid "Pending Balance"
+msgstr "Iznos na čekanju"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:612
+#: src/components/wallet/standard/WalletStandard.tsx:230
+msgid "Pending Change"
+msgstr "Promjena na čekanju"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:594
+#: src/components/wallet/standard/WalletStandard.tsx:220
+msgid "Pending Total Balance"
+msgstr "Ukupan iznos na čekanju"
+
+#: src/components/trading/CreateOffer.jsx:103
+msgid "Please add a trade pair"
+msgstr "Dodaj par za razmjenu"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:711
+msgid "Please enter 0 fee. Positive fees not supported yet for RL."
+msgstr "Unesi 0 za naknadu. Pozitivne naknade još nisu podržane za RL."
+
+#: src/components/wallet/create/createRLAdmin.jsx:139
+msgid "Please enter a valid initial coin amount"
+msgstr "Unesi ispravan iznos za početni novčić"
+
+#: src/components/wallet/create/createNewColouredCoin.jsx:62
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:678
+#: src/components/wallet/standard/WalletStandard.tsx:280
+msgid "Please enter a valid numeric amount"
+msgstr "Unesi ispravan numerički iznos"
+
+#: src/components/wallet/create/createExistingColouredCoin.jsx:63
+#: src/components/wallet/create/createNewColouredCoin.jsx:74
+#: src/components/wallet/create/createRLAdmin.jsx:151
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:690
+#: src/components/wallet/standard/WalletStandard.tsx:286
+msgid "Please enter a valid numeric fee"
+msgstr "Unesi ispravnu numerički naknadu"
+
+#: src/components/wallet/create/createRLAdmin.jsx:93
+msgid "Please enter a valid numeric interval length"
+msgstr "Unesi ispravnu numeričku duljinu intervala"
+
+#: src/components/wallet/create/createRLAdmin.jsx:110
+msgid "Please enter a valid numeric spendable amount"
+msgstr "Unesi ispravan numerički iznos za potrošnju"
+
+#: src/components/wallet/create/createRLAdmin.jsx:122
+msgid "Please enter a valid pubkey"
+msgstr "Unesi ispravan pubkey"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:660
+#: src/components/wallet/standard/WalletStandard.tsx:270
+msgid "Please finish syncing before making a transaction"
+msgstr "Završi sinkroniziranje prije kreiranja transakcije"
+
+#: src/components/trading/CreateOffer.jsx:69
+msgid "Please select amount"
+msgstr "Odaberi iznos"
+
+#: src/components/trading/CreateOffer.jsx:79
+msgid "Please select buy or sell"
+msgstr "Odaberi prodaja ili kupnja"
+
+#: src/components/trading/CreateOffer.jsx:57
+msgid "Please select coin colour"
+msgstr "Odaberi boju novčića"
+
+#: src/components/trading/CreateOffer.jsx:63
+#~ msgid "Please select coin type"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:44
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:48
+msgid "Please specify final directory"
+msgstr "Odaberi krajnji direktorij"
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:55
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:59
+msgid "Please specify temporary directory"
+msgstr "Odaberi privremeni direktorij"
+
+#: src/components/plot/Plot.tsx:13
+msgid "Plot"
+msgstr "Zemljište"
+
+#: src/components/farm/card/FarmCardPlotCount.tsx:8
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:18
+msgid "Plot Count"
+msgstr "Broj zemljišta"
+
+#: src/components/block/Block.jsx:264
+msgid "Plot Id"
+msgstr "ID Zemljišta"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:49
+msgid "Plot Key"
+msgstr "Ključ Zemljišta"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:43
+#~ msgid "Plot Name"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:240
+msgid "Plot Public Key"
+msgstr "Javni ključ Zemljišta"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:49
+#~ msgid "Plot Seed"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:66
+msgid "Plot Size"
+msgstr "Veličina Zemljišta"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:43
+msgid "Plot in Parallel"
+msgstr "Paralelni uzgoj"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:26
+msgid "Plot is duplicate of {0}"
+msgstr "Zemljište je duplikat od {0}"
+
+#: src/components/dashboard/DashboardSideBar.tsx:29
+msgid "Plots"
+msgstr "Zemljišta"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:19
+msgid "Plots Passed Filter"
+msgstr "Zemljišta su prošla filter"
+
+#: src/components/plot/overview/PlotOverviewHero.tsx:23
+#~ msgid "Plots are allocated space on your hard drive used to farm and earn Spare. <0>Learn more</0>"
+#~ msgstr "Zemljišta su alociran prostor na tvome tvrdom pogonu koja se koriste za uzgoj i zaradu Spare. <0>Saznaj više</0>"
+
+#: src/components/plot/queue/PlotQueueIndicator.tsx:21
+msgid "Plotting"
+msgstr "Obrada"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:35
+msgid "Plotting in parallel can save time. Otherwise, add plot(s) to the queue."
+msgstr "Obrada u paralelnom može uštedjeti vrijeme. Suprotno, dodaj zemljišta na čekanje."
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:114
+msgid "Plotting with bitfield enabled has about 30% less overall writes and is now almost always faster. You may see reduced memory requirements with bitfield plotting disabled. If your CPU design is from before 2010 you may have to disable bitfield plotting."
+msgstr "Obrada sa uključenom \"bitfield\" opcijom ima oko 30% manje zapisivanja i sada je skoro uvijek brže. Možeš vidjeti manju upotrebu memorije sa isključenom \"bitfield\" opcijom. Ako je tvoj CPU proizveden prije 2010, možda ćeš morati isključiti \"bitfield\" uzgoj."
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:114
+#~ msgid "Plotting with bitfield enabled has about 30% less overall writes and is now almost always faster. You may see reduced memory requirements with bitfield plotting disabled. If your CPU design is from before 2010 you may have to disbale bitfield plotting."
+#~ msgstr ""
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:55
+msgid "Pool Key"
+msgstr "Ključ Bazena"
+
+#: src/components/block/Block.jsx:244
+msgid "Pool Public Key"
+msgstr "Javni ključ bazena"
+
+#: src/components/block/Block.jsx:256
+msgid "Pool Puzzle Hash"
+msgstr "Zagonetni hash bazena"
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:96
+msgid "Pool Reward Address"
+msgstr "Adresa za nagradu Bazena"
+
+#: src/components/block/Block.jsx:282
+msgid "Pool Reward Amount"
+msgstr "Iznos nagrade Bazena"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:30
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:30
+#: src/components/fullNode/FullNodeAddConnection.tsx:62
+#: src/components/fullNode/FullNodeConnections.tsx:33
+msgid "Port"
+msgstr "Ulaz"
+
+#: src/components/block/Block.jsx:316
+msgid "Previous"
+msgstr "Prethodno"
+
+#: src/components/block/Block.jsx:203
+#~ msgid "Previous Block Hash"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:204
+msgid "Previous Header Hash"
+msgstr "Prethodni hash zaglavlja"
+
+#: src/components/block/Block.jsx:217
+#~ msgid "Previous Sub Block Hash"
+#~ msgstr "Previous Sub Block Hash"
+
+#: src/components/selectKey/SelectKey.tsx:88
+msgid "Private key with public fingerprint"
+msgstr ""
+
+#: src/components/selectKey/SelectKey.tsx:87
+#~ msgid "Private key with public fingerprint {fingerprint}"
+#~ msgstr "Privatni ključ sa javnim otiskom {fingerprint}"
+
+#: src/middleware/middleware_api.jsx:223
+msgid "Private key {0}"
+msgstr "Privatni ključ {0}"
+
+#: src/middleware/middleware_api.jsx:233
+msgid "Private key:"
+msgstr "Privatni ključ:"
+
+#: src/components/block/Block.jsx:236
+msgid "Proof of Space Size"
+msgstr "Dokaz o Veličini Prostora"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:23
+msgid "Proofs Found"
+msgstr "Pronađeni dokazi"
+
+#: src/components/wallet/create/createRLAdmin.jsx:316
+msgid "Pubkey"
+msgstr "Pubkey"
+
+#: src/middleware/middleware_api.jsx:241
+msgid "Public key:"
+msgstr "Javni ključ:"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:103
+msgid "Queue Name"
+msgstr "Ime reda za čekanje"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:43
+msgid "Queue name"
+msgstr "Ime reda za čekanje"
+
+#: src/components/plot/queue/PlotQueueIndicator.tsx:22
+msgid "Queued"
+msgstr "U redu čekanja"
+
+#: src/electron-starter.js:80
+#~ msgid "Quit"
+#~ msgstr "Quit"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:73
+msgid "RAM max usage"
+msgstr "Maksimalno korištenje RAM-a"
+
+#: src/components/wallet/Wallets.tsx:46
+msgid "RL Wallet"
+msgstr "RL Novčanik"
+
+#: src/components/wallet/create/WalletCreate.jsx:246
+#~ msgid "RLListItems.title"
+#~ msgstr ""
+
+#: src/components/wallet/create/WalletCreate.jsx:130
+msgid "Rate Limited"
+msgstr "Ograničeno"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:452
+msgid "Rate Limited Info"
+msgstr "Informacije ograničenja"
+
+#: src/components/wallet/create/WalletCreate.jsx:232
+msgid "Rate Limited Options"
+msgstr "Opcije ograničenja"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:274
+msgid "Rate Limited User Wallet Setup"
+msgstr "Podešavanje ograničenog korisničkog novčanika"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:453
+#: src/components/wallet/standard/WalletStandard.tsx:374
+msgid "Receive Address"
+msgstr "Prijemna adresa"
+
+#: src/components/wallet/create/WalletCreate.jsx:320
+msgid "Recover DID wallet"
+msgstr "Povrati DID novčanik"
+
+#: src/components/plot/PlotHeader.tsx:43
+msgid "Refresh Plots"
+msgstr "Osvježi zemljišta"
+
+#: src/electron/main.tsx:325
+msgid "Release Notes"
+msgstr "Bilješke o izdanju"
+
+#: src/components/plot/queue/PlotQueueIndicator.tsx:23
+msgid "Removing"
+msgstr "Uklanjam"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:206
+msgid "Rename"
+msgstr "Preimenuj"
+
+#: src/electron/main.tsx:340
+msgid "Report an Issue..."
+msgstr "Prijavi problem..."
+
+#: src/components/backup/BackupRestore.tsx:107
+msgid "Restore Metadata for Coloured Coins and other Smart Wallets from Backup"
+msgstr "Povrati Meta podatke za Obojane Novčiće i druge Pametne Novčanike iz Sigurnosne datoteke"
+
+#: src/components/backup/BackupRestore.tsx:107
+#~ msgid "Restore Smart Wallets From Backup"
+#~ msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:57
+#: src/components/fullNode/FullNodeConnections.jsx:107
+#~ msgid "SB Height"
+#~ msgstr "SB Height"
+
+#: src/components/backup/BackupRestore.tsx:122
+msgid "Safe To Skip"
+msgstr "Sigurno za preskok"
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:105
+#: src/components/trading/CreateOffer.jsx:154
+msgid "Save"
+msgstr "Spremi"
+
+#: src/components/fullNode/FullNode.jsx:338
+#~ msgid "Search"
+#~ msgstr ""
+
+#: src/components/fullNode/FullNodeBlockSearch.tsx:30
+msgid "Search block by header hash"
+msgstr "Traži blok po hashu zaglavlja"
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:75
+msgid "Second temporary folder location"
+msgstr "Lokacija drugog privremenog direktorija"
+
+#: src/components/selectKey/SelectKey.tsx:98
+msgid "See private key"
+msgstr "Pogledaj privatni ključ"
+
+#: src/middleware/middleware_api.jsx:251
+msgid "Seed:"
+msgstr "Sjeme:"
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:70
+msgid "Select 2nd Temporary Directory"
+msgstr "Odaberi drugi privremeni direktorij"
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:29
+msgid "Select Final Directory"
+msgstr "Odaberi krajnji direktorij"
+
+#: src/components/selectKey/SelectKey.tsx:71
+#~ msgid "Select Key"
+#~ msgstr "Odaberi ključ"
+
+#: src/components/trading/ViewOffer.jsx:36
+msgid "Select Offer"
+msgstr "Odaberi Ponudu"
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:39
+msgid "Select Temporary Directory"
+msgstr "Odaberi Privremeni Direktorij"
+
+#: src/components/wallet/create/WalletCreate.jsx:108
+msgid "Select Wallet Type"
+msgstr "Odaberi vrstu Novčanika"
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:31
+msgid "Select the final destination for the folder where you would like the plot to be stored. We recommend you use a large slow hard drive (like external HDD)."
+msgstr "Odaberi krajnji odredišni direktorij za direktorij gdje želiš da zemljišta budu spremljena. Preporučamo korištenje velikog sporog diska (kao vanjski HDD)."
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:41
+msgid "Select the temporary destination for the folder where you would like the plot to be stored. We recommend you use a fast SSD."
+msgstr "Odaberi privremeni direktorij za direktorij gdje želiš da zemljišta budu spremljena. Preporučamo korištenje brzog SSD diska."
+
+#: src/components/plot/add/PlotAddSelectFinalDirectory.tsx:52
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:63
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:81
+msgid "Selected"
+msgstr "Odabrano"
+
+#: src/components/trading/CreateOffer.jsx:176
+#: src/components/trading/TradesTable.tsx:30
+#: src/components/trading/TradingOverview.jsx:288
+msgid "Sell"
+msgstr "Prodaj"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:435
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:797
+#: src/components/wallet/standard/WalletStandard.tsx:355
+msgid "Send"
+msgstr "Pošalji"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:477
+msgid "Send this info packet to your Rate Limited Wallet user who must use it to complete setup of their wallet:"
+msgstr "Pošalji ovaj informacijski paket svome korisniku ograničenog novčanika koji ga mora iskoristiti za završetak postavljanja njegovog novčanika:"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:284
+msgid "Send your pubkey to your Rate Limited Wallet admin:"
+msgstr "Pošalji svoj pubkey svome administratoru ograničenog novčanika:"
+
+#: src/components/core/components/AdvancedOptions/AdvancedOptions.tsx:40
+#~ msgid "Show Advanced Options"
+#~ msgstr "Prikaži napredne opcije"
+
+#: src/electron-starter.js:79
+#~ msgid "Show app"
+#~ msgstr "Show app"
+
+#: src/components/trading/CreateOffer.jsx:168
+#: src/components/trading/TradesTable.tsx:13
+msgid "Side"
+msgstr "Strana"
+
+#: src/components/selectKey/SelectKey.tsx:74
+msgid "Sign In"
+msgstr "Prijavi se"
+
+#: src/components/backup/BackupRestore.tsx:122
+#~ msgid "Skip"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:129
+#~ msgid "Skips adding [final dir] to harvester for farming"
+#~ msgstr "Skips adding [final dir] to harvester for farming"
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:129
+msgid "Skips adding a final directory to harvester for farming"
+msgstr "Preskače dodavanje krajnjeg direktorija žeteocu za uzgoj"
+
+#: src/electron/main.tsx:357
+msgid "Spare"
+msgstr ""
+
+#: src/electron/main.tsx:313
+msgid "Spare Blockchain Wiki"
+msgstr ""
+
+#: src/components/wallet/Wallets.tsx:35
+msgid "Spare Wallet"
+msgstr ""
+
+#: src/electron/main.tsx:404
+msgid "Speech"
+msgstr "Govor"
+
+#: src/components/wallet/create/createRLAdmin.jsx:240
+msgid "Spendable Amount"
+msgstr "Potrošni iznos"
+
+#: src/components/wallet/create/createRLAdmin.jsx:209
+msgid "Spendable Amount Per Interval"
+msgstr "Potrošni iznos po intervalu"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:288
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:570
+#: src/components/wallet/standard/WalletStandard.tsx:203
+msgid "Spendable Balance"
+msgstr "Potrošni saldo"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:407
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:458
+msgid "Spending Interval (number of blocks): {interval}"
+msgstr "Interval potrošnje (broj blokova): {interval}"
+
+#: src/components/wallet/create/createRLAdmin.jsx:202
+msgid "Spending Interval Length (number of blocks)"
+msgstr "Duljina intervala potrošnje (broj blokova)"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:414
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:465
+msgid "Spending Limit (spare per interval): {0}"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:103
+msgid "State"
+msgstr "Stanje"
+
+#: src/components/fullNode/FullNode.jsx:113
+#: src/components/fullNode/FullNode.jsx:130
+#: src/components/fullNode/FullNode.jsx:138
+#: src/components/fullNode/FullNode.jsx:160
+#: src/components/plot/overview/PlotOverviewPlots.tsx:65
+#: src/components/trading/TradingOverview.jsx:121
+#: src/components/wallet/WalletHistory.tsx:43
+#: src/components/wallet/WalletStatusCard.tsx:12
+#: src/components/wallet/Wallets.tsx:98
+#: src/components/wallet/standard/WalletStandard.tsx:448
+msgid "Status"
+msgstr "Stanje"
+
+#: src/components/trading/TradingOverview.jsx:174
+msgid "Status:"
+msgstr "Stanje:"
+
+#: src/components/wallet/Wallets.tsx:119
+#~ msgid "StatusCard.connections"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:113
+#~ msgid "StatusCard.height"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:98
+#~ msgid "StatusCard.status"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:93
+#~ msgid "StatusCard.title"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:103
+#~ msgid "Stripe Size"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:199
+#~ msgid "Sub Block Height"
+#~ msgstr "Sub Block Height"
+
+#: src/components/block/Block.jsx:338
+#~ msgid "Sub Block at height {0} in the Spare blockchain"
+#~ msgstr "Sub Block at height {0} in the Spare blockchain"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:356
+msgid "Submit"
+msgstr "Poslano"
+
+#: src/components/fullNode/FullNode.jsx:139
+msgid "Synced"
+msgstr "Sinkronizirano"
+
+#: src/components/farm/FarmerStatus.tsx:28
+#: src/components/farm/card/FarmCardStatus.tsx:12
+#: src/components/plot/PlotStatus.tsx:15
+msgid "Syncing"
+msgstr "Sinkroniziram"
+
+#: src/components/fullNode/FullNode.jsx:115
+msgid "Syncing <0/>/<1/>"
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:107
+#~ msgid "Syncing {progress}/{tip}"
+#~ msgstr "Sinkroniziram {progress}/{tip}"
+
+#: src/components/farm/card/FarmCardBlockRewards.tsx:15
+#~ msgid "TSPARE Block Rewards"
+#~ msgstr ""
+
+#: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
+#~ msgid "TSPARE Farming Rewards"
+#~ msgstr ""
+
+#: src/components/farm/card/FarmCardFeesReward.tsx:12
+#~ msgid "TSPARE Fees Collected"
+#~ msgstr ""
+
+#: src/components/farm/card/FarmCardUserFees.tsx:12
+#~ msgid "TSPARE User Fees"
+#~ msgstr "TSPARE User Fees"
+
+#: src/components/farm/card/FarmCardUserFees.tsx:15
+#~ msgid "TSPARE User Transaction Fees"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:18
+#~ msgid "Temporary files are created during the plotting process which exceeds the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
+#~ msgstr ""
+
+#: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:48
+msgid "Temporary folder location"
+msgstr "Lokacija privremenog direktorija"
+
+#: src/components/app/AppTimeBomb.tsx:28
+msgid "The application will stop working at block height 193536."
+msgstr "Aplikacija će prestati raditi na visini bloka: 193536."
+
+#: src/components/farm/FarmFullNodeConnections.tsx:58
+msgid "The full node that your farmer is connected to is below. <0>Learn more</0>"
+msgstr "Puni čvor na koji je tvoj žetelac spojen naveden je dolje niže. <0>Saznaj više</0>"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:30
+#: src/components/plot/add/PlotAddChooseSize.tsx:74
+msgid "The minimum required size for mainnet is k=32"
+msgstr "Minimalna neophodna veličina za mainnet je k=32"
+
+#: src/components/fullNode/FullNode.jsx:133
+msgid "The node is not synced"
+msgstr "Čvor nije sinkroniziran"
+
+#: src/components/fullNode/FullNode.jsx:121
+msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
+msgstr "Čvor se sinkronizira, što znači da preuzima blokove sa drugih čvorova, kako bi stigao krajnji blok u lancu"
+
+#: src/components/block/Block.jsx:267
+msgid "The seed used to create the plot. This depends on the pool pk and plot pk."
+msgstr "Sjeme korišteno za kreiranje zemljišta. Ovo ovisi o pk bazena i pk zemljišta."
+
+#: src/components/block/Block.jsx:219
+msgid "The total number of VDF (verifiable delay function) or proof of time iterations on the whole chain up to this sub block."
+msgstr "Ukupan broj VDF (provjerljiva funkcija odgode) ili dokaz o vremenskim ponavljanjima cijelog lanca u ovom pod bloku."
+
+#: src/components/block/Block.jsx:229
+msgid "The total number of VDF (verifiable delay function) or proof of time iterations on this block."
+msgstr "Ukupan broj VDF (provjerljiva funkcija odgode) ili dokaz o vremenskim ponavljanjima ovog bloka."
+
+#: src/components/block/Block.jsx:293
+msgid "The total transactions fees in this block. Rewarded to the farmer."
+msgstr "Ukupno naknada transakcija u ovom bloku. Nagrađeno za farmera."
+
+#: src/components/plot/PlotsFailed.tsx:26
+msgid "These plots are invalid, you might want to delete them."
+msgstr "Ova zemljišta su nevažeća, možda ih želiš ukloniti."
+
+#: src/components/plot/PlotAddDirectoryDialog.tsx:44
+msgid "This allows you to add a directory that has plots in it. If you have not created any plots, go to the plotting screen."
+msgstr "Ovo ti omogućuje dodavanje direktorija koji sadrži zemljišta. Ako nisi kreirao zemljište, idi na Uzgoj izbornik."
+
+#: src/components/trading/CreateOffer.jsx:126
+#: src/hooks/useSelectDirectory.tsx:26
+#: src/hooks/useSelectFile.tsx:26
+msgid "This feature is available only from the GUI."
+msgstr "Ova mogućnost je dostupna samo iz GUI."
+
+#: src/components/wallet/standard/WalletStandard.tsx:203
+msgid "This is the amount of Spare that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Spare that you have just spent but is not yet in the blockchain."
+msgstr ""
+
+#: src/components/wallet/standard/WalletStandard.tsx:230
+msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
+msgstr "Ovo je promjena na čekanju, što su novčići koje si poslao sam sebi, ali još nisu potvrđeni."
+
+#: src/components/wallet/standard/WalletStandard.tsx:225
+msgid "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
+msgstr "Ovo je ukupan zbroj ulaznih i izlaznih transakcija na čekanju (koje još nisu uključene u blockchain). Ovo ne uključuje nagrade uzgoja."
+
+#: src/components/fullNode/FullNode.jsx:182
+msgid "This is the time of the latest peak sub block."
+msgstr "Ovo je vrijeme najnovijeg pod bloka."
+
+#: src/components/block/Block.jsx:183
+msgid "This is the time the block was created by the farmer, which is before it is finalized with a proof of time"
+msgstr "Ovo je vrijeme bloka koji je farmer kreirao, koje je prije nego je završen sa dokazom o vremenu"
+
+#: src/components/wallet/standard/WalletStandard.tsx:197
+msgid "This is the total amount of spare in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr ""
+
+#: src/components/wallet/standard/WalletStandard.tsx:220
+msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
+msgstr "Ovo je ukupan saldo + saldo na čekanju: ono što će tvoj saldo biti nakon što sve transakcije na čekanju budu potvrđene."
+
+#: src/components/fullNode/FullNode.jsx:142
+msgid "This node is fully caught up and validating the network"
+msgstr "Ovaj čvor je sasvim sinkroniziran i provjerava mrežu"
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:39
+#~ msgid "This table shows you the last time your farm attempted to win a block challenge."
+#~ msgstr ""
+
+#: src/components/farm/FarmLastAttemptedProof.tsx:39
+msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
+msgstr "Ova tabela pokazuje vrijeme tvojeg zadnjeg pokušaja za osvajanje izazova bloka. <0>Saznaj više</0>"
+
+#: src/components/trading/TradingOverview.jsx:185
+msgid "This trade was created at this time"
+msgstr "Trgovina je kreirana u ovo vrijeme"
+
+#: src/components/trading/TradingOverview.jsx:199
+msgid "This trade was included on blockchain at this block height"
+msgstr "Ova trgovina je uključena u blockchain na ovoj visini bloka"
+
+#: src/components/app/AppTimeBombAlert.tsx:11
+msgid "This version of Spare is no longer compatible with the blockchain and can not safely farm."
+msgstr ""
+
+#: src/components/fullNode/FullNode.jsx:95
+msgid "Time Created"
+msgstr "Vrijeme kreiranja"
+
+#: src/components/trading/TradingOverview.jsx:192
+#~ msgid "Time this trade was created at this time"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:180
+msgid "Timestamp"
+msgstr "Vremenska oznaka"
+
+#: src/components/wallet/WalletHistory.tsx:32
+msgid "To"
+msgstr "Za"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:287
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:564
+#: src/components/wallet/standard/WalletStandard.tsx:197
+msgid "Total Balance"
+msgstr "Ukupno stanje"
+
+#: src/components/fullNode/FullNode.jsx:200
+msgid "Total Iterations"
+msgstr "Ukupno Ponavljanja"
+
+#: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:8
+msgid "Total Network Space"
+msgstr "Ukupno prostora na mreži"
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:91
+msgid "Total Plot Size:"
+msgstr "Ukupna veličina zemljišta:"
+
+#: src/components/farm/card/FarmCardTotalSizeOfPlots.tsx:8
+msgid "Total Size of Plots"
+msgstr "Ukupna veličina zemljišta"
+
+#: src/components/farm/card/FarmCardTotalSpareFarmed.tsx:15
+#~ msgid "Total Spare Farmed"
+#~ msgstr ""
+
+#: src/components/block/Block.jsx:216
+msgid "Total VDF Iterations"
+msgstr "Ukupno VDF ponavljanja"
+
+#: src/components/fullNode/FullNode.jsx:202
+msgid "Total iterations since the start of the blockchain"
+msgstr "Ukupni ponavljanja od početka blockchaina"
+
+#: src/components/dashboard/DashboardSideBar.tsx:27
+#~ msgid "Trade"
+#~ msgstr "Trade"
+
+#: src/components/trading/TradingOverview.jsx:353
+msgid "Trade Details"
+msgstr "Detalji trgovanja"
+
+#: src/components/trading/TradingOverview.jsx:118
+msgid "Trade ID"
+msgstr "ID Trgovanja"
+
+#: src/components/trading/TradingOverview.jsx:167
+msgid "Trade ID:"
+msgstr "ID Trgovanja:"
+
+#: src/components/trading/TradeManager.tsx:17
+msgid "Trade Overview"
+msgstr "Pregled trgovanja"
+
+#: src/components/trading/TradingOverview.jsx:146
+msgid "Trades will show up here"
+msgstr "Trgovanja će se prikazati ovdje"
+
+#: src/components/trading/TradeManager.tsx:13
+msgid "Trading"
+msgstr "Trgovanje"
+
+#: src/components/trading/TradingOverview.jsx:428
+msgid "Trading History"
+msgstr "Povijest trgovanja"
+
+#: src/components/block/Block.jsx:275
+msgid "Transactions Filter Hash"
+msgstr "Hash filtera transakcija"
+
+#: src/components/wallet/WalletHistory.tsx:22
+msgid "Type"
+msgstr "Vrsta"
+
+#: src/components/fullNode/FullNode.jsx:101
+msgid "Unfinished"
+msgstr "Nedovršeno"
+
+#: src/components/trading/TradingOverview.jsx:170
+msgid "Unique identifier"
+msgstr "Jedinstven identifikator"
+
+#: src/components/core/components/LocaleToggle/LocaleToggle.tsx:32
+msgid "Unknown"
+msgstr "Nepoznat"
+
+#: src/components/wallet/create/createRLAdmin.jsx:300
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:299
+msgid "User Pubkey"
+msgstr "Korisnički Pubkey"
+
+#: src/components/fullNode/FullNode.jsx:194
+msgid "VDF Sub Slot Iterations"
+msgstr "VDF Pod Slot Ponavljanja"
+
+#: src/electron/main.tsx:252
+msgid "View"
+msgstr "Pregled"
+
+#: src/components/plot/queue/PlotQueueActions.tsx:54
+#: src/components/plot/queue/PlotQueueLogDialog.tsx:33
+msgid "View Log"
+msgstr "Pregledaj zapisnik"
+
+#: src/components/trading/TradeManager.tsx:27
+msgid "View Offer"
+msgstr "Pregledaj ponude"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:585
+#: src/components/wallet/standard/WalletStandard.tsx:215
+msgid "View pending balances"
+msgstr "Pregledaj stanja na čekanju"
+
+#: src/components/wallet/coloured/WalletColoured.tsx:296
+msgid "View pending balances..."
+msgstr "Pregledaj stanja na čekanju..."
+
+#: src/components/farm/card/FarmCardNotAvailable.tsx:9
+#: src/components/plot/PlotStatus.tsx:22
+#: src/components/plot/PlotStatus.tsx:25
+msgid "Wait for synchronization"
+msgstr "Pričekaj sinkronizaciju"
+
+#: src/components/wallet/Wallets.tsx:104
+#~ msgid "Waiting for launch"
+#~ msgstr "Waiting for launch"
+
+#: src/components/fullNode/FullNode.jsx:103
+#: src/components/wallet/WalletStatusCard.tsx:20
+#~ msgid "Waiting for network to launch"
+#~ msgstr "Waiting for network to launch"
+
+#: src/components/wallet/Wallets.tsx:34
+#~ msgid "WalletItem.ccWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:48
+#~ msgid "WalletItem.didWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:41
+#~ msgid "WalletItem.rlWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:30
+#~ msgid "WalletItem.spareWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:107
+#~ msgid "WalletStatusCard.not_synced"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:105
+#~ msgid "WalletStatusCard.synced"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:103
+#~ msgid "WalletStatusCard.syncing"
+#~ msgstr ""
+
+#: src/components/dashboard/DashboardSideBar.tsx:28
+#: src/components/selectKey/SelectKey.tsx:71
+#: src/components/wallet/Wallets.tsx:136
+msgid "Wallets"
+msgstr "Novčanici"
+
+#: src/components/wallet/Wallets.tsx:131
+#~ msgid "Wallets.title"
+#~ msgstr ""
+
+#: src/components/plot/overview/PlotOverviewPlots.tsx:84
+msgid "Want to earn more Spare? Add more plots to your farm."
+msgstr ""
+
+#: src/components/plot/add/PlotAddNumberOfPlots.tsx:53
+msgid "Want to have a delay before the next plot starts?"
+msgstr "Želiš odgodu prije nego počne iduće zemljište?"
+
+#: src/components/block/Block.jsx:194
+msgid "Weight"
+msgstr "Težina"
+
+#: src/components/block/Block.jsx:197
+msgid "Weight is the total added difficulty of all sub blocks up to and including this one"
+msgstr "Težina je ukupno dodanih kompleksnosti svih pod blokova uključujući i ovaj"
+
+#: src/components/selectKey/SelectKey.tsx:77
+msgid "Welcome to Spare. Please log in with an existing key, or create a new key."
+msgstr ""
+
+#: src/components/wallet/WalletAdd.tsx:35
+msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
+msgstr "Dobrodošao! Navedene riječi se koriste kao sigurnosna kopija tvog Novćanika. Bez njih, nemas pristup svome novčaniku, drži ih sigurno! Zapiši svaku riječ točnim redoslijedom. (Redoslijed je bitan)"
+
+#: src/components/wallet/rateLimited/WalletRateLimited.jsx:323
+msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
+msgstr "Kada zaprimiš informacijski paket od administratora, unesi ga ispod za završetak postavljanja svoj ograničenog novčanika:"
+
+#: src/electron/main.tsx:295
+msgid "Window"
+msgstr "Prozor"
+
+#: src/components/farm/card/FarmCardBlockRewards.tsx:18
+msgid "Without fees"
+msgstr "Bez naknada"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:30
+#: src/components/trading/TradingOverview.jsx:205
+#: src/electron/main.tsx:161
+msgid "Yes"
+msgstr "Da"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:56
+#~ msgid "You do not need to be synched or connected to Plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
+#~ msgstr "You do not need to be synched or connected to Plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
+
+#: src/components/plot/add/PlotAddChooseSize.tsx:56
+msgid "You do not need to be synched or connected to plot. Temporary files are created during the plotting process which exceed the size of the final plot files. Make sure you have enough space. <0>Learn more</0>"
+msgstr "Ne moraš biti potpuno sinkroniziran ili spojen na zemljišta. Privremene datoteke se kreiraju prilikom uzgoja koje nadilaze veličinu samog zemljišta. Osiguraj dovoljno prostora. <0>Saznaj više</0>"
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:34
+#~ msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation."
+#~ msgstr ""
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:34
+msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3 to 4 times longer than this estimate."
+msgstr "Imaš {0}% prostora na mreži, tako da će uzgoj bloka potrajati {expectedTimeToWin} u pretpostavci. Stvarni rezultat može biti 3-4 puta duži od pretpostavke."
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:34
+#~ msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3-4 times longer - actual results may be 3x this estimate.<0>Learn about Expected Value</0>"
+#~ msgstr "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3-4 times longer - actual results may be 3x this estimate.<0>Learn about Expected Value</0>"
+
+#: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:34
+#~ msgid "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3-4 times longer this estimate. <0>Learn about Expected Value</0>"
+#~ msgstr "You have {0}% of the space on the network, so farming a block will take {expectedTimeToWin} in expectation. Actual results may take 3-4 times longer this estimate. <0>Learn about Expected Value</0>"
+
+#: src/components/app/AppTimeBomb.tsx:28
+#~ msgid "You need to upgrade the Spare application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the Spare application as this version will stop working soon!"
+
+#: src/components/farm/overview/FarmOverview.tsx:24
+msgid "Your Farm Overview"
+msgstr "Pregled tvoje farme"
+
+#: src/components/farm/FarmFullNodeConnections.tsx:56
+msgid "Your Full Node Connection"
+msgstr "Tvoja veza Punog Čvora"
+
+#: src/components/farm/FarmYourHarvesterNetwork.tsx:57
+msgid "Your Harvester Network"
+msgstr "Tvoja mreža Žetelaca"
+
+#: src/util/getDescriptiveError.ts:4
+msgid "[Error 13] Permission denied. You are trying to access a file/directory without having the necessary permissions. Most likely one of the plot folders in your config.yaml has an issue."
+msgstr "[Greška13] Nema dozvole. Pokušavaš pristupiti datoteci/direktoriju bez potrebnih dozvola. Vrlo vjerojatno jedno od tvojih zemljišta ima problem u config.yaml datoteci."
+
+#: src/util/getDescriptiveError.ts:7
+msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
+msgstr "[Error 22] Datoteka nije pronađena. Vrlo vjerojatno jedno od tvojih zemljišta u config.yaml datoteci ima problem."
+
+#: src/components/wallet/WalletStatusCard.tsx:31
+#: src/components/wallet/Wallets.tsx:124
+msgid "connections:"
+msgstr "konekcije:"
+
+#: src/components/wallet/WalletStatusCard.tsx:25
+#: src/components/wallet/Wallets.tsx:118
+msgid "height:"
+msgstr "visina:"
+
+#: src/components/wallet/Wallets.tsx:112
+msgid "not synced"
+msgstr "nije sinkronizirano"
+
+#: src/components/wallet/WalletStatusCard.tsx:17
+#: src/components/wallet/Wallets.tsx:103
+msgid "status:"
+msgstr "stanje:"
+
+#: src/components/wallet/WalletStatusCard.tsx:20
+#: src/components/wallet/Wallets.tsx:110
+msgid "synced"
+msgstr "sinkronizirano"
+
+#: src/components/wallet/WalletStatusCard.tsx:20
+#: src/components/wallet/Wallets.tsx:108
+msgid "syncing"
+msgstr "sinkronizacija"
+
+#: src/components/farm/card/FarmCardBlockRewards.tsx:16
+#~ msgid "{0} Block Rewards"
+#~ msgstr "{0} Block Rewards"
+
+#: src/components/farm/card/FarmCardUserFees.tsx:16
+#~ msgid "{0} User Transaction Fees"
+#~ msgstr "{0} User Transaction Fees"
+
+#: src/components/farm/card/FarmCardBlockRewards.tsx:18
+msgid "{currencyCode} Block Rewards"
+msgstr "{currencyCode} Nagrade bloka"
+
+#: src/components/farm/card/FarmCardTotalSpareFarmed.tsx:17
+msgid "{currencyCode} Total Spare Farmed"
+msgstr ""
+
+#: src/components/farm/card/FarmCardUserFees.tsx:17
+msgid "{currencyCode} User Transaction Fees"
+msgstr "{currencyCode} Korisničke naknade transakcija"
