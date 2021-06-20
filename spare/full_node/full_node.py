@@ -180,7 +180,7 @@ class FullNode:
             dns_servers = self.config["dns_servers"]
         elif self.config["port"] == 9444:
             # If `dns_servers` misses from the `config`, hardcode it if we're running mainnet.
-            dns_servers.append("dns-introducer.sparecoin.org")
+            dns_servers.append("dns-introducer-spare.sparecoin.org")
         try:
             self.full_node_peers = FullNodePeers(
                 self.server,
