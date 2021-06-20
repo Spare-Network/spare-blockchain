@@ -31,9 +31,6 @@ npm run build
 npm run electron &
 ```
 
-### Windows
-Almost done.
-
 ### Ubuntu/Debian
 ```
 sudo apt-get update
