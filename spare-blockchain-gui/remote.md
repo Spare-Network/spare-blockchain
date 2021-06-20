@@ -15,8 +15,8 @@ sudo ufw allow from <IP of UI machine> to any port 59400 proto tcp
 To secure their connection, the UI will need the daemon's certificates. Copy these files to the UI machine:
 
 ````bash
-~/.spare-coin/<currentversion>/config/ssl/daemon/private_daemon.crt
-~/.spare-coin/<currentversion>/config/ssl/daemon/private_daemon.key
+~/.spare-blockchain/<currentversion>/config/ssl/daemon/private_daemon.crt
+~/.spare-blockchain/<currentversion>/config/ssl/daemon/private_daemon.key
 ````
 
 ## On the UI host
@@ -24,8 +24,8 @@ To secure their connection, the UI will need the daemon's certificates. Copy the
 Place the daemon's cert files, copied earlier, in the following location:
 
 ````bash
-~/.spare-coin/<currentversion>/config/ssl/ui/
-~/.spare-coin/<currentversion>/config/ssl/ui/
+~/.spare-blockchain/<currentversion>/config/ssl/ui/
+~/.spare-blockchain/<currentversion>/config/ssl/ui/
 ````
 
 Find the `ui` section in `config.yaml` and specify the following settings:
