@@ -325,7 +325,7 @@ ui:
   port: 8222
 
   # Which port to use to communicate with the full node
-  rpc_port: 8555
+  rpc_port: 9554
 
   # This SSH key is for the ui SSH server
   ssh_filename: config/ssh_host_key
