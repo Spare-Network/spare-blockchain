@@ -140,6 +140,9 @@ class WalletNode:
             self.logged_in = False
             return False
 
+        if self.config.get("enable_profiler", False):
+            asyncio.create_task(profile_task(self.root_path, "wallet", self.log))
+
         db_path_key_suffix = str(private_key.get_g1().get_fingerprint())
         db_path_replaced: str = (
             self.config["database_path"]
