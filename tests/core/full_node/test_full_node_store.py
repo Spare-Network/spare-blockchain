@@ -15,7 +15,7 @@ from spare.protocols.timelord_protocol import NewInfusionPointVDF
 from spare.types.blockchain_format.sized_bytes import bytes32
 from spare.types.unfinished_block import UnfinishedBlock
 from spare.util.block_cache import BlockCache
-from spare.util.block_tools import get_signage_point
+from tests.block_tools import get_signage_point
 from spare.util.hash import std_hash
 from spare.util.ints import uint8, uint32, uint64, uint128
 from tests.core.fixtures import default_1000_blocks, empty_blockchain  # noqa: F401

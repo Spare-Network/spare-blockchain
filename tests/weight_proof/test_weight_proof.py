@@ -18,7 +18,7 @@ from spare.server.start_full_node import SERVICE_NAME
 from spare.types.blockchain_format.sized_bytes import bytes32
 from spare.types.blockchain_format.sub_epoch_summary import SubEpochSummary
 from spare.util.block_cache import BlockCache
-from spare.util.block_tools import test_constants
+from tests.block_tools import test_constants
 from spare.util.config import load_config
 from spare.util.default_root import DEFAULT_ROOT_PATH
 from spare.util.generator_tools import get_block_header

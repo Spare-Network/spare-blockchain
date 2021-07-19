@@ -6,7 +6,7 @@ import pytest
 from spare.server.outbound_message import NodeType
 from spare.server.server import ssl_context_for_server
 from spare.types.peer_info import PeerInfo
-from spare.util.block_tools import BlockTools
+from tests.block_tools import BlockTools
 from spare.util.ints import uint16
 from spare.util.ws_message import create_payload
 from tests.core.node_height import node_height_at_least

@@ -28,13 +28,13 @@ from spare.types.end_of_slot_bundle import EndOfSubSlotBundle
 from spare.types.full_block import FullBlock
 from spare.types.spend_bundle import SpendBundle
 from spare.types.unfinished_block import UnfinishedBlock
-from spare.util.block_tools import BlockTools, get_vdf_info_and_proof
+from tests.block_tools import BlockTools, get_vdf_info_and_proof
 from spare.util.errors import Err
 from spare.util.hash import std_hash
 from spare.util.ints import uint8, uint64, uint32
 from spare.util.merkle_set import MerkleSet
 from spare.util.recursive_replace import recursive_replace
-from spare.util.wallet_tools import WalletTool
+from tests.wallet_tools import WalletTool
 from tests.core.fixtures import default_400_blocks  # noqa: F401; noqa: F401
 from tests.core.fixtures import default_1000_blocks  # noqa: F401
 from tests.core.fixtures import default_10000_blocks  # noqa: F401

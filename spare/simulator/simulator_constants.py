@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    from spare.util.block_tools import BlockTools, test_constants
+    from tests.block_tools import BlockTools, test_constants
     from spare.util.default_root import DEFAULT_ROOT_PATH
 
     # TODO: mariano: fix this with new consensus

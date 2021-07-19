@@ -30,14 +30,14 @@ from spare.types.mempool_inclusion_status import MempoolInclusionStatus
 from spare.types.peer_info import PeerInfo, TimestampedPeerInfo
 from spare.types.spend_bundle import SpendBundle
 from spare.types.unfinished_block import UnfinishedBlock
-from spare.util.block_tools import get_signage_point
+from tests.block_tools import get_signage_point
 from spare.util.clvm import int_to_bytes
 from spare.util.errors import Err
 from spare.util.hash import std_hash
 from spare.util.ints import uint8, uint16, uint32, uint64
 from spare.util.recursive_replace import recursive_replace
 from spare.util.vdf_prover import get_vdf_info_and_proof
-from spare.util.wallet_tools import WalletTool
+from tests.wallet_tools import WalletTool
 from tests.core.fixtures import empty_blockchain  # noqa: F401
 from spare.wallet.cc_wallet.cc_wallet import CCWallet
 from spare.wallet.transaction_record import TransactionRecord

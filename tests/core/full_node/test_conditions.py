@@ -22,7 +22,7 @@ from spare.types.coin_solution import CoinSolution
 from spare.types.condition_opcodes import ConditionOpcode
 from spare.types.full_block import FullBlock
 from spare.types.spend_bundle import SpendBundle
-from spare.util.block_tools import BlockTools, test_constants
+from tests.block_tools import BlockTools, test_constants
 from spare.util.errors import Err
 
 from .ram_db import create_ram_blockchain

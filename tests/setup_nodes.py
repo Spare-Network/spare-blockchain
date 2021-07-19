@@ -18,7 +18,7 @@ from spare.simulator.start_simulator import service_kwargs_for_full_node_simulat
 from spare.timelord.timelord_launcher import kill_processes, spawn_process
 from spare.types.peer_info import PeerInfo
 from spare.util.bech32m import encode_puzzle_hash
-from spare.util.block_tools import BlockTools, test_constants
+from tests.block_tools import BlockTools, test_constants
 from spare.util.hash import std_hash
 from spare.util.ints import uint16, uint32
 from spare.util.keychain import Keychain, bytes_to_mnemonic

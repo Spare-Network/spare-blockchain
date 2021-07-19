@@ -14,7 +14,7 @@ from spare.rpc.harvester_rpc_client import HarvesterRpcClient
 from spare.rpc.rpc_server import start_rpc_server
 from spare.types.blockchain_format.sized_bytes import bytes32
 from spare.util.bech32m import decode_puzzle_hash, encode_puzzle_hash
-from spare.util.block_tools import get_plot_dir
+from tests.block_tools import get_plot_dir
 from spare.util.config import load_config
 from spare.util.hash import std_hash
 from spare.util.ints import uint8, uint16, uint32, uint64

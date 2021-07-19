@@ -18,7 +18,7 @@ from spare.types.full_block import FullBlock
 from spare.types.generator_types import BlockGenerator
 from spare.util.generator_tools import tx_removals_and_additions
 from spare.util.ints import uint64, uint32
-from spare.util.wallet_tools import WalletTool
+from tests.wallet_tools import WalletTool
 from spare.util.db_wrapper import DBWrapper
 from tests.setup_nodes import bt, test_constants
 

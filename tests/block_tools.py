@@ -50,6 +50,7 @@ from spare.types.blockchain_format.slots import (
     RewardChainSubSlot,
     SubSlotProofs,
 )
+<<<<<<< HEAD:spare/util/block_tools.py
 from spare.types.blockchain_format.sub_epoch_summary import SubEpochSummary
 from spare.types.blockchain_format.vdf import VDFInfo, VDFProof
 from spare.types.end_of_slot_bundle import EndOfSubSlotBundle
@@ -65,8 +66,27 @@ from spare.util.ints import uint8, uint32, uint64, uint128
 from spare.util.keychain import Keychain, bytes_to_mnemonic
 from spare.util.path import mkdir
 from spare.util.vdf_prover import get_vdf_info_and_proof
-from tests.wallet_tools import WalletTool
+from spare.util.wallet_tools import WalletTool
 from spare.wallet.derive_keys import (
+=======
+from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
+from chia.types.blockchain_format.vdf import VDFInfo, VDFProof
+from chia.types.end_of_slot_bundle import EndOfSubSlotBundle
+from chia.types.full_block import FullBlock
+from chia.types.generator_types import BlockGenerator, CompressorArg
+from chia.types.spend_bundle import SpendBundle
+from chia.types.unfinished_block import UnfinishedBlock
+from chia.util.bech32m import encode_puzzle_hash
+from chia.util.block_cache import BlockCache
+from chia.util.config import load_config, save_config
+from chia.util.hash import std_hash
+from chia.util.ints import uint8, uint32, uint64, uint128
+from chia.util.keychain import Keychain, bytes_to_mnemonic
+from chia.util.path import mkdir
+from chia.util.vdf_prover import get_vdf_info_and_proof
+from tests.wallet_tools import WalletTool
+from chia.wallet.derive_keys import (
+>>>>>>> 42fde9a8 (move chia.util.block_tools and chia.util.wallet_tools into tests (#6799)):tests/block_tools.py
     master_sk_to_farmer_sk,
     master_sk_to_local_sk,
     master_sk_to_pool_sk,

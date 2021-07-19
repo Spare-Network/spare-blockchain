@@ -9,7 +9,7 @@ from spare.types.blockchain_format.program import Program, INFINITE_COST
 from spare.types.condition_opcodes import ConditionOpcode
 from spare.types.condition_with_args import ConditionWithArgs
 from spare.util.ints import uint32
-from spare.util.wallet_tools import WalletTool
+from tests.wallet_tools import WalletTool
 from spare.wallet.derive_keys import master_sk_to_wallet_sk
 from spare.wallet.puzzles.p2_delegated_puzzle import puzzle_for_pk
 
@@ -29,7 +29,7 @@ def float_to_str(f):
     return float_string
 
 
-def run_and_return_cost_time(chialisp):
+def run_and_return_cost_time(sparelisp):
 
     start = time.time()
     clvm_loop = "((c (q ((c (f (a)) (c (f (a)) (c (f (r (a))) (c (f (r (r (a))))"
@@ -37,7 +37,7 @@ def run_and_return_cost_time(chialisp):
     " (c (- (f (r (a))) (q 1)) (c (f (r (r (a)))) (q ()))))))"
     " ((c (f (r (r (a)))) (q ()))))) (q (q ()))) (a)))) (a))))"
     loop_program = Program.to(binutils.assemble(clvm_loop))
-    clvm_loop_solution = f"(1000 {chialisp})"
+    clvm_loop_solution = f"(1000 {sparelisp})"
     solution_program = Program.to(binutils.assemble(clvm_loop_solution))
 
     cost, sexp = loop_program.run_with_cost(solution_program, INFINITE_COST)
