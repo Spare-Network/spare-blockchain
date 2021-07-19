@@ -19,7 +19,7 @@ from websockets import ConnectionClosedOK, WebSocketException, WebSocketServerPr
 from spare.cmds.init_funcs import spare_init
 from spare.daemon.windows_signal import kill
 from spare.server.server import ssl_context_for_root, ssl_context_for_server
-from spare.ssl.create_ssl import get_mozzila_ca_crt
+from spare.ssl.create_ssl import get_mozilla_ca_crt
 from spare.util.spare_logging import initialize_logging
 from spare.util.config import load_config
 from spare.util.json_util import dict_to_json_str
@@ -51,8 +51,8 @@ service_plotter = "spare plots create"
 async def fetch(url: str):
     async with ClientSession() as session:
         try:
-            mozzila_root = get_mozzila_ca_crt()
-            ssl_context = ssl_context_for_root(mozzila_root)
+            mozilla_root = get_mozilla_ca_crt()
+            ssl_context = ssl_context_for_root(mozilla_root)
             response = await session.get(url, ssl=ssl_context)
             if not response.ok:
                 log.warning("Response not OK.")
