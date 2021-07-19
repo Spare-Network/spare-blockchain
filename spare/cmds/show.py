@@ -1,3 +1,4 @@
+from spare.util.misc import format_bytes
 from typing import Any
 
 import click
@@ -85,16 +86,7 @@ async def show_async(
                 )
 
                 print("Estimated network space: ", end="")
-                network_space_human_readable = blockchain_state["space"] / 1024 ** 4
-                if network_space_human_readable >= 1024:
-                    network_space_human_readable = network_space_human_readable / 1024
-                    if network_space_human_readable >= 1024:
-                        network_space_human_readable = network_space_human_readable / 1024
-                        print(f"{network_space_human_readable:.3f} EiB")
-                    else:
-                        print(f"{network_space_human_readable:.3f} PiB")
-                else:
-                    print(f"{network_space_human_readable:.3f} TiB")
+                print(format_bytes(blockchain_state["space"]))
                 print(f"Current difficulty: {difficulty}")
                 print(f"Current VDF sub_slot_iters: {sub_slot_iters}")
                 print("Total iterations since the start of the blockchain:", total_iters)
