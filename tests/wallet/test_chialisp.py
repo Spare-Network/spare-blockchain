@@ -1,6 +1,6 @@
 import pytest
 
-from spare.wallet.chialisp import (
+from spare.wallet.sparelisp import (
     apply,
     args,
     cons,
@@ -17,7 +17,7 @@ from spare.wallet.chialisp import (
 )
 
 
-class TestChialisp:
+class Testsparelisp:
     def test_sexp(self):
         assert sexp() == "()"
         assert sexp(1) == "(1)"

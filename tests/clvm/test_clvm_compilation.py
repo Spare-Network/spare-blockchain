@@ -7,39 +7,39 @@ from spare.types.blockchain_format.program import Program, SerializedProgram
 
 wallet_program_files = set(
     [
-        "chia/wallet/puzzles/calculate_synthetic_public_key.clvm",
-        "chia/wallet/puzzles/cc.clvm",
-        "chia/wallet/puzzles/chialisp_deserialisation.clvm",
-        "chia/wallet/puzzles/rom_bootstrap_generator.clvm",
-        "chia/wallet/puzzles/generator_for_single_coin.clvm",
-        "chia/wallet/puzzles/genesis-by-coin-id-with-0.clvm",
-        "chia/wallet/puzzles/genesis-by-puzzle-hash-with-0.clvm",
-        "chia/wallet/puzzles/lock.inner.puzzle.clvm",
-        "chia/wallet/puzzles/p2_conditions.clvm",
-        "chia/wallet/puzzles/p2_delegated_conditions.clvm",
-        "chia/wallet/puzzles/p2_delegated_puzzle.clvm",
-        "chia/wallet/puzzles/p2_delegated_puzzle_or_hidden_puzzle.clvm",
-        "chia/wallet/puzzles/p2_m_of_n_delegate_direct.clvm",
-        "chia/wallet/puzzles/p2_puzzle_hash.clvm",
-        "chia/wallet/puzzles/rl_aggregation.clvm",
-        "chia/wallet/puzzles/rl.clvm",
-        "chia/wallet/puzzles/sha256tree_module.clvm",
-        "chia/wallet/puzzles/singleton_top_layer.clvm",
-        "chia/wallet/puzzles/did_innerpuz.clvm",
-        "chia/wallet/puzzles/decompress_puzzle.clvm",
-        "chia/wallet/puzzles/decompress_coin_solution_entry_with_prefix.clvm",
-        "chia/wallet/puzzles/decompress_coin_solution_entry.clvm",
-        "chia/wallet/puzzles/block_program_zero.clvm",
-        "chia/wallet/puzzles/test_generator_deserialize.clvm",
-        "chia/wallet/puzzles/test_multiple_generator_input_arguments.clvm",
+        "spare/wallet/puzzles/calculate_synthetic_public_key.clvm",
+        "spare/wallet/puzzles/cc.clvm",
+        "spare/wallet/puzzles/chialisp_deserialisation.clvm",
+        "spare/wallet/puzzles/rom_bootstrap_generator.clvm",
+        "spare/wallet/puzzles/generator_for_single_coin.clvm",
+        "spare/wallet/puzzles/genesis-by-coin-id-with-0.clvm",
+        "spare/wallet/puzzles/genesis-by-puzzle-hash-with-0.clvm",
+        "spare/wallet/puzzles/lock.inner.puzzle.clvm",
+        "spare/wallet/puzzles/p2_conditions.clvm",
+        "spare/wallet/puzzles/p2_delegated_conditions.clvm",
+        "spare/wallet/puzzles/p2_delegated_puzzle.clvm",
+        "spare/wallet/puzzles/p2_delegated_puzzle_or_hidden_puzzle.clvm",
+        "spare/wallet/puzzles/p2_m_of_n_delegate_direct.clvm",
+        "spare/wallet/puzzles/p2_puzzle_hash.clvm",
+        "spare/wallet/puzzles/rl_aggregation.clvm",
+        "spare/wallet/puzzles/rl.clvm",
+        "spare/wallet/puzzles/sha256tree_module.clvm",
+        "spare/wallet/puzzles/singleton_top_layer.clvm",
+        "spare/wallet/puzzles/did_innerpuz.clvm",
+        "spare/wallet/puzzles/decompress_puzzle.clvm",
+        "spare/wallet/puzzles/decompress_coin_solution_entry_with_prefix.clvm",
+        "spare/wallet/puzzles/decompress_coin_solution_entry.clvm",
+        "spare/wallet/puzzles/block_program_zero.clvm",
+        "spare/wallet/puzzles/test_generator_deserialize.clvm",
+        "spare/wallet/puzzles/test_multiple_generator_input_arguments.clvm",
     ]
 )
 
 clvm_include_files = set(
-    ["chia/wallet/puzzles/create-lock-puzzlehash.clvm", "chia/wallet/puzzles/condition_codes.clvm"]
+    ["spare/wallet/puzzles/create-lock-puzzlehash.clvm", "spare/wallet/puzzles/condition_codes.clvm"]
 )
 
-CLVM_PROGRAM_ROOT = "chia/wallet/puzzles"
+CLVM_PROGRAM_ROOT = "spare/wallet/puzzles"
 
 
 def list_files(dir, glob):
@@ -66,7 +66,7 @@ class TestClvmCompilation(TestCase):
 
     def test_all_programs_listed(self):
         """
-        Checks to see if a new .clvm file was added to chia/wallet/puzzles, but not added to `wallet_program_files`
+        Checks to see if a new .clvm file was added to spare/wallet/puzzles, but not added to `wallet_program_files`
         """
         existing_files = list_files(CLVM_PROGRAM_ROOT, "*.clvm")
         existing_file_paths = set([Path(x).relative_to(CLVM_PROGRAM_ROOT) for x in existing_files])
