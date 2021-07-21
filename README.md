@@ -143,7 +143,7 @@ npm run electron
 sudo yum update -y
 sudo yum install python3 git -y
 
-git clone https://github.com/Spare-Network/shia-blockchain.git
+git clone https://github.com/Spare-Network/spare-blockchain.git
 cd spare-blockchain
 
 sh install.sh
