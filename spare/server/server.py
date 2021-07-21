@@ -374,7 +374,7 @@ class spareServer:
             if peer_id == self.node_id:
                 raise RuntimeError(f"Trying to connect to a peer ({target_node}) with the same peer_id: {peer_id}")
 
-            connection = WSChiaConnection(
+            connection = WSspareConnection(
                 self._local_type,
                 ws,
                 self._port,
