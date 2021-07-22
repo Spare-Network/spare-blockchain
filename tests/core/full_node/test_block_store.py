@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import random
 import sqlite3
 from pathlib import Path
@@ -11,6 +12,8 @@ from spare.full_node.block_store import BlockStore
 from spare.full_node.coin_store import CoinStore
 from spare.util.db_wrapper import DBWrapper
 from tests.setup_nodes import bt, test_constants
+
+log = logging.getLogger(__name__)
 
 
 @pytest.fixture(scope="module")
