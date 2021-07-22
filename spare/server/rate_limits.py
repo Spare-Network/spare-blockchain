@@ -92,9 +92,11 @@ rate_limits_other = {
     ProtocolMessageTypes.request_header_blocks: RLSettings(500, 100),
     ProtocolMessageTypes.reject_header_blocks: RLSettings(100, 100),
     ProtocolMessageTypes.respond_header_blocks: RLSettings(500, 2 * 1024 * 1024, 100 * 1024 * 1024),
-    ProtocolMessageTypes.request_peers_introducer: RLSettings(1000, 100),
-    ProtocolMessageTypes.respond_peers_introducer: RLSettings(1000, 1024 * 1024),
-    ProtocolMessageTypes.farm_new_block: RLSettings(1000, 200),
+    ProtocolMessageTypes.request_peers_introducer: RLSettings(100, 100),
+    ProtocolMessageTypes.respond_peers_introducer: RLSettings(100, 1024 * 1024),
+    ProtocolMessageTypes.farm_new_block: RLSettings(200, 200),
+    ProtocolMessageTypes.request_plots: RLSettings(10, 10 * 1024 * 1024),
+    ProtocolMessageTypes.respond_plots: RLSettings(10, 10 * 1024 * 1024),
 }
 
 

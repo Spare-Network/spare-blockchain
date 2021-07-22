@@ -2,7 +2,7 @@
       uses: actions/checkout@v2
       with:
         repository: 'Spare-Network/test-cache'
-        path: '.spare'
-        ref: '0.26.0'
+        path: '.spare-blockchain'
+        ref: '0.27.0'
         fetch-depth: 1
 
