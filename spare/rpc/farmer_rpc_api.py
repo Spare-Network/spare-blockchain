@@ -19,7 +19,7 @@ class FarmerRpcApi:
             "/set_reward_targets": self.set_reward_targets,
             "/get_pool_state": self.get_pool_state,
             "/set_payout_instructions": self.set_payout_instructions,
-            "/get_plots": self.get_plots,
+            "/get_harvesters": self.get_harvesters,
             "/get_pool_login_link": self.get_pool_login_link,
         }
 
@@ -44,6 +44,16 @@ class FarmerRpcApi:
                     "wallet_ui",
                 )
             ]
+        elif change == "new_plots":
+            return [
+                create_payload_dict(
+                    "get_harvesters",
+                    change_data,
+                    self.service_name,
+                    "wallet_ui",
+                )
+            ]
+
         return []
 
     async def get_signage_point(self, request: Dict) -> Dict:
@@ -51,8 +61,7 @@ class FarmerRpcApi:
         for _, sps in self.service.sps.items():
             for sp in sps:
                 if sp.challenge_chain_sp == sp_hash:
-                    pospaces = self.service.proofs_of_space.get(
-                        sp.challenge_chain_sp, [])
+                    pospaces = self.service.proofs_of_space.get(sp.challenge_chain_sp, [])
                     return {
                         "signage_point": {
                             "challenge_hash": sp.challenge_hash,
@@ -70,8 +79,7 @@ class FarmerRpcApi:
         result: List = []
         for _, sps in self.service.sps.items():
             for sp in sps:
-                pospaces = self.service.proofs_of_space.get(
-                    sp.challenge_chain_sp, [])
+                pospaces = self.service.proofs_of_space.get(sp.challenge_chain_sp, [])
                 result.append(
                     {
                         "signage_point": {
@@ -114,8 +122,8 @@ class FarmerRpcApi:
         await self.service.set_payout_instructions(launcher_id, request["payout_instructions"])
         return {}
 
-    async def get_plots(self, _: Dict):
-        return await self.service.get_plots()
+    async def get_harvesters(self, _: Dict):
+        return await self.service.get_harvesters()
 
     async def get_pool_login_link(self, request: Dict) -> Dict:
         launcher_id: bytes32 = bytes32(hexstr_to_bytes(request["launcher_id"]))

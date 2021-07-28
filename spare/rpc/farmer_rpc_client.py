@@ -6,9 +6,9 @@ from spare.types.blockchain_format.sized_bytes import bytes32
 
 class FarmerRpcClient(RpcClient):
     """
-    Client to spare RPC, connects to a local farmer. Uses HTTP/JSON, and converts back from
+    Client to Spare RPC, connects to a local farmer. Uses HTTP/JSON, and converts back from
     JSON into native python objects before returning. All api calls use POST requests.
-    Note that this is not the same as the peer protocol, or wallet protocol (which run spare's
+    Note that this is not the same as the peer protocol, or wallet protocol (which run Spare's
     protocol on top of TCP), it's a separate protocol on top of HTTP that provides easy access
     to the full node.
     """
@@ -49,8 +49,8 @@ class FarmerRpcClient(RpcClient):
         request = {"launcher_id": launcher_id.hex(), "payout_instructions": payout_instructions}
         return await self.fetch("set_payout_instructions", request)
 
-    async def get_plots(self) -> Dict[str, Any]:
-        return await self.fetch("get_plots", {})
+    async def get_harvesters(self) -> Dict[str, Any]:
+        return await self.fetch("get_harvesters", {})
 
     async def get_pool_login_link(self, launcher_id: bytes32) -> Optional[str]:
         try:
