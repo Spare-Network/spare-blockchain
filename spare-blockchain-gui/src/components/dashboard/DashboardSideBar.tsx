@@ -2,7 +2,7 @@ import { Trans } from '@lingui/macro';
 import { List } from '@material-ui/core';
 import { Flex, SideBarItem } from '@spare/core';
 import {
-    Farm as FarmIcon, Home as HomeIcon, Keys as KeysIcon, Plot as PlotIcon, Wallet as WalletIcon
+    Farm as FarmIcon, Home as HomeIcon, Keys as KeysIcon, Plot as PlotIcon, Wallet as WalletIcon, Pool as PoolIcon
 } from '@spare/icons';
 import React from 'react';
 import { useDispatch } from 'react-redux';
@@ -52,6 +52,11 @@ export default function DashboardSideBar() {
           to="/dashboard/farm"
           icon={<FarmIcon fontSize="large" />}
           title={<Trans>Farm</Trans>}
+        />
+        <SideBarItem
+          to="/dashboard/pool"
+          icon={<PoolIcon fontSize="large" />}
+          title={<Trans>Pool</Trans>}
         />
         <SideBarItem
           to="/"

@@ -15,7 +15,7 @@ import LayoutHero from '../layout/LayoutHero';
 const MnemonicField = (props: any) => (
   <Grid item xs={2}>
     <TextField
-      variant="outlined"
+      variant="filled"
       margin="normal"
       color="primary"
       id={props.id}

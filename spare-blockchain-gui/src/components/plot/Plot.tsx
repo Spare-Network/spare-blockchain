@@ -12,14 +12,14 @@ export default function Plot() {
 
   return (
     <LayoutMain
-      title={(
+      title={
         <>
           <Link to="/dashboard/plot" color="textPrimary">
             <Trans>Plot</Trans>
           </Link>
           <PlotHeaderTarget />
         </>
-      )}
+      }
     >
       <Flex flexDirection="column" gap={3}>
         <Switch>

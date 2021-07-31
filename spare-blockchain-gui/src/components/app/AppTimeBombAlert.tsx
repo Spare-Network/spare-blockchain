@@ -8,7 +8,8 @@ const CRITICAL_HEIGHT = 4608 * 42; // 6 weeks
 
 export default function AppTimeBomb() {
   const peakHeight = useSelector(
-    (state: RootState) => state.full_node_state.blockchain_state?.peak?.height ?? 0,
+    (state: RootState) =>
+      state.full_node_state.blockchain_state?.peak?.height ?? 0,
   );
 
   const isVisible = peakHeight >= CRITICAL_HEIGHT;

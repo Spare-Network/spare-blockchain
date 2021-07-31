@@ -73,6 +73,9 @@ export function plotQueueAdd(
       disableBitfieldPlotting,
       excludeFinalDir,
       overrideK,
+      farmerPublicKey,
+      poolPublicKey,
+      c,
     } = config;
 
     return dispatch(
@@ -92,6 +95,9 @@ export function plotQueueAdd(
         disableBitfieldPlotting,
         excludeFinalDir,
         overrideK,
+        farmerPublicKey,
+        poolPublicKey,
+        c,
       ),
     );
   };

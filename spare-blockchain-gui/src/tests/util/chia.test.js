@@ -14,12 +14,12 @@ describe("spare", () => {
   it("converts number graviton to spare string", () => {
     const result = spare.graviton_to_spare_string(1000000);
 
-    expect(result).toBe("0.000001");
+    expect(result).toBe('0.000001');
   });
   it("converts string graviton to spare string", () => {
     const result = spare.graviton_to_spare_string("1000000");
 
-    expect(result).toBe("0.000001");
+    expect(result).toBe('0.000001');
   });
   it("converts number spare to graviton", () => {
     const result = spare.spare_to_graviton(0.000001);
@@ -44,12 +44,12 @@ describe("spare", () => {
   it("converts number graviton to colouredcoin string", () => {
     const result = spare.graviton_to_colouredcoin_string(1000000);
 
-    expect(result).toBe("1,000");
+    expect(result).toBe('1,000');
   });
   it("converts string graviton to colouredcoin string", () => {
     const result = spare.graviton_to_colouredcoin_string("1000000");
 
-    expect(result).toBe("1,000");
+    expect(result).toBe('1,000');
   });
   it("converts number colouredcoin to graviton", () => {
     const result = spare.colouredcoin_to_graviton(1000);

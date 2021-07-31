@@ -192,27 +192,29 @@ type ColourCardProps = {
 };
 
 function ColourCard(props: ColourCardProps) {
-  const id = props.wallet_id;
+  const { wallet_id } = props;
 
   const dispatch = useDispatch();
-  const colour = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].colour,
+
+  const wallet = useSelector((state: RootState) =>
+    state.wallet_state.wallets?.find((item) => item.id === wallet_id),
   );
-  const name = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].name,
-  );
+
+  if (!wallet) {
+    return null;
+  }
+
+  const { name, colour } = wallet;
 
   let name_input: HTMLInputElement;
 
   function rename() {
-    dispatch(rename_cc_wallet(id, name_input.value));
+    dispatch(rename_cc_wallet(wallet_id, name_input.value));
   }
 
   const classes = useStyles();
   return (
-    <Card
-      title={<Trans>Colour Info</Trans>}
-    >
+    <Card title={<Trans>Colour Info</Trans>}>
       <Grid item xs={12}>
         <Box display="flex">
           <Box>
@@ -366,22 +368,14 @@ function BalanceCard(props: BalanceCardProps) {
     balancebox_5;
 
   return (
-    <Card
-      title={<Trans>Balance</Trans>}
-    >
+    <Card title={<Trans>Balance</Trans>}>
       <BalanceCardSubSection
-        title={
-          <Trans>Total Balance</Trans>
-        }
+        title={<Trans>Total Balance</Trans>}
         balance={balance}
         name={name}
       />
       <BalanceCardSubSection
-        title={
-          <Trans>
-            Spendable Balance
-          </Trans>
-        }
+        title={<Trans>Spendable Balance</Trans>}
         balance={balance_spendable}
         name={name}
       />
@@ -390,9 +384,7 @@ function BalanceCard(props: BalanceCardProps) {
           <Box flexGrow={1}>
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Trans>
-                  View pending balances...
-                </Trans>
+                <Trans>View pending balances...</Trans>
               </AccordionSummary>
               <AccordionDetails>
                 <div dangerouslySetInnerHTML={{ __html: acc_content }} />
@@ -458,11 +450,13 @@ function SendCard(props: SendCardProps) {
       return;
     }
     if (syncing) {
-      dispatch(openDialog(
-        <AlertDialog>
-          Please finish syncing before making a transaction
-        </AlertDialog>
-      ));
+      dispatch(
+        openDialog(
+          <AlertDialog>
+            Please finish syncing before making a transaction
+          </AlertDialog>,
+        ),
+      );
       return;
     }
     let address = address_input.value.trim();
@@ -472,19 +466,17 @@ function SendCard(props: SendCardProps) {
       !Number(amount_input.value) ||
       Number.isNaN(Number(amount_input.value))
     ) {
-      dispatch(openDialog(
-        <AlertDialog>
-          Please enter a valid numeric amount
-        </AlertDialog>
-      ));
+      dispatch(
+        openDialog(
+          <AlertDialog>Please enter a valid numeric amount</AlertDialog>,
+        ),
+      );
       return;
     }
     if (fee_input.value === '' || Number.isNaN(Number(fee_input.value))) {
-      dispatch(openDialog(
-        <AlertDialog>
-          Please enter a valid numeric fee
-        </AlertDialog>
-      ));
+      dispatch(
+        openDialog(<AlertDialog>Please enter a valid numeric fee</AlertDialog>),
+      );
       return;
     }
 
@@ -495,8 +487,9 @@ function SendCard(props: SendCardProps) {
       dispatch(
         openDialog(
           <AlertDialog>
-            Error: recipient address is not a coloured wallet address. Please enter a coloured wallet address
-          </AlertDialog>
+            Error: recipient address is not a coloured wallet address. Please
+            enter a coloured wallet address
+          </AlertDialog>,
         ),
       );
       return;
@@ -509,7 +502,7 @@ function SendCard(props: SendCardProps) {
           openDialog(
             <AlertDialog>
               Error the entered address appears to be for a different colour.
-            </AlertDialog>
+            </AlertDialog>,
           ),
         );
         return;
@@ -527,8 +520,9 @@ function SendCard(props: SendCardProps) {
       dispatch(
         openDialog(
           <AlertDialog>
-            Please enter 0 fee. Positive fees not supported yet for coloured coins.
-          </AlertDialog>
+            Please enter 0 fee. Positive fees not supported yet for coloured
+            coins.
+          </AlertDialog>,
         ),
       );
       return;
@@ -540,9 +534,10 @@ function SendCard(props: SendCardProps) {
   }
 
   return (
-    <Card
-      title={<Trans>Create Transaction</Trans>}
-    >
+    <Card title={
+      <Typography >
+      <span style={{ color: "#E9398D", fontSize: 24, fontWeight: 400, fontFamily: "Josefin" }}><Trans>Create Transaction</Trans></span>
+    </Typography>}>
       {result_message && (
         <Grid item xs={12}>
           <p className={result_class}>{result_message}</p>
@@ -580,11 +575,7 @@ function SendCard(props: SendCardProps) {
               inputRef={(input) => {
                 amount_input = input;
               }}
-              label={
-                <Trans>
-                  Amount ({cc_unit})
-                </Trans>
-              }
+              label={<Trans>Amount ({cc_unit})</Trans>}
             />
           </Box>
           <Box flexGrow={6}>
@@ -653,20 +644,19 @@ function AddressCard(props: AddressCardProps) {
   }
 
   return (
-    <Card
-      title={<Trans>Receive Address</Trans>}
-    >
+    <Card title={
+    <Typography >
+      <span style={{ color: "#E9398D", fontSize: 24, fontWeight: 400, fontFamily: "Josefin" }}><Trans>Receive Address</Trans></span>
+    </Typography>}>
       <Grid item xs={12}>
         <Box display="flex">
           <Box flexGrow={1}>
             <TextField
               disabled
               fullWidth
-              label={
-                <Trans>Address</Trans>
-              }
+              label={<Trans>Address</Trans>}
               value={address}
-              variant="outlined"
+              variant="filled"
             />
           </Box>
           <Box>
@@ -707,7 +697,9 @@ type ColouredWalletProps = {
 
 export default function ColouredWallet(props: ColouredWalletProps) {
   const id = useSelector((state: RootState) => state.wallet_menu.id);
-  const wallets = useSelector((state: RootState) => state.wallet_state.wallets);
+  const wallets = useSelector(
+    (state: RootState) => state.wallet_state.wallets ?? [],
+  );
 
   if (wallets.length > props.wallet_id) {
     return (

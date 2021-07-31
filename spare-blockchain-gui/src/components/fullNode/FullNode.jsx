@@ -2,9 +2,7 @@ import { Trans } from '@lingui/macro';
 import { Box, Card, CardContent, Grid, Paper, Tooltip, Typography } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
 import {
-  Flex, FormatBytes,
-  FormatLargeNumber, Loading,
-  StateColor,
+  Flex, FormatBytes, FormatLargeNumber, Loading, StateColor,
   Table
 } from '@spare/core';
 import { Status } from '@spare/icons';
@@ -13,6 +11,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory, useRouteMatch } from 'react-router-dom';
 import styled from 'styled-components';
+// import HelpIcon from '@material-ui/icons/Help';
 import { unix_to_short_date } from '../../util/utils';
 import LayoutMain from '../layout/LayoutMain';
 import FullNodeBlockSearch from './FullNodeBlockSearch';
@@ -76,7 +75,11 @@ const cols = [
       const height = get(row, 'reward_chain_block.height');
 
       if (!isFinished) {
-        return <i><FormatLargeNumber value={foliageHeight} /></i>;
+        return (
+          <i>
+            <FormatLargeNumber value={foliageHeight} />
+          </i>
+        );
       }
 
       return <FormatLargeNumber value={height} />;
@@ -104,6 +107,7 @@ const cols = [
   },
 ];
 
+
 const getStatusItems = (state, connected, latestPeakTimestamp, networkInfo) => {
   const status_items = [];
   if (state.sync && state.sync.sync_mode) {
@@ -113,7 +117,8 @@ const getStatusItems = (state, connected, latestPeakTimestamp, networkInfo) => {
       label: <Trans>Status</Trans>,
       value: (
         <Trans>
-          Syncing <FormatLargeNumber value={progress} />/<FormatLargeNumber value={tip} />
+          Syncing <FormatLargeNumber value={progress} />/
+          <FormatLargeNumber value={tip} />
         </Trans>
       ),
       colour: 'orange',
@@ -246,6 +251,7 @@ const StatusCell = (props) => {
   );
 };
 
+
 const FullNodeStatus = (props) => {
   const blockchainState = useSelector(
     (state) => state.full_node_state.blockchain_state,
@@ -258,11 +264,16 @@ const FullNodeStatus = (props) => {
     (state) => state.full_node_state.latest_peak_timestamp,
   );
 
-  const networkInfo = useSelector(
-    (state) => state.wallet_state.network_info,
-  );
+  const networkInfo = useSelector((state) => state.wallet_state.network_info);
 
-  const statusItems = blockchainState && getStatusItems(blockchainState, connected, latestPeakTimestamp, networkInfo);
+  const statusItems =
+    blockchainState &&
+    getStatusItems(
+      blockchainState,
+      connected,
+      latestPeakTimestamp,
+      networkInfo,
+    );
 
   return (
     <>
@@ -287,6 +298,7 @@ const FullNodeStatus = (props) => {
     </>
   );
 };
+
 
 const BlocksCard = () => {
   const { url } = useRouteMatch();
@@ -323,9 +335,7 @@ const BlocksCard = () => {
       {rows.length ? (
         <Table cols={cols} rows={rows} onRowClick={handleRowClick} />
       ) : (
-        <Flex justifyContent="center">
-          <Loading />
-        </Flex>
+        <Loading center />
       )}
     </Card>
   );

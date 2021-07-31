@@ -30,12 +30,12 @@ const StyledContainer = styled(Container)`
 `;
 
 const StyledInnerContainer = styled(Box)`
-  box-shadow: inset 6px 0 8px -8px rgba(0,0,0,0.2);
+  box-shadow: inset 6px 0 8px -8px rgba(0, 0, 0, 0.2);
 `;
 
 type Props = {
   children?: ReactElement<any>;
-  sidebar: ReactNode,
+  sidebar: ReactNode;
   title?: ReactNode;
 };
 
@@ -47,10 +47,7 @@ export default function LayoutSidebar(props: Props) {
       <DashboardTitle>{title}</DashboardTitle>
       <Flex flexGrow={1}>
         <StyledSideBarContainer>
-          <StyledSidebar
-            variant="permanent"
-            open
-          >
+          <StyledSidebar variant="permanent" open>
             <Toolbar />
             {sidebar}
           </StyledSidebar>

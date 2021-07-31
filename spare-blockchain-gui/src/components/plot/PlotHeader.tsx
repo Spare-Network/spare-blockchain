@@ -1,16 +1,28 @@
 import { Trans } from '@lingui/macro';
-import { Box, Button, ListItemIcon, MenuItem, Typography } from '@material-ui/core';
-import { Add as AddIcon, Folder as FolderIcon, Refresh as RefreshIcon } from '@material-ui/icons';
+import {
+  Box,
+  Button,
+  ListItemIcon,
+  MenuItem,
+  Typography,
+} from '@material-ui/core';
+import {
+  Add as AddIcon,
+  Folder as FolderIcon,
+  Refresh as RefreshIcon,
+} from '@material-ui/icons';
 import { Flex, More } from '@spare/core';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { createTeleporter } from 'react-teleporter';
 import useOpenDialog from '../../hooks/useOpenDialog';
-import {
-    refreshPlots
-} from '../../modules/harvesterMessages';
+import { refreshPlots } from '../../modules/harvesterMessages';
 import PlotAddDirectoryDialog from './PlotAddDirectoryDialog';
+
+type Props = {
+  children?: ReactNode;
+};
 
 const PlotHeaderTeleporter = createTeleporter();
 
@@ -18,7 +30,9 @@ export const PlotHeaderSource = PlotHeaderTeleporter.Source;
 
 export const PlotHeaderTarget = PlotHeaderTeleporter.Target;
 
-export default function PlotHeader() {
+export default function PlotHeader(props: Props) {
+  const { children } = props;
+
   const history = useHistory();
   const dispatch = useDispatch();
   const openDialog = useOpenDialog();
@@ -32,24 +46,31 @@ export default function PlotHeader() {
   }
 
   function handleAddPlotDirectory() {
-    openDialog((
-      <PlotAddDirectoryDialog />
-    ));
+    openDialog(<PlotAddDirectoryDialog />);
   }
 
   return (
     <div>
       <Flex alignItems="center">
-        <Flex flexGrow={1} />
+        <Flex flexGrow={1}>{children}</Flex>
         <div>
-          <Button color="primary" variant="contained" onClick={handleAddPlot} startIcon={<AddIcon />}>
+          <Button
+            color="primary"
+            variant="contained"
+            onClick={handleAddPlot}
+            startIcon={<AddIcon />}
+          >
             <Trans>Add Plot Directory</Trans>
-          </Button>
-          {' '}
+          </Button>{' '}
           <More>
             {({ onClose }) => (
               <Box>
-                <MenuItem onClick={() => { onClose(); handleRefreshPlots(); }}>
+                <MenuItem
+                  onClick={() => {
+                    onClose();
+                    handleRefreshPlots();
+                  }}
+                >
                   <ListItemIcon>
                     <RefreshIcon fontSize="small" />
                   </ListItemIcon>
@@ -57,7 +78,12 @@ export default function PlotHeader() {
                     <Trans>Refresh Plots</Trans>
                   </Typography>
                 </MenuItem>
-                <MenuItem onClick={() => { onClose(); handleAddPlotDirectory(); }}>
+                <MenuItem
+                  onClick={() => {
+                    onClose();
+                    handleAddPlotDirectory();
+                  }}
+                >
                   <ListItemIcon>
                     <FolderIcon fontSize="small" />
                   </ListItemIcon>

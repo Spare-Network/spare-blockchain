@@ -8,6 +8,7 @@ export default function createWallet(
   name: string,
   type: WalletType,
   data: Object,
+  details?: Object,
 ): Wallet {
   return {
     id,
@@ -29,5 +30,6 @@ export default function createWallet(
     did_attest: '',
     sending_transaction: false,
     send_transaction_result: '',
+    ...details,
   };
 }

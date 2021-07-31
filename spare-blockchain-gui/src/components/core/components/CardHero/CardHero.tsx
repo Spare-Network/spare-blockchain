@@ -4,11 +4,12 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 const StyledContent = styled(CardContent)`
-  padding: ${({ theme }) => `${theme.spacing(5)}px ${theme.spacing(4)}px !important`};
+  padding: ${({ theme }) =>
+    `${theme.spacing(5)}px ${theme.spacing(4)}px !important`};
 `;
 
 type Props = {
-  children?: ReactNode,
+  children?: ReactNode;
 };
 
 export default function CardHero(props: Props) {

@@ -6,20 +6,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: af_ZA\n"
-"Project-Id-Version: spare-blockchain\n"
+"Project-Id-Version: Spare-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2021-04-26 16:03\n"
 "Last-Translator: \n"
 "Language-Team: Afrikaans\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: spare-blockchain\n"
+"X-Crowdin-Project: Spare-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: af\n"
 "X-Crowdin-File: /main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 72\n"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:39
-msgid "*Want to explore Spare's blocks further? Check out <0>Spare Explorer</0> built by an open source developer."
+msgid "*Want to explore Spare’s blocks further? Check out <0>Spare Explorer</0> built by an open source developer."
 msgstr "*Wil jy dalk die Spare blokke verder wil ondersoek? Gaan kyk na <0>Spare Explorer<0>, gebou deur a 'n open source programmeerder."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
@@ -605,7 +605,7 @@ msgid "Error"
 msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:292
-msgid "Error: Cannot send spare to coloured address. Please enter a spare address."
+msgid "Error: Cannot send Spare to coloured address. Please enter a Spare address."
 msgstr ""
 
 #: src/components/farm/card/FarmCardExpectedTimeToWin.tsx:32
@@ -688,7 +688,7 @@ msgid "Fee"
 msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TSPARE)"
+#~ msgid "Fee (TXCH)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1536,7 +1536,7 @@ msgstr ""
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:415
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:466
-msgid "Spending Limit (spare per interval): {0}"
+msgid "Spending Limit (Spare per interval): {0}"
 msgstr ""
 
 #: src/components/fullNode/FullNode.jsx:94
@@ -1606,23 +1606,23 @@ msgid "Syncing {progress}/{tip}"
 msgstr ""
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TSPARE Block Rewards"
+#~ msgid "TXCH Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TSPARE Farming Rewards"
+#~ msgid "TXCH Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TSPARE Fees Collected"
+#~ msgid "TXCH Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TSPARE User Fees"
-#~ msgstr "TSPARE User Fees"
+#~ msgid "TXCH User Fees"
+#~ msgstr "TXCH User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TSPARE User Transaction Fees"
+#~ msgid "TXCH User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:18
@@ -1705,7 +1705,7 @@ msgid "This is the time the block was created by the farmer, which is before it 
 msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:195
-msgid "This is the total amount of spare in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgid "This is the total amount of Spare in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
 msgstr ""
 
 #: src/components/wallet/standard/WalletStandard.tsx:218
@@ -1889,7 +1889,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.spareWallet"
+#~ msgid "WalletItem.SpareWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48

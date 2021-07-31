@@ -17,7 +17,10 @@ import LayoutHero from '../layout/LayoutHero';
 
 const options = english.map((item) => item.word);
 
-const filterOptions = (options: string[], { inputValue }: { inputValue: string }) =>
+const filterOptions = (
+  options: string[],
+  { inputValue }: { inputValue: string },
+) =>
   matchSorter(options, inputValue, {
     threshold: matchSorter.rankings.STARTS_WITH,
   });
@@ -39,7 +42,7 @@ function MnemonicField(props: TextFieldProps & MnemonicFieldProps) {
         renderInput={(params) => (
           <TextField
             autoComplete="off"
-            variant="outlined"
+            variant="filled"
             margin="normal"
             color="primary"
             label={label}
@@ -67,10 +70,12 @@ function Iterator(props: any) {
   );
 
   function handleTextFieldChange(id: number, word: string) {
-    dispatch(mnemonic_word_added({
-      word,
-      id,
-    }));
+    dispatch(
+      mnemonic_word_added({
+        word,
+        id,
+      }),
+    );
   }
 
   const indents = [];

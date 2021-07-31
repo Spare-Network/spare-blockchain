@@ -174,7 +174,7 @@ class TestWalletRpc:
             push_res = await client_node.push_tx(tx_res.spend_bundle)
             assert push_res["success"]
             for i in range(0, 5):
-                await client.farm_block(encode_puzzle_hash(ph_2, "xch"))
+                await client.farm_block(encode_puzzle_hash(ph_2, "spare"))
                 await asyncio.sleep(0.5)
 
             new_balance = initial_funds_eventually - tx_amount - signed_tx_amount - 444 - 999 - 100

@@ -1,28 +1,59 @@
 import { Trans } from '@lingui/macro';
 import {
-  Accordion, AccordionDetails, AccordionSummary, Box, Button,
-  TextField, Tooltip, Typography
+  /*
+  Tooltip,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  */
+  Box,
+  Button,
+  Grid,
+  InputAdornment,
+  ListItemIcon,
+  MenuItem,
+  TextField,
+  Typography,
 } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import {
-  ExpandMore as ExpandMoreIcon,
-  Help as HelpIcon
+  // ExpandMore as ExpandMoreIcon,
+  // Help as HelpIcon,
+  Delete as DeleteIcon,
 } from '@material-ui/icons';
-import { AlertDialog, Card, Flex, Loading } from '@spare/core';
-import React, { ReactNode } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import config from '../../../config/config';
-import useCurrencyCode from '../../../hooks/useCurrencyCode';
-import { openDialog } from '../../../modules/dialog';
 import {
-  farm_block, get_address,
-  send_transaction
+  AlertDialog,
+  Amount,
+  Card,
+  ConfirmDialog,
+  CopyToClipboard,
+  Fee,
+  Flex,
+  Form,
+  More,
+  TextField as SpareTextField,
+} from '@spare/core';
+import React /* , { ReactNode } */ from 'react';
+import { useForm, useWatch } from 'react-hook-form';
+import { useDispatch, useSelector } from 'react-redux';
+import isNumeric from 'validator/es/lib/isNumeric';
+import config from '../../../config/config';
+import useOpenDialog from '../../../hooks/useOpenDialog';
+import { openDialog } from '../../../modules/dialog';
+// import useCurrencyCode from '../../../hooks/useCurrencyCode';
+import { deleteUnconfirmedTransactions } from '../../../modules/incoming';
+import {
+  farm_block,
+  get_address,
+  send_transaction,
 } from '../../../modules/message';
 import type { RootState } from '../../../modules/rootReducer';
-import { graviton_to_spare_string, spare_to_graviton } from '../../../util/spare';
+import { spare_to_graviton } from '../../../util/spare';
 import { get_transaction_result } from '../../../util/transaction_result';
 import WalletHistory from '../WalletHistory';
+import WalletStatus from '../WalletStatus';
+// import WalletGraph from '../WalletGraph';
+import WalletCards from './WalletCards';
 
 const drawerWidth = 240;
 
@@ -31,10 +62,10 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 100,
   },
   resultSuccess: {
-    color: '#00D983',
+    color: '#3AAC59',
   },
   resultFailure: {
-    color: '#E9398D',
+    color: 'red',
   },
   root: {
     display: 'flex',
@@ -182,15 +213,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/*
 type BalanceCardSubSectionProps = {
   title: ReactNode;
   tooltip?: ReactNode;
   balance: number;
 };
-
 function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
   const currencyCode = useCurrencyCode();
-
   return (
     <Grid item xs={12}>
       <Box display="flex">
@@ -206,48 +236,35 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {graviton_to_spare_string(props.balance)} {currencyCode}
+            {mojo_to_chia_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
     </Grid>
   );
 }
-
 type BalanceCardProps = {
   wallet_id: number;
 };
-
 function BalanceCard(props: BalanceCardProps) {
-  const id = props.wallet_id;
-  const balance = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].balance_total,
+  const { wallet_id } = props;
+  const wallet = useSelector((state: RootState) =>
+    state.wallet_state.wallets?.find((item) => item.id === wallet_id),
   );
-  const balance_spendable = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].balance_spendable,
-  );
-  const balance_pending = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].balance_pending,
-  );
-
-  const balance_change = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].balance_change,
-  );
+  const balance = wallet?.wallet_balance?.confirmed_wallet_balance;
+  const balance_spendable = wallet?.wallet_balance?.spendable_balance;
+  const balance_pending = wallet?.wallet_balance?.pending_balance;
+  const pending_change = wallet?.wallet_balance?.pending_change;
   const balance_ptotal = balance + balance_pending;
   const classes = useStyles();
-
   return (
-    <Card title={
-      <Typography >
-        <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Balance</Trans></span>
-      </Typography>
-    }>
+    <Card title={<Trans>Balance</Trans>}>
       <BalanceCardSubSection
         title={<Trans>Total Balance</Trans>}
         balance={balance}
         tooltip={
           <Trans>
-            This is the total amount of spare in the blockchain at the current
+            This is the total amount of chia in the blockchain at the current
             peak sub block that is controlled by your private keys. It includes
             frozen farming rewards, but not pending incoming and outgoing
             transactions.
@@ -259,9 +276,9 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance_spendable}
         tooltip={
           <Trans>
-            This is the amount of Spare that you can currently use to make
+            This is the amount of Chia that you can currently use to make
             transactions. It does not include pending farming rewards, pending
-            incoming transactions, and Spare that you have just spent but is not
+            incoming transactions, and Chia that you have just spent but is not
             yet in the blockchain.
           </Trans>
         }
@@ -305,7 +322,7 @@ function BalanceCard(props: BalanceCardProps) {
                   />
                   <BalanceCardSubSection
                     title={<Trans>Pending Change</Trans>}
-                    balance={balance_change}
+                    balance={pending_change}
                     tooltip={
                       <Trans>
                         This is the pending change, which are change coins which
@@ -320,51 +337,73 @@ function BalanceCard(props: BalanceCardProps) {
           </Box>
         </Box>
       </Grid>
+      <WalletGraph walletId={wallet_id} />
     </Card>
   );
 }
+*/
 
 type SendCardProps = {
   wallet_id: number;
 };
 
+type SendTransactionData = {
+  address: string;
+  amount: string;
+  fee: string;
+};
+
 function SendCard(props: SendCardProps) {
-  const id = props.wallet_id;
+  const { wallet_id } = props;
   const classes = useStyles();
-  let address_input: HTMLInputElement;
-  let amount_input: HTMLInputElement;
-  let fee_input: HTMLInputElement;
   const dispatch = useDispatch();
 
-  const sending_transaction = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].sending_transaction,
-  );
+  const methods = useForm<SendTransactionData>({
+    shouldUnregister: false,
+    defaultValues: {
+      address: '',
+      amount: '',
+      fee: '',
+    },
+  });
 
-  const send_transaction_result = useSelector(
-    (state: RootState) =>
-      state.wallet_state.wallets[id].send_transaction_result,
-  );
+  const addressValue = useWatch<string>({
+    control: methods.control,
+    name: 'address',
+  });
+
   const syncing = useSelector(
     (state: RootState) => state.wallet_state.status.syncing,
   );
 
+  const wallet = useSelector((state: RootState) =>
+    state.wallet_state.wallets?.find((item) => item.id === wallet_id),
+  );
+
+  if (!wallet) {
+    return null;
+  }
+
+  const { sending_transaction, send_transaction_result } = wallet;
+
   const result = get_transaction_result(send_transaction_result);
+
   const result_message = result.message;
   const result_class = result.success
     ? classes.resultSuccess
     : classes.resultFailure;
 
   function farm() {
-    const address = address_input.value;
-    if (address !== '') {
-      dispatch(farm_block(address));
+    if (addressValue) {
+      dispatch(farm_block(addressValue));
     }
   }
 
-  function send() {
+  function handleSubmit(data: SendTransactionData) {
     if (sending_transaction) {
       return;
     }
+
     if (syncing) {
       dispatch(
         openDialog(
@@ -376,13 +415,8 @@ function SendCard(props: SendCardProps) {
       return;
     }
 
-    let address = address_input.value.trim();
-    if (
-      amount_input.value === '' ||
-      Number(amount_input.value) === 0 ||
-      !Number(amount_input.value) ||
-      Number.isNaN(Number(amount_input.value))
-    ) {
+    const amount = data.amount.trim();
+    if (!isNumeric(amount)) {
       dispatch(
         openDialog(
           <AlertDialog>
@@ -392,7 +426,9 @@ function SendCard(props: SendCardProps) {
       );
       return;
     }
-    if (fee_input.value === '' || Number.isNaN(Number(fee_input.value))) {
+
+    const fee = data.fee.trim();
+    if (!isNumeric(fee)) {
       dispatch(
         openDialog(
           <AlertDialog>
@@ -402,9 +438,8 @@ function SendCard(props: SendCardProps) {
       );
       return;
     }
-    const amount = spare_to_graviton(amount_input.value);
-    const fee = spare_to_graviton(fee_input.value);
 
+    let address = data.address;
     if (address.includes('colour')) {
       dispatch(
         openDialog(
@@ -418,6 +453,7 @@ function SendCard(props: SendCardProps) {
       );
       return;
     }
+
     if (address.slice(0, 12) === 'spare_addr://') {
       address = address.slice(12);
     }
@@ -425,110 +461,94 @@ function SendCard(props: SendCardProps) {
       address = address.slice(2);
     }
 
-    const amount_value = Number.parseFloat(amount);
-    const fee_value = Number.parseFloat(fee);
+    const amountValue = Number.parseFloat(spare_to_graviton(amount));
+    const feeValue = Number.parseFloat(spare_to_graviton(fee));
 
-    dispatch(send_transaction(id, amount_value, fee_value, address));
-    address_input.value = '';
-    amount_input.value = '';
-    fee_input.value = '';
+    dispatch(send_transaction(wallet_id, amountValue, feeValue, address));
+
+    methods.reset();
   }
 
   return (
     <Card
       title={
-        <Typography >
-        <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Create Transaction</Trans></span>
-      </Typography>
+        <Typography>
+          <span
+            style={{
+              color: '#E9398D',
+              fontSize: 24,
+              fontWeight: 400,
+              fontFamily: 'Josefin',
+            }}
+          >
+            <Trans>Create Transaction</Trans>
+          </span>
+        </Typography>
       }
-      tooltip={(
+      tooltip={
         <Trans>
-          On average there is one minute between each transaction block. Unless there is congestion you can expect your transaction to be included in less than a minute.
+          On average there is one minute between each transaction block. Unless
+          there is congestion you can expect your transaction to be included in
+          less than a minute.
         </Trans>
-      )}
+      }
     >
-      {result_message && (
-        <Grid item xs={12}>
-          <p className={result_class}>{result_message}</p>
-        </Grid>
-      )}
-      <Grid item xs={12}>
-        <Box display="flex">
-          <Box flexGrow={1}>
-            <TextField
-              id="filled-secondary"
+      {result_message && <p className={result_class}>{result_message}</p>}
+
+      <Form methods={methods} onSubmit={handleSubmit}>
+        <Grid spacing={2} container>
+          <Grid xs={12} item>
+            <SpareTextField
+              name="address"
               variant="filled"
               color="secondary"
               fullWidth
               disabled={sending_transaction}
-              inputRef={(input) => {
-                address_input = input;
-              }}
               label={<Trans>Address / Puzzle hash</Trans>}
             />
-          </Box>
-          <Box />
-        </Box>
-      </Grid>
-      <Grid item xs={12}>
-        <Box display="flex">
-          <Box flexGrow={6}>
-            <TextField
+          </Grid>
+          <Grid xs={12} md={6} item>
+            <Amount
               id="filled-secondary"
               variant="filled"
               color="secondary"
-              fullWidth
+              name="amount"
               disabled={sending_transaction}
-              className={classes.amountField}
-              margin="normal"
-              inputRef={(input) => {
-                amount_input = input;
-              }}
               label={<Trans>Amount</Trans>}
+              fullWidth
             />
-          </Box>
-          <Box flexGrow={6}>
-            <TextField
+          </Grid>
+          <Grid xs={12} md={6} item>
+            <Fee
               id="filled-secondary"
               variant="filled"
-              fullWidth
+              name="fee"
               color="secondary"
-              margin="normal"
               disabled={sending_transaction}
-              inputRef={(input) => {
-                fee_input = input;
-              }}
               label={<Trans>Fee</Trans>}
+              fullWidth
             />
-          </Box>
-        </Box>
-      </Grid>
-      <Grid item xs={12}>
-        <Box display="flex">
-          <Box flexGrow={1}>
-            <Button
-              onClick={farm}
-              className={classes.sendButton}
-              style={config.local_test ? {} : { visibility: 'hidden' }}
-              variant="contained"
-              color="primary"
-            >
-              <Trans>Farm</Trans>
-            </Button>
-          </Box>
-          <Box>
-            <Button
-              onClick={send}
-              className={classes.sendButton}
-              variant="contained"
-              color="primary"
-              disabled={sending_transaction}
-            >
-              <Trans>Send</Trans>
-            </Button>
-          </Box>
-        </Box>
-      </Grid>
+          </Grid>
+          <Grid xs={12} item>
+            <Flex justifyContent="flex-end" gap={1}>
+              {!!config.local_test && (
+                <Button onClick={farm} variant="outlined">
+                  <Trans>Farm</Trans>
+                </Button>
+              )}
+
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                disabled={sending_transaction}
+              >
+                <Trans>Send</Trans>
+              </Button>
+            </Flex>
+          </Grid>
+        </Grid>
+      </Form>
     </Card>
   );
 }
@@ -538,70 +558,71 @@ type AddressCardProps = {
 };
 
 function AddressCard(props: AddressCardProps) {
-  const id = props.wallet_id;
-  const address = useSelector(
-    (state: RootState) => state.wallet_state.wallets[id].address,
-  );
-  const classes = useStyles();
-  const dispatch = useDispatch();
+  const { wallet_id } = props;
 
-  function newAddress() {
-    dispatch(get_address(id, true));
+  const dispatch = useDispatch();
+  const wallet = useSelector((state: RootState) =>
+    state.wallet_state.wallets?.find((item) => item.id === wallet_id),
+  );
+
+  if (!wallet) {
+    return null;
   }
 
-  function copy() {
-    navigator.clipboard.writeText(address);
+  const { address } = wallet;
+
+  function newAddress() {
+    dispatch(get_address(wallet_id, true));
   }
 
   return (
-    <Card 
-      title={    
-        <Typography >
-          <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Receive Address</Trans></span>
+    <Card
+      title={
+        <Typography>
+          <span
+            style={{
+              color: '#E9398D',
+              fontSize: 24,
+              fontWeight: 400,
+              fontFamily: 'Josefin',
+            }}
+          >
+            <Trans>Receive Address</Trans>
+          </span>
         </Typography>
       }
-      tooltip={(
+      action={
+        <Button onClick={newAddress} variant="outlined">
+          <Trans>New Address</Trans>
+        </Button>
+      }
+      tooltip={
         <Trans>
-          HD or Hierarchical Deterministic keys are a type of public key/private key scheme where one private key can have a nearly infinite number of different public keys (and therefor wallet receive addresses) that will all ultimately come back to and be spendable by a single private key.
+          HD or Hierarchical Deterministic keys are a type of public key/private
+          key scheme where one private key can have a nearly infinite number of
+          different public keys (and therefor wallet receive addresses) that
+          will all ultimately come back to and be spendable by a single private
+          key.
         </Trans>
-      )}
+      }
     >
       <Grid item xs={12}>
         <Box display="flex">
           <Box flexGrow={1}>
             <TextField
-              disabled
-              fullWidth
               label={<Trans>Address</Trans>}
               value={address}
-              variant="outlined"
+              variant="filled"
+              InputProps={{
+                readOnly: true,
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <CopyToClipboard value={address} />
+                  </InputAdornment>
+                ),
+              }}
+              fullWidth
             />
-          </Box>
-          <Box>
-            <Button
-              onClick={copy}
-              className={classes.copyButton}
-              variant="contained"
-              color="secondary"
-              disableElevation
-            >
-              <Trans>Copy</Trans>
-            </Button>
-          </Box>
-        </Box>
-      </Grid>
-      <Grid item xs={12}>
-        <Box display="flex">
-          <Box flexGrow={1} />
-          <Box>
-            <Button
-              onClick={newAddress}
-              className={classes.sendButton}
-              variant="contained"
-              color="primary"
-            >
-              <Trans>New Address</Trans>
-            </Button>
           </Box>
         </Box>
       </Grid>
@@ -613,106 +634,71 @@ type StandardWalletProps = {
   wallet_id: number;
 };
 
-const StatusCell = (props) => {
-  const { item } = props;
-  const { label } = item;
-  const { value } = item;
-  const { tooltip } = item;
-  const { colour } = item;
-  return (
-    <Grid item xs={12}>
-      <Flex mb={-2} alignItems="center">
-        <Flex flexGrow={1} gap={1} alignItems="center">
-          <Typography variant="subtitle1">{label}</Typography>
-          {tooltip && (
-            <Tooltip title={tooltip}>
-              <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
-            </Tooltip>
-          )}
-        </Flex>
-        <Typography variant="subtitle1">
-          <span style={colour ? { color: colour } : {}}>{value}</span>
-        </Typography>
-      </Flex>
-    </Grid>
-  );
-};
-
-const StatusCard = (props) => {
-  
-  const syncing = useSelector(
-    (state: RootState) => state.wallet_state.status.syncing,
-  );
-  const synced = useSelector(
-    (state: RootState) => state.wallet_state.status.synced,
-  );
-
-  const height = useSelector(
-    (state: RootState) => state.wallet_state.status.height,
-  );
-  const connectionCount = useSelector(
-    (state: RootState) => state.wallet_state.status.connection_count,
-  );
-
-  const statusItems = [
-    {
-      label : "Height",
-      value: height,
-      tooltip: `the node has ${height}: height`,
-      colour: "#00D983",
-    },
-    {
-      label : "Number of connections",
-      value: connectionCount,
-      tooltip: `the node has ${connectionCount} connections`,
-      colour: "#00D983",
-    },
-    {
-      label : "Status",
-      value: (
-          syncing ? "Syncing" : (synced? "Synced" : "Not synced")
-      ),
-      tooltip: `the node is ${syncing}`,
-      colour: syncing ? "#F7CA3E" : (synced? "#00D983" : "#E9398D"),
-    },
-  ]
-
-  return (
-    <Card title={
-      <Typography >
-          <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Status</Trans></span>
-      </Typography>
-    }>
-      {statusItems ? (
-        <Grid spacing={4} container>
-          {statusItems.map((item) => (
-            <StatusCell item={item} key={item.label} />
-          ))}
-        </Grid>
-      ) : (
-        <Flex justifyContent="center">
-          <Loading />
-        </Flex>
-      )}
-    </Card>
-  );
-};
-
 export default function StandardWallet(props: StandardWalletProps) {
-  const id = props.wallet_id;
-  const wallets = useSelector((state: RootState) => state.wallet_state.wallets);
+  const { wallet_id } = props;
+  const dispatch = useDispatch();
+  const openDialog = useOpenDialog();
 
-  if (wallets.length > props.wallet_id) {
-    return (
-      <Flex flexDirection="column" gap={3}>
-        <StatusCard wallet_id={id} />
-        <BalanceCard wallet_id={id} />
-        <SendCard wallet_id={id} />
-        <AddressCard wallet_id={id} />
-        <WalletHistory walletId={id} />
-      </Flex>
+  async function handleDeleteUnconfirmedTransactions() {
+    const deleteConfirmed = await openDialog(
+      <ConfirmDialog
+        title={<Trans>Confirmation</Trans>}
+        confirmTitle={<Trans>Delete</Trans>}
+        confirmColor="danger"
+      >
+        <Trans>Are you sure you want to delete unconfirmed transactions?</Trans>
+      </ConfirmDialog>,
     );
+
+    // @ts-ignore
+    if (deleteConfirmed) {
+      dispatch(deleteUnconfirmedTransactions(wallet_id));
+    }
   }
 
-  return null;
+  return (
+    <Flex flexDirection="column" gap={1}>
+      <Flex gap={1} alignItems="center">
+        <Flex flexGrow={1}>
+          <Typography variant="h5" gutterBottom>
+            <Trans>Spare Wallet</Trans>
+          </Typography>
+        </Flex>
+        <More>
+          {({ onClose }) => (
+            <Box>
+              <MenuItem
+                onClick={() => {
+                  onClose();
+                  handleDeleteUnconfirmedTransactions();
+                }}
+              >
+                <ListItemIcon>
+                  <DeleteIcon />
+                </ListItemIcon>
+                <Typography variant="inherit" noWrap>
+                  <Trans>Delete Unconfirmed Transactions</Trans>
+                </Typography>
+              </MenuItem>
+            </Box>
+          )}
+        </More>
+      </Flex>
+
+      <Flex flexDirection="column" gap={2}>
+        <Flex gap={1} justifyContent="flex-end">
+          <Typography variant="body1" color="textSecondary">
+            <Trans>Wallet Status:</Trans>
+          </Typography>
+          <WalletStatus height />
+        </Flex>
+        <Flex flexDirection="column" gap={3}>
+          <WalletCards wallet_id={wallet_id} />
+          <SendCard wallet_id={wallet_id} />
+          <AddressCard wallet_id={wallet_id} />
+          <WalletHistory walletId={wallet_id} />
+        </Flex>
+      </Flex>
+    </Flex>
+  );
 }

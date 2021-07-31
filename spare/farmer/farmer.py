@@ -125,13 +125,13 @@ class Farmer:
             raise RuntimeError(error_str)
 
         # This is the farmer configuration
-        self.farmer_target_encoded = self.config["xch_target_address"]
+        self.farmer_target_encoded = self.config["spare_target_address"]
         self.farmer_target = decode_puzzle_hash(self.farmer_target_encoded)
 
         self.pool_public_keys = [G1Element.from_bytes(bytes.fromhex(pk)) for pk in self.config["pool_public_keys"]]
 
         # This is the self pooling configuration, which is only used for original self-pooled plots
-        self.pool_target_encoded = pool_config["xch_target_address"]
+        self.pool_target_encoded = pool_config["spare_target_address"]
         self.pool_target = decode_puzzle_hash(self.pool_target_encoded)
         self.pool_sks_map: Dict = {}
         for key in self.get_private_keys():
@@ -170,7 +170,7 @@ class Farmer:
     def _set_state_changed_callback(self, callback: Callable):
         self.state_changed_callback = callback
 
-    async def on_connect(self, peer: WSSpareConnection):
+    async def on_connect(self, peer: WSspareConnection):
         # Sends a handshake to the harvester
         self.state_changed("add_connection", {})
         handshake = harvester_protocol.HarvesterHandshake(
@@ -194,7 +194,7 @@ class Farmer:
             ErrorResponse(uint16(PoolErrorCode.REQUEST_FAILED.value), error_message).to_json_dict()
         )
 
-    def on_disconnect(self, connection: ws.WSSpareConnection):
+    def on_disconnect(self, connection: ws.WSspareConnection):
         self.log.info(f"peer disconnected {connection.get_peer_info()}")
         self.state_changed("close_connection", {})
 
@@ -507,11 +507,11 @@ class Farmer:
         if farmer_target_encoded is not None:
             self.farmer_target_encoded = farmer_target_encoded
             self.farmer_target = decode_puzzle_hash(farmer_target_encoded)
-            config["farmer"]["xch_target_address"] = farmer_target_encoded
+            config["farmer"]["spare_target_address"] = farmer_target_encoded
         if pool_target_encoded is not None:
             self.pool_target_encoded = pool_target_encoded
             self.pool_target = decode_puzzle_hash(pool_target_encoded)
-            config["pool"]["xch_target_address"] = pool_target_encoded
+            config["pool"]["spare_target_address"] = pool_target_encoded
         save_config(self._root_path, "config.yaml", config)
 
     async def set_payout_instructions(self, launcher_id: bytes32, payout_instructions: str):
@@ -606,7 +606,7 @@ class Farmer:
                     )
         return updated
 
-    async def get_cached_harvesters(self, connection: WSSpareConnection) -> HarvesterCacheEntry:
+    async def get_cached_harvesters(self, connection: WSspareConnection) -> HarvesterCacheEntry:
         host_cache = self.harvester_cache.get(connection.peer_host)
         if host_cache is None:
             host_cache = {}

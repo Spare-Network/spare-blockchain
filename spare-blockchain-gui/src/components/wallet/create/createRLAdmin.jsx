@@ -90,10 +90,8 @@ export const CreateRLAdminWallet = () => {
       dispatch(
         openDialog(
           <AlertDialog>
-            <Trans>
-              Please enter a valid numeric interval length
-            </Trans>
-          </AlertDialog>
+            <Trans>Please enter a valid numeric interval length</Trans>
+          </AlertDialog>,
         ),
       );
       return;
@@ -107,10 +105,8 @@ export const CreateRLAdminWallet = () => {
       dispatch(
         openDialog(
           <AlertDialog>
-            <Trans>
-              Please enter a valid numeric spendable amount
-            </Trans>
-          </AlertDialog>
+            <Trans>Please enter a valid numeric spendable amount</Trans>
+          </AlertDialog>,
         ),
       );
       return;
@@ -119,10 +115,8 @@ export const CreateRLAdminWallet = () => {
       dispatch(
         openDialog(
           <AlertDialog>
-            <Trans>
-              Please enter a valid pubkey
-            </Trans>
-          </AlertDialog>
+            <Trans>Please enter a valid pubkey</Trans>
+          </AlertDialog>,
         ),
       );
       return;
@@ -136,10 +130,8 @@ export const CreateRLAdminWallet = () => {
       dispatch(
         openDialog(
           <AlertDialog>
-            <Trans>
-              Please enter a valid initial coin amount
-            </Trans>
-          </AlertDialog>
+            <Trans>Please enter a valid initial coin amount</Trans>
+          </AlertDialog>,
         ),
       );
       return;
@@ -148,10 +140,8 @@ export const CreateRLAdminWallet = () => {
       dispatch(
         openDialog(
           <AlertDialog>
-            <Trans>
-              Please enter a valid numeric fee
-            </Trans>
-          </AlertDialog>
+            <Trans>Please enter a valid numeric fee</Trans>
+          </AlertDialog>,
         ),
       );
       return;
@@ -188,9 +178,7 @@ export const CreateRLAdminWallet = () => {
           </Box>
           <Box flexGrow={1} className={classes.title}>
             <Typography component="h6" variant="h6">
-              <Trans>
-                Create Rate Limited Admin Wallet
-              </Trans>
+              <Trans>Create Rate Limited Admin Wallet</Trans>
             </Typography>
           </Box>
         </Box>
@@ -199,16 +187,12 @@ export const CreateRLAdminWallet = () => {
         <Box display="flex">
           <Box flexGrow={6} className={custom.inputTitleLeft}>
             <Typography variant="subtitle1">
-              <Trans>
-                Spending Interval Length (number of blocks)
-              </Trans>
+              <Trans>Spending Interval Length (number of blocks)</Trans>
             </Typography>
           </Box>
           <Box flexGrow={6} className={custom.inputTitleRight}>
             <Typography variant="subtitle1">
-              <Trans>
-                Spendable Amount Per Interval
-              </Trans>
+              <Trans>Spendable Amount Per Interval</Trans>
             </Typography>
           </Box>
         </Box>
@@ -236,11 +220,7 @@ export const CreateRLAdminWallet = () => {
               inputRef={(input) => {
                 spareper_input = input;
               }}
-              label={
-                <Trans>
-                  Spendable Amount
-                </Trans>
-              }
+              label={<Trans>Spendable Amount</Trans>}
             />
           </Box>
         </Box>
@@ -249,9 +229,7 @@ export const CreateRLAdminWallet = () => {
         <Box display="flex">
           <Box flexGrow={6} className={custom.inputTitleLeft}>
             <Typography variant="subtitle1">
-              <Trans>
-                Amount For Initial Coin
-              </Trans>
+              <Trans>Amount For Initial Coin</Trans>
             </Typography>
           </Box>
           <Box flexGrow={6} className={custom.inputTitleRight}>
@@ -272,11 +250,7 @@ export const CreateRLAdminWallet = () => {
               inputRef={(input) => {
                 amount_input = input;
               }}
-              label={
-                <Trans>
-                  Initial Amount
-                </Trans>
-              }
+              label={<Trans>Initial Amount</Trans>}
             />
           </Box>
           <Box flexGrow={6}>

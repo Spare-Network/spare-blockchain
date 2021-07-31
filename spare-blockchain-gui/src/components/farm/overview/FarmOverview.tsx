@@ -1,5 +1,11 @@
 import { Trans } from '@lingui/macro';
-import { Box, CircularProgress, ListItemIcon, MenuItem, Typography } from '@material-ui/core';
+import {
+  Box,
+  CircularProgress,
+  ListItemIcon,
+  MenuItem,
+  Typography,
+} from '@material-ui/core';
 import { Settings as SettingsIcon } from '@material-ui/icons';
 import { Flex, More } from '@spare/core';
 import React from 'react';
@@ -20,23 +26,35 @@ export default function FarmOverview() {
 
   function handleManageFarmingRewards() {
     // @ts-ignore
-    openDialog((
-      <FarmManageFarmingRewards />
-    ));
+    openDialog(<FarmManageFarmingRewards />);
   }
 
   return (
     <>
       <Flex gap={2} alignItems="center">
         <Flex flexGrow={1}>
-            <Typography gutterBottom>
-              <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Your Farm Overview</Trans></span>
-            </Typography>
+          <Typography gutterBottom>
+            <span
+              style={{
+                color: '#E9398D',
+                fontSize: 24,
+                fontWeight: 400,
+                fontFamily: 'Josefin',
+              }}
+            >
+              <Trans>Your Farm Overview</Trans>
+            </span>
+          </Typography>
         </Flex>
         <More>
           {({ onClose }) => (
             <Box>
-              <MenuItem onClick={() => { onClose(); handleManageFarmingRewards(); }}>
+              <MenuItem
+                onClick={() => {
+                  onClose();
+                  handleManageFarmingRewards();
+                }}
+              >
                 <ListItemIcon>
                   <SettingsIcon fontSize="small" />
                 </ListItemIcon>
@@ -51,13 +69,11 @@ export default function FarmOverview() {
 
       {loading ? (
         <CircularProgress />
-      ) : (hasPlots ? (
+      ) : hasPlots ? (
         <FarmOverviewCards />
       ) : (
         <FarmOverviewHero />
-      ))}
-
-      
+      )}
     </>
   );
 }

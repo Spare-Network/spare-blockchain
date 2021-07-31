@@ -1,33 +1,28 @@
-import { AppBar, Box, Divider, Drawer, Toolbar } from '@material-ui/core';
+import { AppBar, Divider, Drawer, Toolbar } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
-import {
-    Flex,
-    Logo,
-    LocaleToggle,
-    ToolbarSpacing
-} from '@spare/core';
+import { Flex, LocaleToggle, Logo, ToolbarSpacing } from '@spare/core';
 import React from 'react';
 import { Route, Switch, useRouteMatch } from 'react-router';
 import styled from 'styled-components';
+import { defaultLocale, locales } from '../../config/locales';
 import BackupCreate from '../backup/BackupCreate';
 import Block from '../block/Block';
 import Farm from '../farm/Farm';
 import FullNode from '../fullNode/FullNode';
 import Plot from '../plot/Plot';
+import Pool from '../pool/Pool';
 import TradeManager from '../trading/TradeManager';
 import Wallets from '../wallet/Wallets';
 import DashboardSideBar from './DashboardSideBar';
 import { DashboardTitleTarget } from './DashboardTitle';
-import { defaultLocale, locales } from '../../config/locales';
 
-
-
-const useStyles = makeStyles((theme: Theme) => createStyles({
-  paper: {
-    backgroundColor: "transparent"
-  }
-}));
-
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    paper: {
+      backgroundColor: 'transparent',
+    },
+  }),
+);
 
 const StyledRoot = styled(Flex)`
   height: 100%;
@@ -40,12 +35,12 @@ const StyledAppBar = styled(AppBar)`
     theme.palette.type === 'dark' ? 'transparent' : 'white'};
   width: ${({ theme }) => `calc(100% - ${theme.drawer.width})`};
   margin-left: ${({ theme }) => theme.drawer.width};
-  z-index: ${({ theme}) => theme.zIndex.drawer + 1};
+  z-index: ${({ theme }) => theme.zIndex.drawer + 1};
   padding-top: 50px;
 `;
 
 const StyledDrawer = styled(Drawer)`
-  z-index: ${({ theme}) => theme.zIndex.drawer + 2};
+  z-index: ${({ theme }) => theme.zIndex.drawer + 2};
   width: ${({ theme }) => theme.drawer.width};
   flex-shrink: 0;
   background-color: transparent;
@@ -54,7 +49,7 @@ const StyledDrawer = styled(Drawer)`
   }
 `;
 
-const StyledBody = styled(Box)`
+const StyledBody = styled(Flex)`
   min-width: 0;
 `;
 
@@ -81,14 +76,14 @@ export default function Dashboard() {
           <LocaleToggle locales={locales} defaultLocale={defaultLocale} />
         </Toolbar>
       </StyledAppBar>
-      <StyledDrawer variant="permanent"  classes={{paper: classes.paper}}>
+      <StyledDrawer variant="permanent" classes={{ paper: classes.paper }}>
         <StyledBrandWrapper>
-          <Logo  />
+          <Logo />
         </StyledBrandWrapper>
         <Divider />
         <DashboardSideBar />
       </StyledDrawer>
-      <StyledBody flexGrow={1}>
+      <StyledBody flexDirection="column" flexGrow={1}>
         <ToolbarSpacing />
         <Switch>
           <Route path={`${path}`} exact>
@@ -105,6 +100,9 @@ export default function Dashboard() {
           </Route>
           <Route path={`${path}/farm`}>
             <Farm />
+          </Route>
+          <Route path={`${path}/pool`}>
+            <Pool />
           </Route>
           <Route path={`${path}/trade`}>
             <TradeManager />

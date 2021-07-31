@@ -1,7 +1,15 @@
 import { Trans } from '@lingui/macro';
 import { Button, Tooltip, Typography } from '@material-ui/core';
 import { Delete as DeleteIcon } from '@material-ui/icons';
-import { Card, Flex, FormatBytes, FormatLargeNumber, IconButton, Loading, Table } from '@spare/core';
+import {
+  Card,
+  Flex,
+  FormatBytes,
+  FormatLargeNumber,
+  IconButton,
+  Loading,
+  Table,
+} from '@spare/core';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
@@ -42,9 +50,19 @@ const cols = [
     field(row: Connection) {
       return (
         <>
-          <FormatBytes value={row.bytes_written} unit="MiB" removeUnit fixedDecimals />
+          <FormatBytes
+            value={row.bytes_written}
+            unit="MiB"
+            removeUnit
+            fixedDecimals
+          />
           /
-          <FormatBytes value={row.bytes_read} unit="MiB" removeUnit fixedDecimals />
+          <FormatBytes
+            value={row.bytes_read}
+            unit="MiB"
+            removeUnit
+            fixedDecimals
+          />
         </>
       );
     },
@@ -79,37 +97,42 @@ const cols = [
 
 export default function Connections() {
   const openDialog = useOpenDialog();
-  const connections = useSelector((state: RootState) => state.full_node_state.connections);
+  const connections = useSelector(
+    (state: RootState) => state.full_node_state.connections,
+  );
 
   function handleAddPeer() {
-    openDialog((
-      <FullNodeAddConnection />
-    ));
+    openDialog(<FullNodeAddConnection />);
   }
 
   return (
     <Card
       title={
-        <Typography >
-        <span style={ { color: "#E9398D", fontSize: 24, fontWeight:400, fontFamily:"Josefin" }}><Trans>Connections</Trans></span>
+        <Typography>
+          <span
+            style={{
+              color: '#E9398D',
+              fontSize: 24,
+              fontWeight: 400,
+              fontFamily: 'Josefin',
+            }}
+          >
+            <Trans>Connections</Trans>
+          </span>
         </Typography>
       }
-      action={(
+      action={
         <Flex>
           <Button onClick={handleAddPeer} variant="contained">
-            <Trans>
-              Connect to other peers
-            </Trans>
+            <Trans>Connect to other peers</Trans>
           </Button>
         </Flex>
-      )}
+      }
     >
       {connections ? (
         <Table cols={cols} rows={connections} />
       ) : (
-        <Flex justifyContent="center">
-          <Loading />
-        </Flex>
+        <Loading center />
       )}
     </Card>
   );

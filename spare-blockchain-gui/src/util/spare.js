@@ -93,6 +93,12 @@ export const spare_to_graviton = (spare) => {
     .value();
 };
 
+export const spare_to_graviton_string = (spare) => {
+  return spare_formatter(Number.parseFloat(Number(spare)), 'spare')
+    .to('graviton')
+    .toString();
+};
+
 export const graviton_to_spare_string = (graviton) => {
   return spare_formatter(Number(graviton), 'graviton').to('spare').toString();
 };

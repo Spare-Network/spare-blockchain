@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro';
 import {
-    Box, Button, Typography
+  Box, Button, Typography
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -8,8 +8,8 @@ import { Dropzone } from '@spare/core';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import {
-    changeCreateWallet,
-    CREATE_DID_WALLET_OPTIONS
+  changeCreateWallet,
+  CREATE_DID_WALLET_OPTIONS
 } from '../../../modules/createWallet';
 import { recover_did_action } from '../../../modules/message';
 
@@ -254,12 +254,12 @@ export const RecoverDIDWallet = () => {
     const recovery_file_path = acceptedFiles[0].path;
     const recovery_name = recovery_file_path.replace(/^.*[\\/]/, '');
     dispatch(recover_did_action(recovery_file_path));
-  };
+  }
 
   function goBack() {
     dispatch(changeCreateWallet(CREATE_DID_WALLET_OPTIONS));
   }
-  
+
   return (
     <div>
       <div className={classes.cardTitle}>
@@ -277,9 +277,7 @@ export const RecoverDIDWallet = () => {
         </Box>
       </div>
       <Dropzone onDrop={handleDrop}>
-        <Trans>
-          Drag and drop offer file
-        </Trans>
+        <Trans>Drag and drop offer file</Trans>
       </Dropzone>
     </div>
   );

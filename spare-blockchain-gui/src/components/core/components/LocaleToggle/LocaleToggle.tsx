@@ -8,10 +8,12 @@ import useOpenExternal from '../../../../hooks/useOpenExternal';
 
 type Props = {
   defaultLocale: string;
-  locales: [{
-    locale: string;
-    label: string;
-  }];
+  locales: [
+    {
+      locale: string;
+      label: string;
+    },
+  ];
 };
 
 export default function LocaleToggle(props: Props) {
@@ -44,7 +46,7 @@ export default function LocaleToggle(props: Props) {
   }
 
   const localeData = useMemo(
-    () => locales.find((item)=> item.locale === currentLocale), 
+    () => locales.find((item) => item.locale === currentLocale),
     [currentLocale, locales],
   );
 

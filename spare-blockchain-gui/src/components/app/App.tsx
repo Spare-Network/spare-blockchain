@@ -17,6 +17,8 @@ import AppModalDialogs from './AppModalDialogs';
 import AppRouter from './AppRouter';
 import Fonts from './fonts/Fonts';
 
+
+
 const GlobalStyle = createGlobalStyle`
   html,
   body,
@@ -44,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
 export default function App() {
   const { value: darkMode } = useDarkMode();
   const [locale] = useLocale(defaultLocale);
-  
+
   const theme = useMemo(() => {
     const material = getMaterialLocale(locale);
     return darkMode
@@ -56,7 +58,7 @@ export default function App() {
   let daemon_uri = null;
   if (isElectron()) {
     const electron = window.require('electron');
-    const { remote : r } = electron;
+    const { remote: r } = electron;
     daemon_uri = r.getGlobal('daemon_rpc_ws');
   }
 

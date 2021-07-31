@@ -143,9 +143,7 @@ export const TradeTable = (props) => {
         <TableHeader />
         <Paper className={classes.empty} style={{ position: 'relative' }}>
           <div className={classes.centerText}>
-            <Trans>
-              Trades will show up here
-            </Trans>
+            <Trans>Trades will show up here</Trans>
           </div>
         </Paper>
       </div>
@@ -181,24 +179,23 @@ const getDetailItems = (trade) => {
     label: <Trans>Created At:</Trans>,
     value: unix_to_short_date(trade.created_at_time),
     colour: 'black',
-    tooltip: (
-      <Trans>
-        This trade was created at this time
-      </Trans>
-    ),
+    tooltip: <Trans>This trade was created at this time</Trans>,
   };
   let confirmed_string = '';
   const confirmed = trade.confirmed_at_index;
-  confirmed_string = confirmed === 0 ? (<Trans>Not confirmed yet</Trans>) : trade.confirmed_at_index;
+  confirmed_string =
+    confirmed === 0 ? (
+      <Trans>Not confirmed yet</Trans>
+    ) : (
+      trade.confirmed_at_index
+    );
 
   const executed_at_item = {
     label: <Trans>Confirmed at block:</Trans>,
     value: confirmed_string,
     colour: 'black',
     tooltip: (
-      <Trans>
-        This trade was included on blockchain at this block height
-      </Trans>
+      <Trans>This trade was included on blockchain at this block height</Trans>
     ),
   };
   let our = '';
@@ -207,27 +204,24 @@ const getDetailItems = (trade) => {
     label: <Trans>Created by us:</Trans>,
     value: our,
     colour: 'black',
-    tooltip: (
-      <Trans>
-        Indicated if this offer was created by us
-      </Trans>
-    ),
+    tooltip: <Trans>Indicated if this offer was created by us</Trans>,
   };
 
   let accepted = '';
   const accepted_time = trade.accepted_at_time;
 
-  accepted = accepted_time === null ? <Trans>Not accepted yet</Trans> : unix_to_short_date(trade.accepted_at_time);
+  accepted =
+    accepted_time === null ? (
+      <Trans>Not accepted yet</Trans>
+    ) : (
+      unix_to_short_date(trade.accepted_at_time)
+    );
 
   const accepted_at_time = {
     label: <Trans>Accepted at time:</Trans>,
     value: accepted,
     colour: 'black',
-    tooltip: (
-      <Trans>
-        Indicated what time this offer was accepted
-      </Trans>
-    ),
+    tooltip: <Trans>Indicated what time this offer was accepted</Trans>,
   };
 
   detail_items.push(trade_id_item);
@@ -284,11 +278,7 @@ const OfferRow = (props) => {
   }
 
   const side =
-    amount * multiplier < 0 ? (
-      <Trans>Sell</Trans>
-    ) : (
-      <Trans>Buy</Trans>
-    );
+    amount * multiplier < 0 ? <Trans>Sell</Trans> : <Trans>Buy</Trans>;
 
   return (
     <Box display="flex" style={{ minWidth: '100%' }}>
@@ -385,7 +375,7 @@ export const TradeDetail = () => {
               <Button
                 onClick={secure_cancel}
                 className={classes.accept}
-                variant="contained"
+                variant="outlined"
                 color="primary"
                 style={visible}
               >
@@ -413,9 +403,7 @@ export const TradeDetail = () => {
 export const PendingTrades = () => {
   const trades = useSelector((state) => state.trade_state.pending_trades);
   return (
-    <Card
-      title={<Trans>Offers Created</Trans>}
-    >
+    <Card title={<Trans>Offers Created</Trans>}>
       <TradeTable trades={trades} />
     </Card>
   );
@@ -424,9 +412,7 @@ export const PendingTrades = () => {
 export const TradingHistory = () => {
   const trades = useSelector((state) => state.trade_state.trade_history);
   return (
-    <Card
-      title={<Trans>Trading History</Trans>}
-    >
+    <Card title={<Trans>Trading History</Trans>}>
       <TradeTable trades={trades} />
     </Card>
   );
@@ -439,9 +425,7 @@ export const TradingOverview = () => {
   dispatch(get_all_trades());
 
   if (showingTrade === true) {
-    return (
-      <TradeDetail />
-    );
+    return <TradeDetail />;
   }
   return (
     <Flex flexDirection="column" gap={3}>

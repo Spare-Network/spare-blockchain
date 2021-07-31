@@ -13,7 +13,8 @@ export default function FarmCardBlockRewards() {
   );
 
   const farmerRewardAmount = useSelector(
-    (state: RootState) => state.wallet_state.farmed_amount?.farmer_reward_amount,
+    (state: RootState) =>
+      state.wallet_state.farmed_amount?.farmer_reward_amount,
   );
 
   const poolRewardAmount = useSelector(

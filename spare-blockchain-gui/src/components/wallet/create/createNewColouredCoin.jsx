@@ -59,10 +59,8 @@ export const CreateNewCCWallet = () => {
       dispatch(
         openDialog(
           <AlertDialog>
-            <Trans>
-              Please enter a valid numeric amount
-            </Trans>
-          </AlertDialog>
+            <Trans>Please enter a valid numeric amount</Trans>
+          </AlertDialog>,
         ),
       );
       return;
@@ -71,10 +69,8 @@ export const CreateNewCCWallet = () => {
       dispatch(
         openDialog(
           <AlertDialog>
-            <Trans>
-              Please enter a valid numeric fee
-            </Trans>
-          </AlertDialog>
+            <Trans>Please enter a valid numeric fee</Trans>
+          </AlertDialog>,
         ),
       );
       return;
@@ -96,9 +92,7 @@ export const CreateNewCCWallet = () => {
           </Box>
           <Box flexGrow={1} className={classes.title}>
             <Typography component="h6" variant="h6">
-              <Trans>
-                Generate New Colour
-              </Trans>
+              <Trans>Generate New Colour</Trans>
             </Typography>
           </Box>
         </Box>
