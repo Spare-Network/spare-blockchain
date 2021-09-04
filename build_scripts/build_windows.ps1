@@ -36,7 +36,7 @@ pip install setuptools_scm
 Write-Output "   ---"
 Write-Output "Get SPARE_INSTALLER_VERSION"
 # The environment variable SPARE_INSTALLER_VERSION needs to be defined
-$env:SPARE_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
+$env:SPARE_INSTALLER_VERSION = '0.1.1' # python .\build_scripts\installer-version.py -win
 
 if (-not (Test-Path env:SPARE_INSTALLER_VERSION)) {
   $env:SPARE_INSTALLER_VERSION = '0.0.0'
@@ -48,7 +48,7 @@ Write-Output "   ---"
 Write-Output "   ---"
 Write-Output "Build spare-blockchain wheels"
 Write-Output "   ---"
-pip wheel --use-pep517 --extra-index-url https://pypi.spare.net/simple/ -f . --wheel-dir=.\build_scripts\win_build .
+pip wheel --use-pep517 --extra-index-url https://pypi.chia.net/simple/ -f . --wheel-dir=.\build_scripts\win_build .
 
 Write-Output "   ---"
 Write-Output "Install spare-blockchain wheels into venv with pip"

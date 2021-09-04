@@ -55,9 +55,9 @@ msgstr "Prihvati"
 msgid "Accepted at time:"
 msgstr "Prihvaćeno u:"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 #: src/components/plot/PlotsFailed.tsx:19
 #: src/components/plot/PlotsNotFound.tsx:19
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 msgid "Action"
 msgstr "Radnja"
 
@@ -73,10 +73,10 @@ msgid "Add"
 msgstr "Dodaj"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:88
+#: src/components/plot/overview/PlotOverviewHero.tsx:73
 #: src/components/plot/PlotAddDirectoryDialog.tsx:68
 #: src/components/plot/PlotHeader.tsx:63
 #: src/components/plot/PlotHeader.tsx:91
-#: src/components/plot/overview/PlotOverviewHero.tsx:73
 msgid "Add Plot Directory"
 msgstr "Dodaj direktorij Zemljišta"
 
@@ -128,10 +128,10 @@ msgstr "Adresa / Zagonetni hash"
 #: src/components/core/components/Amount/Amount.tsx:96
 #: src/components/trading/CreateOffer.jsx:191
 #: src/components/trading/TradesTable.tsx:20
-#: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
 #: src/components/wallet/standard/WalletStandard.tsx:517
+#: src/components/wallet/WalletHistory.tsx:62
 msgid "Amount"
 msgstr "Iznos"
 
@@ -409,8 +409,8 @@ msgid "Connect to pool"
 msgstr ""
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
-#: src/components/fullNode/FullNode.jsx:157
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
+#: src/components/fullNode/FullNode.jsx:157
 msgid "Connected"
 msgstr "Povezano"
 
@@ -418,8 +418,8 @@ msgstr "Povezano"
 msgid "Connecting to wallet"
 msgstr "Spajam se na novčanik"
 
-#: src/components/fullNode/FullNode.jsx:155
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:15
+#: src/components/fullNode/FullNode.jsx:155
 msgid "Connection Status"
 msgstr "Stanje veze"
 
@@ -641,8 +641,8 @@ msgid "Developer Tools"
 msgstr "Alati za razvojne programere"
 
 #: src/components/block/Block.jsx:206
-#: src/components/fullNode/FullNode.jsx:192
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:20
+#: src/components/fullNode/FullNode.jsx:192
 msgid "Difficulty"
 msgstr "Kompleksnost"
 
@@ -702,10 +702,10 @@ msgstr ""
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Spare wallet."
 msgstr "Unesi 24 mnemonic riječi koje su kreirane prilikom kreiranja novčanika kako bi mogao vratiti postojeći Spare novčanik."
 
-#: src/components/farm/FarmerStatus.tsx:21
-#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
+#: src/components/farm/FarmerStatus.tsx:21
+#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -737,8 +737,8 @@ msgstr "Procijenjeno Vrijeme za Pobjedu"
 msgid "Estimated network space"
 msgstr "Estimated network space"
 
-#: src/components/fullNode/FullNode.jsx:214
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:22
+#: src/components/fullNode/FullNode.jsx:214
 msgid "Estimated sum of all the plotted disk space of all farmers in the network"
 msgstr "Procijenjen zbroj svih uzgojenih diskovnih prostora od svih farmera na mreži"
 
@@ -803,9 +803,9 @@ msgstr "Farmer nije pokrenut"
 #~ msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 #~ msgstr "Farmeri zarađuju nagrade bloka i naknade transakcije tako da dodjeljuju svoj diskovni prostor mreži kao pomoć u osiguranju transakcija. Ovdje će biti tvoja farma kada dodaš zemljište. <0>Saznaj više</0>"
 
+#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/farm/Farm.tsx:23
 #: src/components/farm/FarmerStatus.tsx:18
-#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Uzgajam"
@@ -822,13 +822,13 @@ msgstr "Stanje uzgoja"
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:153
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:147
 #: src/components/pool/PoolInfo.tsx:17
-#: src/components/wallet/WalletHistory.tsx:66
 #: src/components/wallet/create/createExistingColouredCoin.jsx:116
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
 #: src/components/wallet/standard/WalletStandard.tsx:528
+#: src/components/wallet/WalletHistory.tsx:66
 msgid "Fee"
 msgstr "Naknada"
 
@@ -857,9 +857,9 @@ msgstr "Iznos naknada"
 msgid "File"
 msgstr "Datoteka"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 msgid "Filename"
 msgstr "Ime datoteke"
 
@@ -1179,8 +1179,8 @@ msgstr "Više memorije povećava brzinu"
 msgid "My Pubkey"
 msgstr "Moj Pubkey"
 
-#: src/components/fullNode/FullNode.jsx:174
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:19
+#: src/components/fullNode/FullNode.jsx:174
 msgid "Network Name"
 msgstr "Ime mreže"
 
@@ -1250,16 +1250,16 @@ msgstr ""
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Niti jedno tvoje zemljište još nije prošlo filter zemljišta."
 
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:23
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:368
 msgid "Not Available"
 msgstr "Nije dostupno"
 
-#: src/components/fullNode/FullNode.jsx:136
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
+#: src/components/fullNode/FullNode.jsx:136
 #: src/components/wallet/WalletStatus.tsx:28
 msgid "Not Synced"
 msgstr "Nije sinkronizirano"
@@ -1273,9 +1273,9 @@ msgid "Not confirmed yet"
 msgstr "Još nije potvrđeno"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 #: src/components/fullNode/FullNode.jsx:159
 #: src/components/fullNode/FullNode.jsx:166
-#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 msgid "Not connected"
 msgstr "Nije povezano"
 
@@ -1325,8 +1325,8 @@ msgstr "Odlazni"
 msgid "Payout Address"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:180
 #: src/components/fullNode/card/FullNodeCardPeakHeight.tsx:20
+#: src/components/fullNode/FullNode.jsx:180
 msgid "Peak Height"
 msgstr "Najviša Visina"
 
@@ -1334,8 +1334,8 @@ msgstr "Najviša Visina"
 #~ msgid "Peak Sub-block Height"
 #~ msgstr "Peak Sub-block Height"
 
-#: src/components/fullNode/FullNode.jsx:185
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:23
+#: src/components/fullNode/FullNode.jsx:185
 msgid "Peak Time"
 msgstr "Zadnje vrijeme"
 
@@ -1973,20 +1973,20 @@ msgstr ""
 msgid "State"
 msgstr "Stanje"
 
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/fullNode/FullNode.jsx:117
 #: src/components/fullNode/FullNode.jsx:135
 #: src/components/fullNode/FullNode.jsx:143
 #: src/components/fullNode/FullNode.jsx:165
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:115
 #: src/components/plotNFT/PlotNFTCard.tsx:145
 #: src/components/pool/PoolOverview.tsx:44
 #: src/components/trading/TradingOverview.jsx:121
 #: src/components/wallet/WalletHistory.tsx:55
-#: src/components/wallet/WalletStatusCard.tsx:22
 #: src/components/wallet/Wallets.tsx:121
+#: src/components/wallet/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "Stanje"
 
@@ -2026,21 +2026,21 @@ msgstr "Stanje:"
 msgid "Submit"
 msgstr "Poslano"
 
-#: src/components/fullNode/FullNode.jsx:144
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:43
+#: src/components/fullNode/FullNode.jsx:144
 #: src/components/wallet/WalletStatus.tsx:33
 msgid "Synced"
 msgstr "Sinkronizirano"
 
-#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/farm/card/FarmCardStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/wallet/WalletStatus.tsx:38
 msgid "Syncing"
 msgstr "Sinkroniziram"
 
-#: src/components/fullNode/FullNode.jsx:119
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:21
+#: src/components/fullNode/FullNode.jsx:119
 msgid "Syncing <0/>/<1/>"
 msgstr ""
 
@@ -2093,13 +2093,13 @@ msgstr "Puni čvor na koji je tvoj žetelac spojen naveden je dolje niže. <0>Sa
 msgid "The minimum required size for mainnet is k=32"
 msgstr "Minimalna neophodna veličina za mainnet je k=32"
 
-#: src/components/fullNode/FullNode.jsx:138
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
+#: src/components/fullNode/FullNode.jsx:138
 msgid "The node is not synced"
 msgstr "Čvor nije sinkroniziran"
 
-#: src/components/fullNode/FullNode.jsx:126
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:29
+#: src/components/fullNode/FullNode.jsx:126
 msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
 msgstr "Čvor se sinkronizira, što znači da preuzima blokove sa drugih čvorova, kako bi stigao krajnji blok u lancu"
 
@@ -2178,8 +2178,8 @@ msgstr "Ovo je promjena na čekanju, što su novčići koje si poslao sam sebi, 
 msgid "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
 msgstr "Ovo je ukupan zbroj ulaznih i izlaznih transakcija na čekanju (koje još nisu uključene u blockchain). Ovo ne uključuje nagrade uzgoja."
 
-#: src/components/fullNode/FullNode.jsx:187
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:24
+#: src/components/fullNode/FullNode.jsx:187
 msgid "This is the time of the latest peak sub block."
 msgstr "Ovo je vrijeme najnovijeg pod bloka."
 
@@ -2209,8 +2209,8 @@ msgstr ""
 msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:147
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:46
+#: src/components/fullNode/FullNode.jsx:147
 msgid "This node is fully caught up and validating the network"
 msgstr "Ovaj čvor je sasvim sinkroniziran i provjerava mrežu"
 
@@ -2264,8 +2264,8 @@ msgstr "Za"
 msgid "Total Balance"
 msgstr "Ukupno stanje"
 
-#: src/components/fullNode/FullNode.jsx:205
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:205
 msgid "Total Iterations"
 msgstr "Ukupno Ponavljanja"
 
@@ -2289,8 +2289,8 @@ msgstr "Ukupna veličina zemljišta"
 msgid "Total VDF Iterations"
 msgstr "Ukupno VDF ponavljanja"
 
-#: src/components/fullNode/FullNode.jsx:207
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:22
+#: src/components/fullNode/FullNode.jsx:207
 msgid "Total iterations since the start of the blockchain"
 msgstr "Ukupni ponavljanja od početka blockchaina"
 
@@ -2364,8 +2364,8 @@ msgstr ""
 msgid "User Pubkey"
 msgstr "Korisnički Pubkey"
 
-#: src/components/fullNode/FullNode.jsx:199
 #: src/components/fullNode/card/FullNodeCardVDFSubSlotIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:199
 msgid "VDF Sub Slot Iterations"
 msgstr "VDF Pod Slot Ponavljanja"
 
@@ -2616,13 +2616,13 @@ msgstr "[Greška13] Nema dozvole. Pokušavaš pristupiti datoteci/direktoriju be
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[Error 22] Datoteka nije pronađena. Vrlo vjerojatno jedno od tvojih zemljišta u config.yaml datoteci ima problem."
 
-#: src/components/wallet/WalletStatusCard.tsx:41
 #: src/components/wallet/Wallets.tsx:146
+#: src/components/wallet/WalletStatusCard.tsx:41
 msgid "connections:"
 msgstr "konekcije:"
 
-#: src/components/wallet/WalletStatusCard.tsx:33
 #: src/components/wallet/Wallets.tsx:138
+#: src/components/wallet/WalletStatusCard.tsx:33
 msgid "height:"
 msgstr "visina:"
 
@@ -2634,18 +2634,18 @@ msgstr "nije sinkronizirano"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
-#: src/components/wallet/WalletStatusCard.tsx:27
 #: src/components/wallet/Wallets.tsx:126
+#: src/components/wallet/WalletStatusCard.tsx:27
 msgid "status:"
 msgstr "stanje:"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:131
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "synced"
 msgstr "sinkronizirano"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:130
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "syncing"
 msgstr "sinkronizacija"
 

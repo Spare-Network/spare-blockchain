@@ -55,9 +55,9 @@ msgstr "Yarr"
 msgid "Accepted at time:"
 msgstr "Let through at time:"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 #: src/components/plot/PlotsFailed.tsx:19
 #: src/components/plot/PlotsNotFound.tsx:19
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 msgid "Action"
 msgstr "Order"
 
@@ -73,10 +73,10 @@ msgid "Add"
 msgstr "Add"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:88
+#: src/components/plot/overview/PlotOverviewHero.tsx:73
 #: src/components/plot/PlotAddDirectoryDialog.tsx:68
 #: src/components/plot/PlotHeader.tsx:63
 #: src/components/plot/PlotHeader.tsx:91
-#: src/components/plot/overview/PlotOverviewHero.tsx:73
 msgid "Add Plot Directory"
 msgstr "Add Crew Room"
 
@@ -128,10 +128,10 @@ msgstr "Coordinates / Puzzle hash"
 #: src/components/core/components/Amount/Amount.tsx:96
 #: src/components/trading/CreateOffer.jsx:191
 #: src/components/trading/TradesTable.tsx:20
-#: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
 #: src/components/wallet/standard/WalletStandard.tsx:517
+#: src/components/wallet/WalletHistory.tsx:62
 msgid "Amount"
 msgstr "Amount"
 
@@ -409,8 +409,8 @@ msgid "Connect to pool"
 msgstr "Signal da fleet"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
-#: src/components/fullNode/FullNode.jsx:157
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
+#: src/components/fullNode/FullNode.jsx:157
 msgid "Connected"
 msgstr "Natter'd wit' me hearties jus' now"
 
@@ -418,8 +418,8 @@ msgstr "Natter'd wit' me hearties jus' now"
 msgid "Connecting to wallet"
 msgstr "Lookin' fer treasure chest"
 
-#: src/components/fullNode/FullNode.jsx:155
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:15
+#: src/components/fullNode/FullNode.jsx:155
 msgid "Connection Status"
 msgstr "Contact t' other Capt'ns"
 
@@ -641,8 +641,8 @@ msgid "Developer Tools"
 msgstr "Builder Tools"
 
 #: src/components/block/Block.jsx:206
-#: src/components/fullNode/FullNode.jsx:192
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:20
+#: src/components/fullNode/FullNode.jsx:192
 msgid "Difficulty"
 msgstr "Pirate-huntin' fleets"
 
@@ -702,10 +702,10 @@ msgstr ""
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Spare wallet."
 msgstr "Give the 24 word mnemonic that ye scribbled down in order t' restore yer Spare treasure chest."
 
-#: src/components/farm/FarmerStatus.tsx:21
-#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
+#: src/components/farm/FarmerStatus.tsx:21
+#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -737,8 +737,8 @@ msgstr "Fortune Teller's Next Prize Prophecy"
 msgid "Estimated network space"
 msgstr "Estimated network space"
 
-#: src/components/fullNode/FullNode.jsx:214
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:22
+#: src/components/fullNode/FullNode.jsx:214
 msgid "Estimated sum of all the plotted disk space of all farmers in the network"
 msgstr "Guessed strength of all pirates on the seas"
 
@@ -803,9 +803,9 @@ msgstr "Plunderer nah plunderin'"
 #~ msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 #~ msgstr "Plunderers get booty 'n transaction fees by givin' space t' the ocean (t' \"help secure transactions\"). 'tis where yer plunderer will be once ye add a crewdog. <0>Look fer more</0>"
 
+#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/farm/Farm.tsx:23
 #: src/components/farm/FarmerStatus.tsx:18
-#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Under Full Sail"
@@ -822,13 +822,13 @@ msgstr "State o' Lootin' Trip"
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:153
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:147
 #: src/components/pool/PoolInfo.tsx:17
-#: src/components/wallet/WalletHistory.tsx:66
 #: src/components/wallet/create/createExistingColouredCoin.jsx:116
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
 #: src/components/wallet/standard/WalletStandard.tsx:528
+#: src/components/wallet/WalletHistory.tsx:66
 msgid "Fee"
 msgstr "Fee"
 
@@ -857,9 +857,9 @@ msgstr "Fees Amount"
 msgid "File"
 msgstr "File"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 msgid "Filename"
 msgstr "Filename"
 
@@ -1179,8 +1179,8 @@ msgstr "More memory makes it wee faster"
 msgid "My Pubkey"
 msgstr "My Pubkey"
 
-#: src/components/fullNode/FullNode.jsx:174
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:19
+#: src/components/fullNode/FullNode.jsx:174
 msgid "Network Name"
 msgstr "Ocean"
 
@@ -1250,16 +1250,16 @@ msgstr ""
 msgid "None of your plots have passed the plot filter yet."
 msgstr "None of your barrages has hit a ship."
 
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:23
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:368
 msgid "Not Available"
 msgstr "Nothin' 'ere"
 
-#: src/components/fullNode/FullNode.jsx:136
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
+#: src/components/fullNode/FullNode.jsx:136
 #: src/components/wallet/WalletStatus.tsx:28
 msgid "Not Synced"
 msgstr "Not Over the Horizon Yet"
@@ -1273,9 +1273,9 @@ msgid "Not confirmed yet"
 msgstr "Not yet let through"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 #: src/components/fullNode/FullNode.jsx:159
 #: src/components/fullNode/FullNode.jsx:166
-#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 msgid "Not connected"
 msgstr "Arrgh, can see naught in this fog"
 
@@ -1325,8 +1325,8 @@ msgstr "Goin' Out"
 msgid "Payout Address"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:180
 #: src/components/fullNode/card/FullNodeCardPeakHeight.tsx:20
+#: src/components/fullNode/FullNode.jsx:180
 msgid "Peak Height"
 msgstr "Ships taken all o'er the seas"
 
@@ -1334,8 +1334,8 @@ msgstr "Ships taken all o'er the seas"
 #~ msgid "Peak Sub-block Height"
 #~ msgstr "Peak Sub-block Height"
 
-#: src/components/fullNode/FullNode.jsx:185
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:23
+#: src/components/fullNode/FullNode.jsx:185
 msgid "Peak Time"
 msgstr "Time o' last lucky boardin'"
 
@@ -1973,20 +1973,20 @@ msgstr ""
 msgid "State"
 msgstr "State"
 
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/fullNode/FullNode.jsx:117
 #: src/components/fullNode/FullNode.jsx:135
 #: src/components/fullNode/FullNode.jsx:143
 #: src/components/fullNode/FullNode.jsx:165
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:115
 #: src/components/plotNFT/PlotNFTCard.tsx:145
 #: src/components/pool/PoolOverview.tsx:44
 #: src/components/trading/TradingOverview.jsx:121
 #: src/components/wallet/WalletHistory.tsx:55
-#: src/components/wallet/WalletStatusCard.tsx:22
 #: src/components/wallet/Wallets.tsx:121
+#: src/components/wallet/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "State o' t'ings"
 
@@ -2026,21 +2026,21 @@ msgstr "State o' t'ings:"
 msgid "Submit"
 msgstr "Go Ahead"
 
-#: src/components/fullNode/FullNode.jsx:144
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:43
+#: src/components/fullNode/FullNode.jsx:144
 #: src/components/wallet/WalletStatus.tsx:33
 msgid "Synced"
 msgstr "Everythin' jolly"
 
-#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/farm/card/FarmCardStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/wallet/WalletStatus.tsx:38
 msgid "Syncing"
 msgstr "Catchin' up wit' other Capt'ns"
 
-#: src/components/fullNode/FullNode.jsx:119
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:21
+#: src/components/fullNode/FullNode.jsx:119
 msgid "Syncing <0/>/<1/>"
 msgstr "Pillagin' <0/>/<1/>"
 
@@ -2093,13 +2093,13 @@ msgstr "The Capt'n that yer Plunderer be connected t' be below. <0>Look fer more
 msgid "The minimum required size for mainnet is k=32"
 msgstr "Minimum size fer mainnet be k=32"
 
-#: src/components/fullNode/FullNode.jsx:138
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
+#: src/components/fullNode/FullNode.jsx:138
 msgid "The node is not synced"
 msgstr "The Capt'n be three sheets to the wind"
 
-#: src/components/fullNode/FullNode.jsx:126
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:29
+#: src/components/fullNode/FullNode.jsx:126
 msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
 msgstr "The capt'n be collectin' reports, which means he's gettin' information o' other capt'ns' boarded ships"
 
@@ -2178,8 +2178,8 @@ msgstr "'tis the pendin' change, which are change doubloons which ye 'ave sent t
 msgid "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
 msgstr "'tis the sum o' the incomin' 'n outgoin' pendin' transactions (nah yet included into the blockchain). This be nah includin' lootin' rewards."
 
-#: src/components/fullNode/FullNode.jsx:187
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:24
+#: src/components/fullNode/FullNode.jsx:187
 msgid "This is the time of the latest peak sub block."
 msgstr "'tis the time o' the latest peak sub booty."
 
@@ -2209,8 +2209,8 @@ msgstr ""
 msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:147
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:46
+#: src/components/fullNode/FullNode.jsx:147
 msgid "This node is fully caught up and validating the network"
 msgstr "This pirate be fully caught up 'n scannin' the ocean"
 
@@ -2264,8 +2264,8 @@ msgstr "To"
 msgid "Total Balance"
 msgstr "Ye Whole Treasure"
 
-#: src/components/fullNode/FullNode.jsx:205
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:205
 msgid "Total Iterations"
 msgstr "Thumbs twiddled"
 
@@ -2289,8 +2289,8 @@ msgstr "Yer Strength o' Crew"
 msgid "Total VDF Iterations"
 msgstr "Combined Thumbs Twiddled"
 
-#: src/components/fullNode/FullNode.jsx:207
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:22
+#: src/components/fullNode/FullNode.jsx:207
 msgid "Total iterations since the start of the blockchain"
 msgstr "Thumbs twiddled since the beginnin' o' time"
 
@@ -2364,8 +2364,8 @@ msgstr ""
 msgid "User Pubkey"
 msgstr "Scallywag Pubkey"
 
-#: src/components/fullNode/FullNode.jsx:199
 #: src/components/fullNode/card/FullNodeCardVDFSubSlotIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:199
 msgid "VDF Sub Slot Iterations"
 msgstr "Shots fired"
 
@@ -2616,13 +2616,13 @@ msgstr "[Error 13] Permission denied. Ye be trying t' access a file/directory wi
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[Error 22] File not found. See if one o' the plot folders in yer config.yaml has a problem."
 
-#: src/components/wallet/WalletStatusCard.tsx:41
 #: src/components/wallet/Wallets.tsx:146
+#: src/components/wallet/WalletStatusCard.tsx:41
 msgid "connections:"
 msgstr "connections:"
 
-#: src/components/wallet/WalletStatusCard.tsx:33
 #: src/components/wallet/Wallets.tsx:138
+#: src/components/wallet/WalletStatusCard.tsx:33
 msgid "height:"
 msgstr "recorded captures:"
 
@@ -2634,18 +2634,18 @@ msgstr "not there yet"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
-#: src/components/wallet/WalletStatusCard.tsx:27
 #: src/components/wallet/Wallets.tsx:126
+#: src/components/wallet/WalletStatusCard.tsx:27
 msgid "status:"
 msgstr "status:"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:131
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "synced"
 msgstr "jolly"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:130
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "syncing"
 msgstr "catchin' up"
 

@@ -14,16 +14,16 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    appDirectory: path.join(rootPath, 'Chia-win32-x64'),
-    authors: 'Chia Network',
-    version: process.env.CHIA_INSTALLER_VERSION,
+    appDirectory: path.join(rootPath, 'Spare-win32-x64'),
+    authors: 'Spare Network',
+    version: process.env.SPARE_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/Spare-Network/spare-blockchain/master/electron-react/src/assets/img/spare.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Spare-Network/spare-blockchain/master/spare-blockchain-gui/src/assets/img/spare.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
     exe: 'spare.exe',
-    setupExe: 'ChiaSetup-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
+    setupExe: 'SpareSetup-' + process.env.SPARE_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'spare.ico')
   })
 }

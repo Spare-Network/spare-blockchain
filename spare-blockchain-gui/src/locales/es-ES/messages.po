@@ -55,9 +55,9 @@ msgstr "Aceptar"
 msgid "Accepted at time:"
 msgstr "Aceptado en el momento:"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 #: src/components/plot/PlotsFailed.tsx:19
 #: src/components/plot/PlotsNotFound.tsx:19
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 msgid "Action"
 msgstr "Acción"
 
@@ -73,10 +73,10 @@ msgid "Add"
 msgstr "Añadir"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:88
+#: src/components/plot/overview/PlotOverviewHero.tsx:73
 #: src/components/plot/PlotAddDirectoryDialog.tsx:68
 #: src/components/plot/PlotHeader.tsx:63
 #: src/components/plot/PlotHeader.tsx:91
-#: src/components/plot/overview/PlotOverviewHero.tsx:73
 msgid "Add Plot Directory"
 msgstr "Añadir Directorio de Parcela"
 
@@ -128,10 +128,10 @@ msgstr "Dirección / Enigma hash"
 #: src/components/core/components/Amount/Amount.tsx:96
 #: src/components/trading/CreateOffer.jsx:191
 #: src/components/trading/TradesTable.tsx:20
-#: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
 #: src/components/wallet/standard/WalletStandard.tsx:517
+#: src/components/wallet/WalletHistory.tsx:62
 msgid "Amount"
 msgstr "Cantidad"
 
@@ -409,8 +409,8 @@ msgid "Connect to pool"
 msgstr "Conectar al pool"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
-#: src/components/fullNode/FullNode.jsx:157
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
+#: src/components/fullNode/FullNode.jsx:157
 msgid "Connected"
 msgstr "Conectado"
 
@@ -418,8 +418,8 @@ msgstr "Conectado"
 msgid "Connecting to wallet"
 msgstr "Conectar a cartera"
 
-#: src/components/fullNode/FullNode.jsx:155
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:15
+#: src/components/fullNode/FullNode.jsx:155
 msgid "Connection Status"
 msgstr "Estado de Conexión"
 
@@ -641,8 +641,8 @@ msgid "Developer Tools"
 msgstr "Herramientas de Desarrollador"
 
 #: src/components/block/Block.jsx:206
-#: src/components/fullNode/FullNode.jsx:192
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:20
+#: src/components/fullNode/FullNode.jsx:192
 msgid "Difficulty"
 msgstr "Dificultad"
 
@@ -702,10 +702,10 @@ msgstr ""
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Spare wallet."
 msgstr "Introduzca las 24 palabras mnemotécnicas que has guardado en orden para restaurar su cartera Spare."
 
-#: src/components/farm/FarmerStatus.tsx:21
-#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
+#: src/components/farm/FarmerStatus.tsx:21
+#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -737,8 +737,8 @@ msgstr "Tiempo Estimado para Ganar"
 msgid "Estimated network space"
 msgstr "Estimated network space"
 
-#: src/components/fullNode/FullNode.jsx:214
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:22
+#: src/components/fullNode/FullNode.jsx:214
 msgid "Estimated sum of all the plotted disk space of all farmers in the network"
 msgstr "Suma estimada de todo el espacio en disco trazado de todos los agricultores de la red"
 
@@ -803,9 +803,9 @@ msgstr "El Agricultor no está funcionando"
 #~ msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 #~ msgstr "Los agricultores obtienen recompensas en bloque y tarifas de transacción al asignar espacio libre a la red para ayudar a asegurar las transacciones. Aquí es donde estará su granja una vez que agregue una parcela. <0> Más información </0>"
 
+#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/farm/Farm.tsx:23
 #: src/components/farm/FarmerStatus.tsx:18
-#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Cultivando"
@@ -822,13 +822,13 @@ msgstr "Estado de Cultivo"
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:153
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:147
 #: src/components/pool/PoolInfo.tsx:17
-#: src/components/wallet/WalletHistory.tsx:66
 #: src/components/wallet/create/createExistingColouredCoin.jsx:116
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
 #: src/components/wallet/standard/WalletStandard.tsx:528
+#: src/components/wallet/WalletHistory.tsx:66
 msgid "Fee"
 msgstr "Tarifa"
 
@@ -857,9 +857,9 @@ msgstr "Monto de tarifas"
 msgid "File"
 msgstr "Archivo"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 msgid "Filename"
 msgstr "Nombre del Archivo"
 
@@ -1179,8 +1179,8 @@ msgstr "Más memoria aumenta ligeramente la velocidad"
 msgid "My Pubkey"
 msgstr "Mi Llave Pública"
 
-#: src/components/fullNode/FullNode.jsx:174
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:19
+#: src/components/fullNode/FullNode.jsx:174
 msgid "Network Name"
 msgstr "Nombre de Red"
 
@@ -1250,16 +1250,16 @@ msgstr "Ninguno"
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Ninguna de sus parcelas a pasado un filtro de parcela aún."
 
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:23
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:368
 msgid "Not Available"
 msgstr "No Disponible"
 
-#: src/components/fullNode/FullNode.jsx:136
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
+#: src/components/fullNode/FullNode.jsx:136
 #: src/components/wallet/WalletStatus.tsx:28
 msgid "Not Synced"
 msgstr "No sincronizado"
@@ -1273,9 +1273,9 @@ msgid "Not confirmed yet"
 msgstr "No confirmado todavía"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 #: src/components/fullNode/FullNode.jsx:159
 #: src/components/fullNode/FullNode.jsx:166
-#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 msgid "Not connected"
 msgstr "Desconectado"
 
@@ -1325,8 +1325,8 @@ msgstr "Enviado"
 msgid "Payout Address"
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:180
 #: src/components/fullNode/card/FullNodeCardPeakHeight.tsx:20
+#: src/components/fullNode/FullNode.jsx:180
 msgid "Peak Height"
 msgstr "Altura del Pico"
 
@@ -1334,8 +1334,8 @@ msgstr "Altura del Pico"
 #~ msgid "Peak Sub-block Height"
 #~ msgstr "Peak Sub-block Height"
 
-#: src/components/fullNode/FullNode.jsx:185
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:23
+#: src/components/fullNode/FullNode.jsx:185
 msgid "Peak Time"
 msgstr "Hora del Pico"
 
@@ -1973,20 +1973,20 @@ msgstr ""
 msgid "State"
 msgstr "Estado"
 
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/fullNode/FullNode.jsx:117
 #: src/components/fullNode/FullNode.jsx:135
 #: src/components/fullNode/FullNode.jsx:143
 #: src/components/fullNode/FullNode.jsx:165
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:115
 #: src/components/plotNFT/PlotNFTCard.tsx:145
 #: src/components/pool/PoolOverview.tsx:44
 #: src/components/trading/TradingOverview.jsx:121
 #: src/components/wallet/WalletHistory.tsx:55
-#: src/components/wallet/WalletStatusCard.tsx:22
 #: src/components/wallet/Wallets.tsx:121
+#: src/components/wallet/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "Estado"
 
@@ -2026,21 +2026,21 @@ msgstr "Estado:"
 msgid "Submit"
 msgstr "Enviar"
 
-#: src/components/fullNode/FullNode.jsx:144
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:43
+#: src/components/fullNode/FullNode.jsx:144
 #: src/components/wallet/WalletStatus.tsx:33
 msgid "Synced"
 msgstr "Sincronizado"
 
-#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/farm/card/FarmCardStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/wallet/WalletStatus.tsx:38
 msgid "Syncing"
 msgstr "Sincronizando"
 
-#: src/components/fullNode/FullNode.jsx:119
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:21
+#: src/components/fullNode/FullNode.jsx:119
 msgid "Syncing <0/>/<1/>"
 msgstr "Sincronizando <0/>/<1/>"
 
@@ -2093,13 +2093,13 @@ msgstr "El nodo completo al que está conectado su agricultor se encuentra a con
 msgid "The minimum required size for mainnet is k=32"
 msgstr "El tamaño mínimo requerido para mainnet es k=32"
 
-#: src/components/fullNode/FullNode.jsx:138
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
+#: src/components/fullNode/FullNode.jsx:138
 msgid "The node is not synced"
 msgstr "El nodo no está sincronizado"
 
-#: src/components/fullNode/FullNode.jsx:126
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:29
+#: src/components/fullNode/FullNode.jsx:126
 msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
 msgstr "El nodo se está sincronizando, lo que significa que está descargando bloques de otros nodos, para alcanzar el último bloque de la cadena"
 
@@ -2178,8 +2178,8 @@ msgstr "Esto es un cambio pendiente, los cuales son cambios de monedas que usted
 msgid "This is the sum of the incoming and outgoing pending transactions (not yet included into the blockchain). This does not include farming rewards."
 msgstr "Esta es la suma de las transacciones pendientes entrantes y salientes (aún no incluidas en la cadena de bloques). Esto no incluye las recompensas de cultivo."
 
-#: src/components/fullNode/FullNode.jsx:187
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:24
+#: src/components/fullNode/FullNode.jsx:187
 msgid "This is the time of the latest peak sub block."
 msgstr "Este es la hora del último sub-bloque pico."
 
@@ -2209,8 +2209,8 @@ msgstr "Este es el número total de puntos que esta plotNFT tiene con este fondo
 msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:147
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:46
+#: src/components/fullNode/FullNode.jsx:147
 msgid "This node is fully caught up and validating the network"
 msgstr "Este nodo esta al día y validando la red"
 
@@ -2264,8 +2264,8 @@ msgstr "A"
 msgid "Total Balance"
 msgstr "Saldo Total"
 
-#: src/components/fullNode/FullNode.jsx:205
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:205
 msgid "Total Iterations"
 msgstr "Total de iteraciones"
 
@@ -2289,8 +2289,8 @@ msgstr "Tamaño Total de Parcelas"
 msgid "Total VDF Iterations"
 msgstr "Total de iteraciones VDF"
 
-#: src/components/fullNode/FullNode.jsx:207
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:22
+#: src/components/fullNode/FullNode.jsx:207
 msgid "Total iterations since the start of the blockchain"
 msgstr "Total de iteraciones desde el principio de la cadena de bloques"
 
@@ -2364,8 +2364,8 @@ msgstr "Cambios sin guardar"
 msgid "User Pubkey"
 msgstr "Llave Pública de Usuario"
 
-#: src/components/fullNode/FullNode.jsx:199
 #: src/components/fullNode/card/FullNodeCardVDFSubSlotIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:199
 msgid "VDF Sub Slot Iterations"
 msgstr "Iteraciones VDF Sub Slot"
 
@@ -2616,13 +2616,13 @@ msgstr "[Error 13] Permiso denegado. Estás intentando acceder a un archivo/dire
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[Error 22] Archivo no encontrado. Lo más probable es que una de las carpetas de parcelas de su config.yaml tenga un problema."
 
-#: src/components/wallet/WalletStatusCard.tsx:41
 #: src/components/wallet/Wallets.tsx:146
+#: src/components/wallet/WalletStatusCard.tsx:41
 msgid "connections:"
 msgstr "conexiones:"
 
-#: src/components/wallet/WalletStatusCard.tsx:33
 #: src/components/wallet/Wallets.tsx:138
+#: src/components/wallet/WalletStatusCard.tsx:33
 msgid "height:"
 msgstr "altura:"
 
@@ -2634,18 +2634,18 @@ msgstr "no sincronizado"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
-#: src/components/wallet/WalletStatusCard.tsx:27
 #: src/components/wallet/Wallets.tsx:126
+#: src/components/wallet/WalletStatusCard.tsx:27
 msgid "status:"
 msgstr "estado:"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:131
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "synced"
 msgstr "sincronizado"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:130
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "syncing"
 msgstr "sincronizando"
 

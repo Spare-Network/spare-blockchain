@@ -72,7 +72,6 @@ network_overrides: &network_overrides
   config:
     mainnet:
       address_prefix: "spare"
-      default_full_node_port: 9444
     testnet0:
       address_prefix: "tspare"
     testnet1:
@@ -85,7 +84,6 @@ network_overrides: &network_overrides
       address_prefix: "tspare"
     testnet7:
       address_prefix: "tspare"
-      default_full_node_port: 59444
 
 selected_network: &selected_network "mainnet"
 ALERTS_URL: https://download.spare.farm/notify/mainnet_alert.txt
@@ -113,9 +111,6 @@ logging: &logging
   log_filename: "log/debug.log"
   log_level: "WARNING"  # Can be CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET
   log_maxfilesrotation: 7 #  Max files in rotation. Default value 7 if the key is not set
-  log_syslog: False  # If True, outputs to SysLog host and port specified
-  log_syslog_host: "localhost"  # Send logging messages to a remote or local Unix syslog
-  log_syslog_port: 15514  # UDP port of the remote or local Unix syslog
 
 harvester:
   # The harvester server (if run) will run on this port
@@ -271,8 +266,10 @@ full_node:
   # How often to initiate outbound connections to other full nodes.
   peer_connect_interval: 30
   # Accept peers until this number of connections
+  # per community suggestions
   target_peer_count: 80
   # Initiate outbound connections until this number is hit.
+  # per community suggestions
   target_outbound_peer_count: 8
   # IPv4/IPv6 network addresses and CIDR blocks allowed to connect even when target_peer_count has been hit.
   # exempt_peer_networks: ["192.168.0.3", "192.168.1.0/24", "fe80::/10", "2606:4700:4700::64/128"]
@@ -327,10 +324,10 @@ full_node:
 
 ui:
    # The ui node server (if run) will run on this port
-  port: 8222
+  port: 10222
 
   # Which port to use to communicate with the full node
-  rpc_port: 9554
+  rpc_port: 10555
 
   # This SSH key is for the ui SSH server
   ssh_filename: config/ssh_host_key
@@ -363,9 +360,7 @@ introducer:
 
 wallet:
   port: 9449
-  rpc_port: 7256
-
-  enable_profiler: False
+  rpc_port: 10256
 
   # The minimum height that we care about for our transactions. Set to zero
   # If we are restoring from private key and don't know the height.
@@ -405,5 +400,3 @@ wallet:
 
   trusted_peers:
     trusted_node_1: "config/ssl/full_node/public_full_node.crt"
-
-  short_sync_blocks_behind_threshold: 20

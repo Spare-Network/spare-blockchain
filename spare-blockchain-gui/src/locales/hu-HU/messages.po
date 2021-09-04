@@ -55,9 +55,9 @@ msgstr "Elfogad"
 msgid "Accepted at time:"
 msgstr "Elfogadás ideje:"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 #: src/components/plot/PlotsFailed.tsx:19
 #: src/components/plot/PlotsNotFound.tsx:19
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 msgid "Action"
 msgstr "Művelet"
 
@@ -73,10 +73,10 @@ msgid "Add"
 msgstr "Hozzáadás"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:88
+#: src/components/plot/overview/PlotOverviewHero.tsx:73
 #: src/components/plot/PlotAddDirectoryDialog.tsx:68
 #: src/components/plot/PlotHeader.tsx:63
 #: src/components/plot/PlotHeader.tsx:91
-#: src/components/plot/overview/PlotOverviewHero.tsx:73
 msgid "Add Plot Directory"
 msgstr "Plot könyvtár hozzáadása"
 
@@ -128,10 +128,10 @@ msgstr "Cím / Kirakós hash"
 #: src/components/core/components/Amount/Amount.tsx:96
 #: src/components/trading/CreateOffer.jsx:191
 #: src/components/trading/TradesTable.tsx:20
-#: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:112
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:722
 #: src/components/wallet/standard/WalletStandard.tsx:517
+#: src/components/wallet/WalletHistory.tsx:62
 msgid "Amount"
 msgstr "Összeg"
 
@@ -409,8 +409,8 @@ msgid "Connect to pool"
 msgstr "Csatlakozzon a pool-hoz"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:51
-#: src/components/fullNode/FullNode.jsx:157
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
+#: src/components/fullNode/FullNode.jsx:157
 msgid "Connected"
 msgstr "Csatlakozva"
 
@@ -418,8 +418,8 @@ msgstr "Csatlakozva"
 msgid "Connecting to wallet"
 msgstr "Csatlakozás a tárcához"
 
-#: src/components/fullNode/FullNode.jsx:155
 #: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:15
+#: src/components/fullNode/FullNode.jsx:155
 msgid "Connection Status"
 msgstr "Kapcsolat állapota"
 
@@ -641,8 +641,8 @@ msgid "Developer Tools"
 msgstr "Fejlesztői eszközök"
 
 #: src/components/block/Block.jsx:206
-#: src/components/fullNode/FullNode.jsx:192
 #: src/components/fullNode/card/FullNodeCardDifficulty.tsx:20
+#: src/components/fullNode/FullNode.jsx:192
 msgid "Difficulty"
 msgstr "Bonyolultság"
 
@@ -702,10 +702,10 @@ msgstr ""
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Spare wallet."
 msgstr "A Spare pénztárca visszaállításához írja be az elmentett 24 szóból álló mnemonikát."
 
-#: src/components/farm/FarmerStatus.tsx:21
-#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
+#: src/components/farm/FarmerStatus.tsx:21
+#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -737,8 +737,8 @@ msgstr "Becsült idő a győzelemre"
 msgid "Estimated network space"
 msgstr "Estimated network space"
 
-#: src/components/fullNode/FullNode.jsx:214
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:22
+#: src/components/fullNode/FullNode.jsx:214
 msgid "Estimated sum of all the plotted disk space of all farmers in the network"
 msgstr "A hálózat becsült összes lemezterületének összege"
 
@@ -803,9 +803,9 @@ msgstr "A farmer nem fut"
 #~ msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 #~ msgstr "A  farmerek blokkjutalmakat és tranzakciós díjakat keresnek azzal, hogy tartalék helyet szánnak a hálózatnak a tranzakciók biztosítása érdekében. Itt lesz a farm, ha hozzáadsz egy parcellát. <0> További információ </0>"
 
+#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/farm/Farm.tsx:23
 #: src/components/farm/FarmerStatus.tsx:18
-#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Farmolás"
@@ -822,13 +822,13 @@ msgstr "Farmer státusz"
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:153
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:147
 #: src/components/pool/PoolInfo.tsx:17
-#: src/components/wallet/WalletHistory.tsx:66
 #: src/components/wallet/create/createExistingColouredCoin.jsx:116
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/create/createRLAdmin.jsx:237
 #: src/components/wallet/create/createRLAdmin.jsx:265
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:735
 #: src/components/wallet/standard/WalletStandard.tsx:528
+#: src/components/wallet/WalletHistory.tsx:66
 msgid "Fee"
 msgstr "Díj"
 
@@ -857,9 +857,9 @@ msgstr "Díjak összege"
 msgid "File"
 msgstr "Fájl"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 msgid "Filename"
 msgstr "Fájlnév"
 
@@ -1179,8 +1179,8 @@ msgstr "A több memória kissé növeli a sebességet"
 msgid "My Pubkey"
 msgstr "Publikus kulcsom"
 
-#: src/components/fullNode/FullNode.jsx:174
 #: src/components/fullNode/card/FullNodeCardNetworkName.tsx:19
+#: src/components/fullNode/FullNode.jsx:174
 msgid "Network Name"
 msgstr "Hálózat neve"
 
@@ -1250,16 +1250,16 @@ msgstr ""
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Még egyik kerted sem ment át a kert szűrőn."
 
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:23
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:368
 msgid "Not Available"
 msgstr "Nem elérhető"
 
-#: src/components/fullNode/FullNode.jsx:136
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
+#: src/components/fullNode/FullNode.jsx:136
 #: src/components/wallet/WalletStatus.tsx:28
 msgid "Not Synced"
 msgstr "Nem szinkronizált"
@@ -1273,9 +1273,9 @@ msgid "Not confirmed yet"
 msgstr "Nincs megerősítve"
 
 #: src/components/core/components/FormatConnectionStatus/FormatConnectionStatus.tsx:52
+#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 #: src/components/fullNode/FullNode.jsx:159
 #: src/components/fullNode/FullNode.jsx:166
-#: src/components/fullNode/card/FullNodeCardConnectionStatus.tsx:17
 msgid "Not connected"
 msgstr "Nincs csatlakozva"
 
@@ -1325,8 +1325,8 @@ msgstr "Kimenő"
 msgid "Payout Address"
 msgstr "Kifizetés címe"
 
-#: src/components/fullNode/FullNode.jsx:180
 #: src/components/fullNode/card/FullNodeCardPeakHeight.tsx:20
+#: src/components/fullNode/FullNode.jsx:180
 msgid "Peak Height"
 msgstr "Csúcsmagasság"
 
@@ -1334,8 +1334,8 @@ msgstr "Csúcsmagasság"
 #~ msgid "Peak Sub-block Height"
 #~ msgstr "Peak Sub-block Height"
 
-#: src/components/fullNode/FullNode.jsx:185
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:23
+#: src/components/fullNode/FullNode.jsx:185
 msgid "Peak Time"
 msgstr "Csúcsidôszak"
 
@@ -1973,20 +1973,20 @@ msgstr ""
 msgid "State"
 msgstr "Megye"
 
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
+#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/fullNode/FullNode.jsx:117
 #: src/components/fullNode/FullNode.jsx:135
 #: src/components/fullNode/FullNode.jsx:143
 #: src/components/fullNode/FullNode.jsx:165
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:59
-#: src/components/fullNode/card/FullNodeCardStatus.tsx:67
 #: src/components/plot/overview/PlotOverviewPlots.tsx:110
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:115
 #: src/components/plotNFT/PlotNFTCard.tsx:145
 #: src/components/pool/PoolOverview.tsx:44
 #: src/components/trading/TradingOverview.jsx:121
 #: src/components/wallet/WalletHistory.tsx:55
-#: src/components/wallet/WalletStatusCard.tsx:22
 #: src/components/wallet/Wallets.tsx:121
+#: src/components/wallet/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "Állapot"
 
@@ -2026,21 +2026,21 @@ msgstr "Állapot:"
 msgid "Submit"
 msgstr "Elküldés"
 
-#: src/components/fullNode/FullNode.jsx:144
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:43
+#: src/components/fullNode/FullNode.jsx:144
 #: src/components/wallet/WalletStatus.tsx:33
 msgid "Synced"
 msgstr "Szinkronizálva"
 
-#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/farm/card/FarmCardStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/wallet/WalletStatus.tsx:38
 msgid "Syncing"
 msgstr "Szinkronizálás folyamatban"
 
-#: src/components/fullNode/FullNode.jsx:119
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:21
+#: src/components/fullNode/FullNode.jsx:119
 msgid "Syncing <0/>/<1/>"
 msgstr "Szinkronizálás <0/>/<1/>"
 
@@ -2093,13 +2093,13 @@ msgstr "A teljes node, melyhez a farmer csatlakozik. <0>További információ</0
 msgid "The minimum required size for mainnet is k=32"
 msgstr "A mainnet legkisebb megengedett mérete k=32"
 
-#: src/components/fullNode/FullNode.jsx:138
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:39
+#: src/components/fullNode/FullNode.jsx:138
 msgid "The node is not synced"
 msgstr "A node nincs szinkronizálva"
 
-#: src/components/fullNode/FullNode.jsx:126
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:29
+#: src/components/fullNode/FullNode.jsx:126
 msgid "The node is syncing, which means it is downloading blocks from other nodes, to reach the latest block in the chain"
 msgstr "A node szinkronizál, azaz más csomópontokról tölt le blokkokat amíg eléri a legfrissebb blokkot a blokkláncon"
 
@@ -2180,8 +2180,8 @@ msgstr ""
 "Ez a függőben lévő, bejövő és kimenő ügyletek összesítése. (Még nem a blokklánc részei)\n"
 "Nem tartalmazza a termesztési díjakat."
 
-#: src/components/fullNode/FullNode.jsx:187
 #: src/components/fullNode/card/FullNodeCardPeakTime.tsx:24
+#: src/components/fullNode/FullNode.jsx:187
 msgid "This is the time of the latest peak sub block."
 msgstr "Ez a legutóbbi csúcs alblokk ideje."
 
@@ -2211,8 +2211,8 @@ msgstr ""
 msgid "This is the total number of points your farmer has found for this plot NFT. Each k32 plot will get around 10 points per day, so if you have 10TiB, should should expect around 1000 points per day, or 41 points per hour."
 msgstr ""
 
-#: src/components/fullNode/FullNode.jsx:147
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:46
+#: src/components/fullNode/FullNode.jsx:147
 msgid "This node is fully caught up and validating the network"
 msgstr "Ez a csomópont teljesen felzárkózott és érvényesíti a hálózatot"
 
@@ -2266,8 +2266,8 @@ msgstr "Címzett"
 msgid "Total Balance"
 msgstr "Teljes egyenleg"
 
-#: src/components/fullNode/FullNode.jsx:205
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:205
 msgid "Total Iterations"
 msgstr "Összes ismétlések száma"
 
@@ -2291,8 +2291,8 @@ msgstr "Parcella fájlok összes mérete"
 msgid "Total VDF Iterations"
 msgstr "Összes VDF ismétlések száma"
 
-#: src/components/fullNode/FullNode.jsx:207
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:22
+#: src/components/fullNode/FullNode.jsx:207
 msgid "Total iterations since the start of the blockchain"
 msgstr "Összes ismétlések száma a blokklánc indulása óta"
 
@@ -2366,8 +2366,8 @@ msgstr ""
 msgid "User Pubkey"
 msgstr "Felhasználó publikus kulcsa"
 
-#: src/components/fullNode/FullNode.jsx:199
 #: src/components/fullNode/card/FullNodeCardVDFSubSlotIterations.tsx:20
+#: src/components/fullNode/FullNode.jsx:199
 msgid "VDF Sub Slot Iterations"
 msgstr "VDF alhelyi ismétlések"
 
@@ -2618,13 +2618,13 @@ msgstr "[Error 13] A hozzáférés megtagadva. Megpróbáltál egy fájlhoz vagy
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[Error 22] A fájl nem található. Valószínűleg az egyik parcella könyvtárad beállítása a config.yaml fájlban hibás."
 
-#: src/components/wallet/WalletStatusCard.tsx:41
 #: src/components/wallet/Wallets.tsx:146
+#: src/components/wallet/WalletStatusCard.tsx:41
 msgid "connections:"
 msgstr "kapcsolatok:"
 
-#: src/components/wallet/WalletStatusCard.tsx:33
 #: src/components/wallet/Wallets.tsx:138
+#: src/components/wallet/WalletStatusCard.tsx:33
 msgid "height:"
 msgstr "magasság:"
 
@@ -2636,18 +2636,18 @@ msgstr "nincs szinkronizálva"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr ""
 
-#: src/components/wallet/WalletStatusCard.tsx:27
 #: src/components/wallet/Wallets.tsx:126
+#: src/components/wallet/WalletStatusCard.tsx:27
 msgid "status:"
 msgstr "állapot:"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:131
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "synced"
 msgstr "szinkronizálva"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:130
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "syncing"
 msgstr "szinkronizálás"
 
